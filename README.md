@@ -107,6 +107,22 @@ Esta pasta contém as features e lógicas de negócio que podem ser compartilhad
 
 ---
 
+## Contribuidores
+
+Agradecimentos para essas pessoas incriveis:
+<table>
+    <tr>
+        <td align="center"><a href="https://www.linkedin.com/in/alexandre-oliveira-rocha-1bab33126"><img src="https://secure.gravatar.com/avatar/9b0a1f37d16054ebe40574175381b0193875068710d9b7fd260b2e7b14021959?s=1600&d=identicon" width="100px;" alt=""/><br /><sub><b>Alexandre de Oliveira Rocha</b></sub></a><br/>
+        <a >💻</a>
+        </td>
+        <td align="center"><a href="https://www.linkedin.com/in/fprrsz"><img src="https://gitlab.com/uploads/-/system/user/avatar/21309539/avatar.png?width=800" width="100px;" alt=""/><br /><sub><b>Felipe Ferreira</b></sub></a><br/>
+        <a >💻</a>
+        </td>
+    </tr>
+</table>
+
+---
+
 Se você tiver qualquer dúvida ou sugestão sobre a estrutura ou os padrões do Design System, fique à vontade para abrir uma issue ou enviar um PR!
 
 ---
