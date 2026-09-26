@@ -21,8 +21,8 @@ class _DSCustomFormState extends State<DSCustomForm> {
         child: Wrap(
           direction: Axis.horizontal,
           crossAxisAlignment: WrapCrossAlignment.start,
-          spacing: 8,
-          runSpacing: 8,
+          spacing: widget.customFormMap.spacing,
+          runSpacing: widget.customFormMap.runSpacing,
           children: widget.customFormMap.listDSCustomFormInput
               .map((DSCustomFormInput customFormInput) {
             return SizedBox(

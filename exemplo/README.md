@@ -1,6 +1,6 @@
 # design_system_exemplo
 
-Esse é um projeto para mostrar os componentes do Design System da Get
+Esse é um projeto para mostrar os componentes do Design System
 
 ## Getting Started
 

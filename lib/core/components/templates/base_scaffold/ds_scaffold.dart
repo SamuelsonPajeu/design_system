@@ -1,14 +1,16 @@
-import 'package:design_system/core/ui/themes/base_app_theme.dart';
+import 'package:design_system/core/components/molecules/back_gesture_manager/ds_back_gesture_manager.dart';
+import 'package:design_system/core/components/molecules/top_app_bar/ds_top_app_bar.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 
-class DSScaffold extends StatefulWidget {
+class DSScaffold extends StatelessWidget {
   const DSScaffold({
     super.key,
     required this.body,
     this.backgroundColor,
     this.appBar,
-    this.padding = const EdgeInsets.all(16.0),
-    this.margin = const EdgeInsets.all(0),
+    this.padding,
+    this.margin = EdgeInsets.zero,
     this.drawer,
     this.floatingActionButton,
     this.bottomNavigationBar,
@@ -17,11 +19,13 @@ class DSScaffold extends StatefulWidget {
     this.persistentFooterButtons,
     this.endDrawer,
     this.resizeToAvoidBottomInset = true,
+    this.onPopInvoked,
+    this.endDrawerEnableOpenDragGesture,
   });
 
   final Widget body;
   final Color? backgroundColor;
-  final AppBar? appBar;
+  final PreferredSizeWidget? appBar;
   final EdgeInsetsGeometry? padding;
   final EdgeInsetsGeometry? margin;
   final Widget? drawer;
@@ -32,53 +36,66 @@ class DSScaffold extends StatefulWidget {
   final List<Widget>? persistentFooterButtons;
   final Widget? endDrawer;
   final bool? resizeToAvoidBottomInset;
-
-  @override
-  State<DSScaffold> createState() => _DSScaffoldState();
-}
-
-class _DSScaffoldState extends State<DSScaffold> {
-  Color get _backgroundColor =>
-      widget.backgroundColor ?? Theme.of(context).colors.sysSurface;
+  final void Function(bool, dynamic)? onPopInvoked;
+  final bool? endDrawerEnableOpenDragGesture;
 
   @override
   Widget build(BuildContext context) {
-    if (widget.removeSafeArea) {
-      return Scaffold(
-        resizeToAvoidBottomInset: widget.resizeToAvoidBottomInset,
-        backgroundColor: _backgroundColor,
-        appBar: widget.appBar,
-        drawer: widget.drawer,
-        floatingActionButton: widget.floatingActionButton,
-        bottomNavigationBar: widget.bottomNavigationBar,
-        bottomSheet: widget.bottomSheet,
-        body: Container(
-          padding: widget.padding,
-          margin: widget.margin,
-          child: widget.body,
-        ),
-        persistentFooterButtons: widget.persistentFooterButtons,
-        endDrawer: widget.endDrawer,
+    Widget contentBody = Container(
+      padding: padding,
+      margin: margin,
+      child: body,
+    );
+
+    if (!removeSafeArea) {
+      contentBody = SafeArea(child: contentBody);
+    }
+
+    // --- Automatic DSTopAppBar Resizing Logic ---
+    PreferredSizeWidget? effectiveAppBar = appBar;
+
+    if (appBar is DSTopAppBar) {
+      final dsAppBar = appBar as DSTopAppBar;
+      final double width = MediaQuery.sizeOf(context).width;
+
+      // Calculate the precise height needed for the current screen width & variant
+      final double height = DSTopAppBar.getHeightForWidth(
+        width: width,
+        type: dsAppBar.type,
+        isSearchVisible: dsAppBar.isSearchBarVisible,
+        searchBehavior: dsAppBar.searchBehavior,
+        bottom: dsAppBar.bottom,
+        toolbarHeight: dsAppBar.toolbarHeight,
+        topPadding: dsAppBar.topPadding,
+        bottomPadding: dsAppBar.bottomPadding,
+        primaryBandHeight: dsAppBar.primaryBandHeight,
+        showPrimaryBand: dsAppBar.showPrimaryBand,
       );
-    } else {
-      return Scaffold(
-        resizeToAvoidBottomInset: widget.resizeToAvoidBottomInset,
-        backgroundColor: _backgroundColor,
-        appBar: widget.appBar,
-        drawer: widget.drawer,
-        floatingActionButton: widget.floatingActionButton,
-        bottomNavigationBar: widget.bottomNavigationBar,
-        bottomSheet: widget.bottomSheet,
-        body: SafeArea(
-          child: Container(
-            padding: widget.padding,
-            margin: widget.margin,
-            child: widget.body,
-          ),
-        ),
-        persistentFooterButtons: widget.persistentFooterButtons,
-        endDrawer: widget.endDrawer,
+
+      // Wrap in PreferredSize to override the default height
+      effectiveAppBar = PreferredSize(
+        preferredSize: Size.fromHeight(height),
+        child: dsAppBar,
       );
     }
+
+    final scaffoldWidget = Scaffold(
+      resizeToAvoidBottomInset: resizeToAvoidBottomInset,
+      backgroundColor: backgroundColor ?? context.colors.sysSurfaceContainerLow,
+      appBar: effectiveAppBar,
+      drawer: drawer,
+      floatingActionButton: floatingActionButton,
+      bottomNavigationBar: bottomNavigationBar,
+      bottomSheet: bottomSheet,
+      body: contentBody,
+      persistentFooterButtons: persistentFooterButtons,
+      endDrawer: endDrawer,
+      endDrawerEnableOpenDragGesture: endDrawerEnableOpenDragGesture ?? false,
+    );
+
+    return DSBackGestureRoot(
+      onPopInvoked: onPopInvoked,
+      child: scaffoldWidget,
+    );
   }
 }

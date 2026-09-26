@@ -18,9 +18,9 @@ class InitialPage extends StatelessWidget {
 
   final String data = '''
 
-# Repositório de Pacotes - Design System da GetConnect
+# Repositório de Pacotes - Design System da Base
 
-Este repositório contém os pacotes e a estrutura para o Design System da GetConnect. Nosso objetivo é proporcionar uma base consistente e reutilizável para os projetos, garantindo que todos os componentes sigam um padrão de qualidade e organização.
+Este é um repositório que contém os pacotes e a estrutura para o Design System. O objetivo é proporcionar uma base consistente e reutilizável para os projetos, garantindo que todos os componentes sigam um padrão de qualidade e organização.
 
 ## Estrutura de Diretórios
 
@@ -32,13 +32,13 @@ Aqui ficam todos os componentes e widgets reutilizáveis que formam a interface 
 
 - **`atomos`**: São os componentes mais básicos da UI. Exemplo: botões, textos, ícones.
     - Exemplo: `Text`, `Icon`
-    
+
 - **`moleculas`**: São combinações de átomos que formam componentes mais complexos. Exemplo: campos de formulários, listas de itens.
     - Exemplo: `ListTile`, `Button`, `Input`
-    
+
 - **`organismos`**: Componentes ainda mais complexos compostos por átomos e moléculas. Exemplo: formulários completos, menus de navegação.
     - Exemplo: `Form`, `AppBar`, `BottomBar`, `Grid`, `UserProfile`, `LoginForm`, `MedicineOnTimeList`
-    
+
 - **`templates`**: Estruturas de layout que combinam organismos e moldam a arquitetura da tela. Exemplo: páginas base que são usadas em diferentes partes do app.
     - Exemplo: `BaseScreen`, `Dashboard`, `LoginScreen`, `ListScreen`
 

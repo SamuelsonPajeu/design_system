@@ -2,6 +2,7 @@ import 'package:design_system/core/components/atoms/icon/ds_icon.dart';
 import 'package:design_system/core/components/molecules/menu_items/menu_item/ds_menu_item_button.dart';
 import 'package:design_system/core/components/molecules/menu_items/menu_item/ds_submenu_item_button.dart';
 import 'package:design_system/core/components/templates/base_scaffold/ds_scaffold.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:storybook_flutter/storybook_flutter.dart';
@@ -12,7 +13,7 @@ class MenuItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DSScaffold(
-      backgroundColor: Theme.of(context).colorScheme.surface,
+      backgroundColor: context.colors.sysSurface,
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -29,12 +30,12 @@ class MenuItems extends StatelessWidget {
               ),
               leadingIcon: context.knobs.nullable.options(
                 label: 'Leading Icon',
-                initial: const DSIcon(icon: Symbols.content_cut),
+                initial: const DSIcon.custom(icon: Symbols.content_cut),
                 enabled: true,
               ),
               trailingIcon: context.knobs.nullable.options(
                 label: 'Trailing Icon',
-                initial: const DSIcon(icon: Symbols.more_vert),
+                initial: const DSIcon.custom(icon: Symbols.more_vert),
                 enabled: false,
               ),
             ),
@@ -48,24 +49,24 @@ class MenuItems extends StatelessWidget {
               ),
               leadingIcon: context.knobs.nullable.options(
                 label: 'Leading Icon',
-                initial: const DSIcon(icon: Symbols.content_cut),
+                initial: const DSIcon.custom(icon: Symbols.content_cut),
                 enabled: true,
               ),
               trailingIcon: context.knobs.nullable.options(
                 label: 'Trailing Icon',
-                initial: const DSIcon(icon: Symbols.more_vert),
+                initial: const DSIcon.custom(icon: Symbols.more_vert),
                 enabled: false,
               ),
               children: [
                 DSMenuItemButton(
                   onPressed: () {},
                   buttonText: 'Item 1',
-                  leadingIcon: const DSIcon(icon: Symbols.content_cut),
+                  leadingIcon: const DSIcon.custom(icon: Symbols.content_cut),
                 ),
                 DSMenuItemButton(
                   onPressed: () {},
                   buttonText: 'Item 2',
-                  trailingIcon: const DSIcon(icon: Symbols.content_cut),
+                  trailingIcon: const DSIcon.custom(icon: Symbols.content_cut),
                 ),
                 DSMenuItemButton(
                   onPressed: () {},

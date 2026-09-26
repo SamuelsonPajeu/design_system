@@ -2,8 +2,10 @@ import 'dart:async'; // Add timer for debounce
 
 import 'package:design_system/core/components/atoms/field_mask_type/ds_field_mask_type.dart';
 import 'package:design_system/core/components/atoms/field_validator_type/ds_fields_validatos_type.dart';
+import 'package:design_system/core/components/molecules/field/ds_visibility_adapter.dart';
+import 'package:design_system/core/components/molecules/keyboard/ds_keyboard_actions.dart';
 import 'package:design_system/core/components/molecules/shake/ds_shake_error.dart';
-import 'package:design_system/core/ui/themes/base_app_theme.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -21,12 +23,14 @@ class DSFormTextField extends StatefulWidget {
     this.keyboardType,
     this.maxLines = 1,
     this.prefixIcon,
-    this.suffixIcon,
+    this.sufixIcon,
+    this.sufixIconSemanticLabel,
     this.suffixText,
     this.padding = 0,
     this.required = false,
     this.readOnly = false,
     this.validate = false,
+    this.visible = true,
     this.maskedValidation = false,
     this.onTap,
     this.onEditingComplete,
@@ -42,6 +46,7 @@ class DSFormTextField extends StatefulWidget {
     this.autovalidateMode,
     this.onFieldSubmitted,
     this.multiLine = false,
+    this.showCounter = true,
     super.key,
   });
 
@@ -52,13 +57,15 @@ class DSFormTextField extends StatefulWidget {
   final TextInputType? keyboardType;
   final int? maxLines;
   final Icon? prefixIcon;
-  final Widget? suffixIcon;
+  final Widget? sufixIcon;
+  final String? sufixIconSemanticLabel;
   final double padding;
   final int? maxLenght;
   final DSFieldMaskType? maskType;
   final bool required;
   final bool readOnly;
   final bool validate;
+  final bool visible;
   final String? suffixText;
   final String? equalValidationValue;
   final String? validationMessage;
@@ -75,6 +82,8 @@ class DSFormTextField extends StatefulWidget {
   final AutovalidateMode? autovalidateMode;
   final Function(String)? onFieldSubmitted;
   final bool multiLine;
+
+  final bool showCounter;
 
   @override
   State<DSFormTextField> createState() => _DSFormTextFieldState();
@@ -147,149 +156,148 @@ class _DSFormTextFieldState extends State<DSFormTextField> {
 
   @override
   Widget build(BuildContext context) {
-    final appColorsExtension = Theme.of(context).colors;
+    final appColorsExtension = context.colors;
     return Padding(
-        padding: EdgeInsets.symmetric(horizontal: widget.padding),
-        child: Semantics(
-          label: '${widget.hintText} ',
-          textField: true,
-          enabled: !widget.readOnly,
-          excludeSemantics: true,
-          focused: widget.focusNode?.hasFocus ?? false,
-          hint: widget.required
-              ? "(campo obrigatório) $instructionMessage"
-              : instructionMessage,
-          value: widget.controller.text,
-          onTapHint: widget.readOnly && widget.onTap != null
-              ? "Toque para selecionar ${widget.hintText}"
-              : null,
+      padding: EdgeInsets.symmetric(horizontal: widget.padding),
+      child: ValueListenableBuilder<TextEditingValue>(
+        valueListenable: widget.controller,
+        builder: (context, textValue, child) {
+          return Semantics(
+            label: '${widget.hintText} ',
+            textField: true,
+            enabled: !widget.readOnly,
+            excludeSemantics: true,
+            focused: widget.focusNode?.hasFocus == true,
+            hint: widget.required
+                ? "(campo obrigatório) $instructionMessage"
+                : instructionMessage,
+            value: textValue.text,
+            onTapHint: widget.readOnly && widget.onTap != null
+                ? "Toque para selecionar ${widget.hintText}"
+                : null,
+            child: child!,
+          );
+        },
+        child: DSKeyboardActionDoneWidget(
+          focusNode: widget.focusNode,
           child: TextFormField(
-              key: widget.fieldKey,
-              autovalidateMode: widget.autovalidateMode,
-              maxLines: widget.multiLine ? widget.maxLines : 1,
-              readOnly: widget.readOnly,
-              obscureText: widget.obscureText,
-              controller: widget.controller,
-              focusNode: widget.focusNode,
-              onFieldSubmitted: widget.onFieldSubmitted,
-              keyboardType: widget.keyboardType,
-              maxLength: widget.maxLenght,
-              onTap: widget.onTap,
-              onEditingComplete: widget.onEditingComplete,
-              onChanged: _handleTextChange,
-              inputFormatters: inputFormatters,
-              decoration: InputDecoration(
-                prefixIcon: widget.prefixIcon,
-                suffixIcon: widget.suffixIcon,
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(8),
-                  ),
-                ),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(8),
-                  ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(8),
-                  ),
-                  borderSide: BorderSide(color: Colors.transparent),
-                ),
-                filled: true,
-                fillColor: widget.readOnly && widget.onTap == null
-                    ? appColorsExtension.refneutraln95
-                    : widget.backgroundColor ??
-                        appColorsExtension.sysSecondaryContainer,
-                suffixText: widget.suffixText,
-                labelText: showLabel ? null : widget.hintText,
-                labelStyle: showLabel
-                    ? null
-                    : Theme.of(context).textTheme.bodyMedium!.copyWith(
-                          color: appColorsExtension.sysSecondary,
-                        ),
-                hintText: widget.hintText,
-                hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      color: appColorsExtension.sysSecondary,
+            key: widget.fieldKey,
+            autovalidateMode: widget.autovalidateMode,
+            maxLines: widget.multiLine ? widget.maxLines : 1,
+            readOnly: widget.readOnly,
+            obscureText: widget.obscureText,
+            controller: widget.controller,
+            focusNode: widget.focusNode,
+            onFieldSubmitted: widget.onFieldSubmitted,
+            keyboardType: widget.keyboardType,
+            maxLength: widget.maxLenght,
+            onTap: widget.onTap,
+            onEditingComplete: widget.onEditingComplete,
+            onChanged: _handleTextChange,
+            inputFormatters: inputFormatters,
+            decoration: InputDecoration(
+              prefixIcon: widget.prefixIcon,
+              suffixIcon: widget.sufixIcon != null &&
+                      widget.sufixIconSemanticLabel != null
+                  ? Semantics(
+                      label: widget.sufixIconSemanticLabel,
+                      child: widget.sufixIcon,
+                    )
+                  : widget.sufixIcon,
+              focusedBorder:
+                  Theme.of(context).inputDecorationTheme.focusedBorder ??
+                      OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: appColorsExtension.sysSurface),
+                      ),
+              counterText: widget.showCounter ? null : '',
+              filled: true,
+              fillColor: widget.readOnly && widget.onTap == null
+                  ? appColorsExtension.sysSurfaceContainerHighest
+                  : widget.backgroundColor ?? appColorsExtension.sysSurface,
+              suffixText: widget.suffixText,
+              labelText: showLabel ? null : widget.hintText,
+              labelStyle: showLabel
+                  ? null
+                  : context.texts.bodyLarge.copyWith(
+                      color: appColorsExtension.sysOutline,
                     ),
-                semanticCounterText:
-                    widget.required ? "Campo obrigatório" : null,
-                // Adiciona um texto descritivo para suporte a acessibilidade
-                // helperText: widget.obscureText ? "Campo de senha" : null,
-                // Define se este campo é de senha ou não para os leitores de tela
-                label: showLabel
-                    ? RichText(
-                        text: TextSpan(
-                          text: widget.hintText,
-                          style:
-                              Theme.of(context).textTheme.bodyMedium!.copyWith(
-                                    color: appColorsExtension.sysSecondary,
-                                  ),
-                          children: [
-                            TextSpan(
-                                text: ' *',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(
-                                      color: appColorsExtension.sysError,
-                                    )),
-                          ],
+              hintText: widget.hintText,
+              hintStyle: TextStyle(color: appColorsExtension.sysOutline),
+              semanticCounterText: widget.required ? "Campo obrigatório" : null,
+              // Adiciona um texto descritivo para suporte a acessibilidade
+              helperText: widget.obscureText ? "Campo de senha" : null,
+              // Define se este campo é de senha ou não para os leitores de tela
+              label: showLabel
+                  ? RichText(
+                      text: TextSpan(
+                        text: widget.hintText,
+                        style: context.texts.bodyLarge.copyWith(
+                          color: appColorsExtension.sysOutline,
                         ),
-                      )
-                    : null,
-              ),
-              validator: (value) {
-                if (!widget.required && fieldIsEmpty) {
-                  return null;
-                }
-                if (!widget.required &&
-                    widget.validatorType == null &&
-                    widget.validate == false &&
-                    widget.equalValidationValue == null) {
-                  return null;
-                }
-
-                String val = value ?? '';
-
-                if (maskFormatter != null &&
-                    !widget.maskedValidation &&
-                    maskFormatter!.isFill()) {
-                  maskFormatter!.maskText(val);
-                  val = maskFormatter!.getUnmaskedText();
-                }
-
-                if (!DSValidateField.fromType(widget.validatorType!, val,
-                    blockList: widget.blockList)) {
-                  SemanticsService.announce(
-                    widget.validationMessage ??
-                        'Insira um valor válido no campo: ${widget.hintText}',
-                    TextDirection.ltr,
-                    assertiveness: Assertiveness.polite,
-                  );
-
-                  widget.shakeKey?.currentState?.shake();
-                  return widget.validationMessage ?? 'Campo obrigatório';
-                }
-
-                if (widget.equalValidationValue != null &&
-                    val != widget.equalValidationValue) {
-                  SemanticsService.announce(
-                    widget.validationMessage ??
-                        'Insira um valor válido no campo: ${widget.hintText}',
-                    TextDirection.ltr,
-                    assertiveness: Assertiveness.polite,
-                  );
-                  widget.shakeKey?.currentState?.shake();
-                  return widget.equalValidationMessage ??
-                      'Insira um valor válido';
-                }
-
+                        children: [
+                          TextSpan(
+                            text: ' *',
+                            style: TextStyle(
+                              color: appColorsExtension.sysError,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  : null,
+            ),
+            validator: (value) {
+              if (!widget.required && fieldIsEmpty) {
                 return null;
-              }),
-        ));
+              }
+              if (!widget.required &&
+                  widget.validatorType == null &&
+                  widget.validate == false &&
+                  widget.equalValidationValue == null) {
+                return null;
+              }
+
+              String val = value ?? '';
+
+              if (maskFormatter != null &&
+                  !widget.maskedValidation &&
+                  maskFormatter!.isFill()) {
+                maskFormatter!.maskText(val);
+                val = maskFormatter!.getUnmaskedText();
+              }
+
+              if (!DSValidateField.fromType(widget.validatorType!, val,
+                  blockList: widget.blockList)) {
+                SemanticsService.announce(
+                  widget.validationMessage ??
+                      'Insira um valor válido no campo: ${widget.hintText}',
+                  TextDirection.ltr,
+                  assertiveness: Assertiveness.polite,
+                );
+
+                widget.shakeKey?.currentState?.shake();
+                return widget.validationMessage ?? 'Campo obrigatório';
+              }
+
+              if (widget.equalValidationValue != null &&
+                  val != widget.equalValidationValue) {
+                SemanticsService.announce(
+                  widget.validationMessage ??
+                      'Insira um valor válido no campo: ${widget.hintText}',
+                  TextDirection.ltr,
+                  assertiveness: Assertiveness.polite,
+                );
+                widget.shakeKey?.currentState?.shake();
+                return widget.equalValidationMessage ??
+                    'Insira um valor válido';
+              }
+
+              return null;
+            },
+          ),
+        ),
+      ).visibilityAdapter(visible: widget.visible),
+    );
   }
 }

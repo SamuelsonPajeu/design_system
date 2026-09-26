@@ -1,4 +1,4 @@
-enum DsViewModeFilterDynamicList {
+enum DSViewModeFilterDynamicList {
   chips,
   tabs,
 }

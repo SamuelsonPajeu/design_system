@@ -7,333 +7,333 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
     required this.hyperlinkHovered,
     required this.hyperlinkNormal,
     required this.hyperlinkVisited,
-    required this.referrore0,
-    required this.referrore10,
-    required this.referrore100,
-    required this.referrore15,
-    required this.referrore2,
-    required this.referrore20,
-    required this.referrore30,
-    required this.referrore4,
-    required this.referrore40,
-    required this.referrore50,
-    required this.referrore6,
-    required this.referrore60,
-    required this.referrore70,
-    required this.referrore8,
-    required this.referrore80,
-    required this.referrore85,
-    required this.referrore90,
-    required this.referrore93,
-    required this.referrore95,
-    required this.referrore98,
-    required this.referrore99,
-    required this.refneutraln0,
-    required this.refneutraln10,
-    required this.refneutraln100,
-    required this.refneutraln15,
-    required this.refneutraln2,
-    required this.refneutraln20,
-    required this.refneutraln30,
-    required this.refneutraln4,
-    required this.refneutraln40,
-    required this.refneutraln50,
-    required this.refneutraln6,
-    required this.refneutraln60,
-    required this.refneutraln70,
-    required this.refneutraln8,
-    required this.refneutraln80,
-    required this.refneutraln85,
-    required this.refneutraln90,
-    required this.refneutraln93,
-    required this.refneutraln95,
-    required this.refneutraln98,
-    required this.refneutraln99,
-    required this.refneutralvariantnv0,
-    required this.refneutralvariantnv10,
-    required this.refneutralvariantnv100,
-    required this.refneutralvariantnv15,
-    required this.refneutralvariantnv2,
-    required this.refneutralvariantnv20,
-    required this.refneutralvariantnv30,
-    required this.refneutralvariantnv4,
-    required this.refneutralvariantnv40,
-    required this.refneutralvariantnv50,
-    required this.refneutralvariantnv6,
-    required this.refneutralvariantnv60,
-    required this.refneutralvariantnv70,
-    required this.refneutralvariantnv8,
-    required this.refneutralvariantnv80,
-    required this.refneutralvariantnv85,
-    required this.refneutralvariantnv90,
-    required this.refneutralvariantnv93,
-    required this.refneutralvariantnv95,
-    required this.refneutralvariantnv98,
-    required this.refneutralvariantnv99,
-    required this.refprimaryp0,
-    required this.refprimaryp10,
-    required this.refprimaryp100,
-    required this.refprimaryp15,
-    required this.refprimaryp2,
-    required this.refprimaryp20,
-    required this.refprimaryp30,
-    required this.refprimaryp4,
-    required this.refprimaryp40,
-    required this.refprimaryp50,
-    required this.refprimaryp6,
-    required this.refprimaryp60,
-    required this.refprimaryp70,
-    required this.refprimaryp8,
-    required this.refprimaryp80,
-    required this.refprimaryp85,
-    required this.refprimaryp90,
-    required this.refprimaryp93,
-    required this.refprimaryp95,
-    required this.refprimaryp98,
-    required this.refprimaryp99,
-    required this.refsecondarys0,
-    required this.refsecondarys10,
-    required this.refsecondarys100,
-    required this.refsecondarys15,
-    required this.refsecondarys2,
-    required this.refsecondarys20,
-    required this.refsecondarys30,
-    required this.refsecondarys4,
-    required this.refsecondarys40,
-    required this.refsecondarys50,
-    required this.refsecondarys6,
-    required this.refsecondarys60,
-    required this.refsecondarys70,
-    required this.refsecondarys8,
-    required this.refsecondarys80,
-    required this.refsecondarys85,
-    required this.refsecondarys90,
-    required this.refsecondarys93,
-    required this.refsecondarys95,
-    required this.refsecondarys98,
-    required this.refsecondarys99,
-    required this.refsuccessu0,
-    required this.refsuccessu10,
-    required this.refsuccessu100,
-    required this.refsuccessu15,
-    required this.refsuccessu2,
-    required this.refsuccessu20,
-    required this.refsuccessu30,
-    required this.refsuccessu4,
-    required this.refsuccessu40,
-    required this.refsuccessu50,
-    required this.refsuccessu6,
-    required this.refsuccessu60,
-    required this.refsuccessu70,
-    required this.refsuccessu8,
-    required this.refsuccessu80,
-    required this.refsuccessu85,
-    required this.refsuccessu90,
-    required this.refsuccessu93,
-    required this.refsuccessu95,
-    required this.refsuccessu98,
-    required this.refsuccessu99,
-    required this.reftertiaryt0,
-    required this.reftertiaryt10,
-    required this.reftertiaryt100,
-    required this.reftertiaryt15,
-    required this.reftertiaryt2,
-    required this.reftertiaryt20,
-    required this.reftertiaryt30,
-    required this.reftertiaryt4,
-    required this.reftertiaryt40,
-    required this.reftertiaryt50,
-    required this.reftertiaryt6,
-    required this.reftertiaryt60,
-    required this.reftertiaryt70,
-    required this.reftertiaryt8,
-    required this.reftertiaryt80,
-    required this.reftertiaryt85,
-    required this.reftertiaryt90,
-    required this.reftertiaryt93,
-    required this.reftertiaryt95,
-    required this.reftertiaryt98,
-    required this.reftertiaryt99,
-    required this.refwarnw0,
-    required this.refwarnw10,
-    required this.refwarnw100,
-    required this.refwarnw15,
-    required this.refwarnw2,
-    required this.refwarnw20,
-    required this.refwarnw30,
-    required this.refwarnw4,
-    required this.refwarnw40,
-    required this.refwarnw50,
-    required this.refwarnw6,
-    required this.refwarnw60,
-    required this.refwarnw70,
-    required this.refwarnw8,
-    required this.refwarnw80,
-    required this.refwarnw85,
-    required this.refwarnw90,
-    required this.refwarnw93,
-    required this.refwarnw95,
-    required this.refwarnw98,
-    required this.refwarnw99,
-    required this.statelayerserrorcontaineropacity008,
-    required this.statelayerserrorcontaineropacity012,
-    required this.statelayerserrorcontaineropacity016,
-    required this.statelayerserroropacity008,
-    required this.statelayerserroropacity012,
-    required this.statelayerserroropacity016,
-    required this.statelayersinverseonsurfaceopacity008,
-    required this.statelayersinverseonsurfaceopacity012,
-    required this.statelayersinverseonsurfaceopacity016,
-    required this.statelayersinverseprimaryopacity008,
-    required this.statelayersinverseprimaryopacity012,
-    required this.statelayersinverseprimaryopacity016,
-    required this.statelayersinversesurfaceopacity008,
-    required this.statelayersinversesurfaceopacity012,
-    required this.statelayersinversesurfaceopacity016,
-    required this.statelayersonerrorcontaineropacity008,
-    required this.statelayersonerrorcontaineropacity012,
-    required this.statelayersonerrorcontaineropacity016,
-    required this.statelayersonerroropacity008,
-    required this.statelayersonerroropacity012,
-    required this.statelayersonerroropacity016,
-    required this.statelayersonprimarycontaineropacity008,
-    required this.statelayersonprimarycontaineropacity012,
-    required this.statelayersonprimarycontaineropacity016,
-    required this.statelayersonprimaryfixedopacity008,
-    required this.statelayersonprimaryfixedopacity012,
-    required this.statelayersonprimaryfixedopacity016,
-    required this.statelayersonprimaryfixedvariantopacity008,
-    required this.statelayersonprimaryfixedvariantopacity012,
-    required this.statelayersonprimaryfixedvariantopacity016,
-    required this.statelayersonprimaryopacity008,
-    required this.statelayersonprimaryopacity012,
-    required this.statelayersonprimaryopacity016,
-    required this.statelayersonsecondarycontaineropacity008,
-    required this.statelayersonsecondarycontaineropacity012,
-    required this.statelayersonsecondarycontaineropacity016,
-    required this.statelayersonsecondaryfixedopacity008,
-    required this.statelayersonsecondaryfixedopacity012,
-    required this.statelayersonsecondaryfixedopacity016,
-    required this.statelayersonsecondaryfixedvariantopacity008,
-    required this.statelayersonsecondaryfixedvariantopacity012,
-    required this.statelayersonsecondaryfixedvariantopacity016,
-    required this.statelayersonsecondaryopacity008,
-    required this.statelayersonsecondaryopacity012,
-    required this.statelayersonsecondaryopacity016,
-    required this.statelayersonsuccesscontaineropacity008,
-    required this.statelayersonsuccesscontaineropacity012,
-    required this.statelayersonsuccesscontaineropacity016,
-    required this.statelayersonsuccessopacity008,
-    required this.statelayersonsuccessopacity012,
-    required this.statelayersonsuccessopacity016,
-    required this.statelayersonsurfaceopacity008,
-    required this.statelayersonsurfaceopacity012,
-    required this.statelayersonsurfaceopacity016,
-    required this.statelayersonsurfacevariantopacity008,
-    required this.statelayersonsurfacevariantopacity012,
-    required this.statelayersonsurfacevariantopacity016,
-    required this.statelayersontertiarycontaineropacity008,
-    required this.statelayersontertiarycontaineropacity012,
-    required this.statelayersontertiarycontaineropacity016,
-    required this.statelayersontertiaryfixedopacity008,
-    required this.statelayersontertiaryfixedopacity012,
-    required this.statelayersontertiaryfixedopacity016,
-    required this.statelayersontertiaryfixedvariantopacity008,
-    required this.statelayersontertiaryfixedvariantopacity012,
-    required this.statelayersontertiaryfixedvariantopacity016,
-    required this.statelayersontertiaryopacity008,
-    required this.statelayersontertiaryopacity012,
-    required this.statelayersontertiaryopacity016,
-    required this.statelayersonwarncontaineropacity008,
-    required this.statelayersonwarncontaineropacity012,
-    required this.statelayersonwarncontaineropacity016,
-    required this.statelayersonwarnopacity008,
-    required this.statelayersonwarnopacity012,
-    required this.statelayersonwarnopacity016,
-    required this.statelayersoutlineopacity008,
-    required this.statelayersoutlineopacity012,
-    required this.statelayersoutlineopacity016,
-    required this.statelayersoutlinevariantopacity008,
-    required this.statelayersoutlinevariantopacity012,
-    required this.statelayersoutlinevariantopacity016,
-    required this.statelayersprimarycontaineropacity008,
-    required this.statelayersprimarycontaineropacity012,
-    required this.statelayersprimarycontaineropacity016,
-    required this.statelayersprimaryfixeddimopacity008,
-    required this.statelayersprimaryfixeddimopacity012,
-    required this.statelayersprimaryfixeddimopacity016,
-    required this.statelayersprimaryfixedopacity008,
-    required this.statelayersprimaryfixedopacity012,
-    required this.statelayersprimaryfixedopacity016,
-    required this.statelayersprimaryopacity008,
-    required this.statelayersprimaryopacity012,
-    required this.statelayersprimaryopacity016,
-    required this.statelayersscrimopacity008,
-    required this.statelayersscrimopacity012,
-    required this.statelayersscrimopacity016,
-    required this.statelayerssecondarycontaineropacity008,
-    required this.statelayerssecondarycontaineropacity012,
-    required this.statelayerssecondarycontaineropacity016,
-    required this.statelayerssecondaryfixeddimopacity008,
-    required this.statelayerssecondaryfixeddimopacity012,
-    required this.statelayerssecondaryfixeddimopacity016,
-    required this.statelayerssecondaryfixedopacity008,
-    required this.statelayerssecondaryfixedopacity012,
-    required this.statelayerssecondaryfixedopacity016,
-    required this.statelayerssecondaryopacity008,
-    required this.statelayerssecondaryopacity012,
-    required this.statelayerssecondaryopacity016,
-    required this.statelayersshadowopacity008,
-    required this.statelayersshadowopacity012,
-    required this.statelayersshadowopacity016,
-    required this.statelayerssuccesscontaineropacity008,
-    required this.statelayerssuccesscontaineropacity012,
-    required this.statelayerssuccesscontaineropacity016,
-    required this.statelayerssuccessopacity008,
-    required this.statelayerssuccessopacity012,
-    required this.statelayerssuccessopacity016,
-    required this.statelayerssurfacebrightopacity008,
-    required this.statelayerssurfacebrightopacity012,
-    required this.statelayerssurfacebrightopacity016,
-    required this.statelayerssurfacecontainerhighopacity008,
-    required this.statelayerssurfacecontainerhighopacity012,
-    required this.statelayerssurfacecontainerhighopacity016,
-    required this.statelayerssurfacecontainerhighestopacity008,
-    required this.statelayerssurfacecontainerhighestopacity012,
-    required this.statelayerssurfacecontainerhighestopacity016,
-    required this.statelayerssurfacecontainerlowopacity008,
-    required this.statelayerssurfacecontainerlowopacity012,
-    required this.statelayerssurfacecontainerlowopacity016,
-    required this.statelayerssurfacecontainerlowestopacity008,
-    required this.statelayerssurfacecontainerlowestopacity012,
-    required this.statelayerssurfacecontainerlowestopacity016,
-    required this.statelayerssurfacecontaineropacity008,
-    required this.statelayerssurfacecontaineropacity012,
-    required this.statelayerssurfacecontaineropacity016,
-    required this.statelayerssurfacedimopacity008,
-    required this.statelayerssurfacedimopacity012,
-    required this.statelayerssurfacedimopacity016,
-    required this.statelayerssurfaceopacity008,
-    required this.statelayerssurfaceopacity012,
-    required this.statelayerssurfaceopacity016,
-    required this.statelayerstertiarycontaineropacity008,
-    required this.statelayerstertiarycontaineropacity012,
-    required this.statelayerstertiarycontaineropacity016,
-    required this.statelayerstertiaryfixeddimopacity008,
-    required this.statelayerstertiaryfixeddimopacity012,
-    required this.statelayerstertiaryfixeddimopacity016,
-    required this.statelayerstertiaryfixedopacity008,
-    required this.statelayerstertiaryfixedopacity012,
-    required this.statelayerstertiaryfixedopacity016,
-    required this.statelayerstertiaryopacity008,
-    required this.statelayerstertiaryopacity012,
-    required this.statelayerstertiaryopacity016,
-    required this.statelayerswarncontaineropacity008,
-    required this.statelayerswarncontaineropacity012,
-    required this.statelayerswarncontaineropacity016,
-    required this.statelayerswarnopacity008,
-    required this.statelayerswarnopacity012,
-    required this.statelayerswarnopacity016,
+    required this.refErrorE0,
+    required this.refErrorE10,
+    required this.refErrorE100,
+    required this.refErrorE15,
+    required this.refErrorE2,
+    required this.refErrorE20,
+    required this.refErrorE30,
+    required this.refErrorE4,
+    required this.refErrorE40,
+    required this.refErrorE50,
+    required this.refErrorE6,
+    required this.refErrorE60,
+    required this.refErrorE70,
+    required this.refErrorE8,
+    required this.refErrorE80,
+    required this.refErrorE85,
+    required this.refErrorE90,
+    required this.refErrorE93,
+    required this.refErrorE95,
+    required this.refErrorE98,
+    required this.refErrorE99,
+    required this.refNeutralN0,
+    required this.refNeutralN10,
+    required this.refNeutralN100,
+    required this.refNeutralN15,
+    required this.refNeutralN2,
+    required this.refNeutralN20,
+    required this.refNeutralN30,
+    required this.refNeutralN4,
+    required this.refNeutralN40,
+    required this.refNeutralN50,
+    required this.refNeutralN6,
+    required this.refNeutralN60,
+    required this.refNeutralN70,
+    required this.refNeutralN8,
+    required this.refNeutralN80,
+    required this.refNeutralN85,
+    required this.refNeutralN90,
+    required this.refNeutralN93,
+    required this.refNeutralN95,
+    required this.refNeutralN98,
+    required this.refNeutralN99,
+    required this.refNeutralVariantNv0,
+    required this.refNeutralVariantNv10,
+    required this.refNeutralVariantNv100,
+    required this.refNeutralVariantNv15,
+    required this.refNeutralVariantNv2,
+    required this.refNeutralVariantNv20,
+    required this.refNeutralVariantNv30,
+    required this.refNeutralVariantNv4,
+    required this.refNeutralVariantNv40,
+    required this.refNeutralVariantNv50,
+    required this.refNeutralVariantNv6,
+    required this.refNeutralVariantNv60,
+    required this.refNeutralVariantNv70,
+    required this.refNeutralVariantNv8,
+    required this.refNeutralVariantNv80,
+    required this.refNeutralVariantNv85,
+    required this.refNeutralVariantNv90,
+    required this.refNeutralVariantNv93,
+    required this.refNeutralVariantNv95,
+    required this.refNeutralVariantNv98,
+    required this.refNeutralVariantNv99,
+    required this.refPrimaryP0,
+    required this.refPrimaryP10,
+    required this.refPrimaryP100,
+    required this.refPrimaryP15,
+    required this.refPrimaryP2,
+    required this.refPrimaryP20,
+    required this.refPrimaryP30,
+    required this.refPrimaryP4,
+    required this.refPrimaryP40,
+    required this.refPrimaryP50,
+    required this.refPrimaryP6,
+    required this.refPrimaryP60,
+    required this.refPrimaryP70,
+    required this.refPrimaryP8,
+    required this.refPrimaryP80,
+    required this.refPrimaryP85,
+    required this.refPrimaryP90,
+    required this.refPrimaryP93,
+    required this.refPrimaryP95,
+    required this.refPrimaryP98,
+    required this.refPrimaryP99,
+    required this.refSecondaryS0,
+    required this.refSecondaryS10,
+    required this.refSecondaryS100,
+    required this.refSecondaryS15,
+    required this.refSecondaryS2,
+    required this.refSecondaryS20,
+    required this.refSecondaryS30,
+    required this.refSecondaryS4,
+    required this.refSecondaryS40,
+    required this.refSecondaryS50,
+    required this.refSecondaryS6,
+    required this.refSecondaryS60,
+    required this.refSecondaryS70,
+    required this.refSecondaryS8,
+    required this.refSecondaryS80,
+    required this.refSecondaryS85,
+    required this.refSecondaryS90,
+    required this.refSecondaryS93,
+    required this.refSecondaryS95,
+    required this.refSecondaryS98,
+    required this.refSecondaryS99,
+    required this.refSuccessU0,
+    required this.refSuccessU10,
+    required this.refSuccessU100,
+    required this.refSuccessU15,
+    required this.refSuccessU2,
+    required this.refSuccessU20,
+    required this.refSuccessU30,
+    required this.refSuccessU4,
+    required this.refSuccessU40,
+    required this.refSuccessU50,
+    required this.refSuccessU6,
+    required this.refSuccessU60,
+    required this.refSuccessU70,
+    required this.refSuccessU8,
+    required this.refSuccessU80,
+    required this.refSuccessU85,
+    required this.refSuccessU90,
+    required this.refSuccessU93,
+    required this.refSuccessU95,
+    required this.refSuccessU98,
+    required this.refSuccessU99,
+    required this.refTertiaryT0,
+    required this.refTertiaryT10,
+    required this.refTertiaryT100,
+    required this.refTertiaryT15,
+    required this.refTertiaryT2,
+    required this.refTertiaryT20,
+    required this.refTertiaryT30,
+    required this.refTertiaryT4,
+    required this.refTertiaryT40,
+    required this.refTertiaryT50,
+    required this.refTertiaryT6,
+    required this.refTertiaryT60,
+    required this.refTertiaryT70,
+    required this.refTertiaryT8,
+    required this.refTertiaryT80,
+    required this.refTertiaryT85,
+    required this.refTertiaryT90,
+    required this.refTertiaryT93,
+    required this.refTertiaryT95,
+    required this.refTertiaryT98,
+    required this.refTertiaryT99,
+    required this.refWarnW0,
+    required this.refWarnW10,
+    required this.refWarnW100,
+    required this.refWarnW15,
+    required this.refWarnW2,
+    required this.refWarnW20,
+    required this.refWarnW30,
+    required this.refWarnW4,
+    required this.refWarnW40,
+    required this.refWarnW50,
+    required this.refWarnW6,
+    required this.refWarnW60,
+    required this.refWarnW70,
+    required this.refWarnW8,
+    required this.refWarnW80,
+    required this.refWarnW85,
+    required this.refWarnW90,
+    required this.refWarnW93,
+    required this.refWarnW95,
+    required this.refWarnW98,
+    required this.refWarnW99,
+    required this.stateLayersErrorContainerOpacity008,
+    required this.stateLayersErrorContainerOpacity012,
+    required this.stateLayersErrorContainerOpacity016,
+    required this.stateLayersErrorOpacity008,
+    required this.stateLayersErrorOpacity012,
+    required this.stateLayersErrorOpacity016,
+    required this.stateLayersInverseOnSurfaceOpacity008,
+    required this.stateLayersInverseOnSurfaceOpacity012,
+    required this.stateLayersInverseOnSurfaceOpacity016,
+    required this.stateLayersInversePrimaryOpacity008,
+    required this.stateLayersInversePrimaryOpacity012,
+    required this.stateLayersInversePrimaryOpacity016,
+    required this.stateLayersInverseSurfaceOpacity008,
+    required this.stateLayersInverseSurfaceOpacity012,
+    required this.stateLayersInverseSurfaceOpacity016,
+    required this.stateLayersOnErrorContainerOpacity008,
+    required this.stateLayersOnErrorContainerOpacity012,
+    required this.stateLayersOnErrorContainerOpacity016,
+    required this.stateLayersOnErrorOpacity008,
+    required this.stateLayersOnErrorOpacity012,
+    required this.stateLayersOnErrorOpacity016,
+    required this.stateLayersOnPrimaryContainerOpacity008,
+    required this.stateLayersOnPrimaryContainerOpacity012,
+    required this.stateLayersOnPrimaryContainerOpacity016,
+    required this.stateLayersOnPrimaryFixedOpacity008,
+    required this.stateLayersOnPrimaryFixedOpacity012,
+    required this.stateLayersOnPrimaryFixedOpacity016,
+    required this.stateLayersOnPrimaryFixedVariantOpacity008,
+    required this.stateLayersOnPrimaryFixedVariantOpacity012,
+    required this.stateLayersOnPrimaryFixedVariantOpacity016,
+    required this.stateLayersOnPrimaryOpacity008,
+    required this.stateLayersOnPrimaryOpacity012,
+    required this.stateLayersOnPrimaryOpacity016,
+    required this.stateLayersOnSecondaryContainerOpacity008,
+    required this.stateLayersOnSecondaryContainerOpacity012,
+    required this.stateLayersOnSecondaryContainerOpacity016,
+    required this.stateLayersOnSecondaryFixedOpacity008,
+    required this.stateLayersOnSecondaryFixedOpacity012,
+    required this.stateLayersOnSecondaryFixedOpacity016,
+    required this.stateLayersOnSecondaryFixedVariantOpacity008,
+    required this.stateLayersOnSecondaryFixedVariantOpacity012,
+    required this.stateLayersOnSecondaryFixedVariantOpacity016,
+    required this.stateLayersOnSecondaryOpacity008,
+    required this.stateLayersOnSecondaryOpacity012,
+    required this.stateLayersOnSecondaryOpacity016,
+    required this.stateLayersOnSuccessContainerOpacity008,
+    required this.stateLayersOnSuccessContainerOpacity012,
+    required this.stateLayersOnSuccessContainerOpacity016,
+    required this.stateLayersOnSuccessOpacity008,
+    required this.stateLayersOnSuccessOpacity012,
+    required this.stateLayersOnSuccessOpacity016,
+    required this.stateLayersOnSurfaceOpacity008,
+    required this.stateLayersOnSurfaceOpacity012,
+    required this.stateLayersOnSurfaceOpacity016,
+    required this.stateLayersOnSurfaceVariantOpacity008,
+    required this.stateLayersOnSurfaceVariantOpacity012,
+    required this.stateLayersOnSurfaceVariantOpacity016,
+    required this.stateLayersOnTertiaryContainerOpacity008,
+    required this.stateLayersOnTertiaryContainerOpacity012,
+    required this.stateLayersOnTertiaryContainerOpacity016,
+    required this.stateLayersOnTertiaryFixedOpacity008,
+    required this.stateLayersOnTertiaryFixedOpacity012,
+    required this.stateLayersOnTertiaryFixedOpacity016,
+    required this.stateLayersOnTertiaryFixedVariantOpacity008,
+    required this.stateLayersOnTertiaryFixedVariantOpacity012,
+    required this.stateLayersOnTertiaryFixedVariantOpacity016,
+    required this.stateLayersOnTertiaryOpacity008,
+    required this.stateLayersOnTertiaryOpacity012,
+    required this.stateLayersOnTertiaryOpacity016,
+    required this.stateLayersOnWarnContainerOpacity008,
+    required this.stateLayersOnWarnContainerOpacity012,
+    required this.stateLayersOnWarnContainerOpacity016,
+    required this.stateLayersOnWarnOpacity008,
+    required this.stateLayersOnWarnOpacity012,
+    required this.stateLayersOnWarnOpacity016,
+    required this.stateLayersOutlineOpacity008,
+    required this.stateLayersOutlineOpacity012,
+    required this.stateLayersOutlineOpacity016,
+    required this.stateLayersOutlineVariantOpacity008,
+    required this.stateLayersOutlineVariantOpacity012,
+    required this.stateLayersOutlineVariantOpacity016,
+    required this.stateLayersPrimaryContainerOpacity008,
+    required this.stateLayersPrimaryContainerOpacity012,
+    required this.stateLayersPrimaryContainerOpacity016,
+    required this.stateLayersPrimaryFixedDimOpacity008,
+    required this.stateLayersPrimaryFixedDimOpacity012,
+    required this.stateLayersPrimaryFixedDimOpacity016,
+    required this.stateLayersPrimaryFixedOpacity008,
+    required this.stateLayersPrimaryFixedOpacity012,
+    required this.stateLayersPrimaryFixedOpacity016,
+    required this.stateLayersPrimaryOpacity008,
+    required this.stateLayersPrimaryOpacity012,
+    required this.stateLayersPrimaryOpacity016,
+    required this.stateLayersScrimOpacity008,
+    required this.stateLayersScrimOpacity012,
+    required this.stateLayersScrimOpacity016,
+    required this.stateLayersSecondaryContainerOpacity008,
+    required this.stateLayersSecondaryContainerOpacity012,
+    required this.stateLayersSecondaryContainerOpacity016,
+    required this.stateLayersSecondaryFixedDimOpacity008,
+    required this.stateLayersSecondaryFixedDimOpacity012,
+    required this.stateLayersSecondaryFixedDimOpacity016,
+    required this.stateLayersSecondaryFixedOpacity008,
+    required this.stateLayersSecondaryFixedOpacity012,
+    required this.stateLayersSecondaryFixedOpacity016,
+    required this.stateLayersSecondaryOpacity008,
+    required this.stateLayersSecondaryOpacity012,
+    required this.stateLayersSecondaryOpacity016,
+    required this.stateLayersShadowOpacity008,
+    required this.stateLayersShadowOpacity012,
+    required this.stateLayersShadowOpacity016,
+    required this.stateLayersSuccessContainerOpacity008,
+    required this.stateLayersSuccessContainerOpacity012,
+    required this.stateLayersSuccessContainerOpacity016,
+    required this.stateLayersSuccessOpacity008,
+    required this.stateLayersSuccessOpacity012,
+    required this.stateLayersSuccessOpacity016,
+    required this.stateLayersSurfaceBrightOpacity008,
+    required this.stateLayersSurfaceBrightOpacity012,
+    required this.stateLayersSurfaceBrightOpacity016,
+    required this.stateLayersSurfaceContainerHighOpacity008,
+    required this.stateLayersSurfaceContainerHighOpacity012,
+    required this.stateLayersSurfaceContainerHighOpacity016,
+    required this.stateLayersSurfaceContainerHighestOpacity008,
+    required this.stateLayersSurfaceContainerHighestOpacity012,
+    required this.stateLayersSurfaceContainerHighestOpacity016,
+    required this.stateLayersSurfaceContainerLowOpacity008,
+    required this.stateLayersSurfaceContainerLowOpacity012,
+    required this.stateLayersSurfaceContainerLowOpacity016,
+    required this.stateLayersSurfaceContainerLowestOpacity008,
+    required this.stateLayersSurfaceContainerLowestOpacity012,
+    required this.stateLayersSurfaceContainerLowestOpacity016,
+    required this.stateLayersSurfaceContainerOpacity008,
+    required this.stateLayersSurfaceContainerOpacity012,
+    required this.stateLayersSurfaceContainerOpacity016,
+    required this.stateLayersSurfaceDimOpacity008,
+    required this.stateLayersSurfaceDimOpacity012,
+    required this.stateLayersSurfaceDimOpacity016,
+    required this.stateLayersSurfaceOpacity008,
+    required this.stateLayersSurfaceOpacity012,
+    required this.stateLayersSurfaceOpacity016,
+    required this.stateLayersTertiaryContainerOpacity008,
+    required this.stateLayersTertiaryContainerOpacity012,
+    required this.stateLayersTertiaryContainerOpacity016,
+    required this.stateLayersTertiaryFixedDimOpacity008,
+    required this.stateLayersTertiaryFixedDimOpacity012,
+    required this.stateLayersTertiaryFixedDimOpacity016,
+    required this.stateLayersTertiaryFixedOpacity008,
+    required this.stateLayersTertiaryFixedOpacity012,
+    required this.stateLayersTertiaryFixedOpacity016,
+    required this.stateLayersTertiaryOpacity008,
+    required this.stateLayersTertiaryOpacity012,
+    required this.stateLayersTertiaryOpacity016,
+    required this.stateLayersWarnContainerOpacity008,
+    required this.stateLayersWarnContainerOpacity012,
+    required this.stateLayersWarnContainerOpacity016,
+    required this.stateLayersWarnOpacity008,
+    required this.stateLayersWarnOpacity012,
+    required this.stateLayersWarnOpacity016,
     required this.sysError,
     required this.sysErrorContainer,
     required this.sysInverseOnSurface,
@@ -373,6 +373,7 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
     required this.sysShadow,
     required this.sysSuccess,
     required this.sysSuccessContainer,
+    required this.sysSurfaceTinted,
     required this.sysSurface,
     required this.sysSurfaceBright,
     required this.sysSurfaceContainer,
@@ -387,6 +388,32 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
     required this.sysTertiaryFixedDim,
     required this.sysWarn,
     required this.sysWarnContainer,
+    required this.aqua,
+    required this.black,
+    required this.blue,
+    required this.cyan,
+    required this.grape,
+    required this.green,
+    required this.lime,
+    required this.magenta,
+    required this.orange,
+    required this.pink,
+    required this.purple,
+    required this.red,
+    required this.white,
+    required this.yellow,
+    required this.onRed,
+    required this.onOrange,
+    required this.onYellow,
+    required this.onLime,
+    required this.onGreen,
+    required this.onAqua,
+    required this.onCyan,
+    required this.onBlue,
+    required this.onPurple,
+    required this.onGrape,
+    required this.onPink,
+    required this.onMagenta,
   });
 
   final Color hyperlinkActive;
@@ -394,333 +421,333 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
   final Color hyperlinkHovered;
   final Color hyperlinkNormal;
   final Color hyperlinkVisited;
-  final Color referrore0;
-  final Color referrore10;
-  final Color referrore100;
-  final Color referrore15;
-  final Color referrore2;
-  final Color referrore20;
-  final Color referrore30;
-  final Color referrore4;
-  final Color referrore40;
-  final Color referrore50;
-  final Color referrore6;
-  final Color referrore60;
-  final Color referrore70;
-  final Color referrore8;
-  final Color referrore80;
-  final Color referrore85;
-  final Color referrore90;
-  final Color referrore93;
-  final Color referrore95;
-  final Color referrore98;
-  final Color referrore99;
-  final Color refneutraln0;
-  final Color refneutraln10;
-  final Color refneutraln100;
-  final Color refneutraln15;
-  final Color refneutraln2;
-  final Color refneutraln20;
-  final Color refneutraln30;
-  final Color refneutraln4;
-  final Color refneutraln40;
-  final Color refneutraln50;
-  final Color refneutraln6;
-  final Color refneutraln60;
-  final Color refneutraln70;
-  final Color refneutraln8;
-  final Color refneutraln80;
-  final Color refneutraln85;
-  final Color refneutraln90;
-  final Color refneutraln93;
-  final Color refneutraln95;
-  final Color refneutraln98;
-  final Color refneutraln99;
-  final Color refneutralvariantnv0;
-  final Color refneutralvariantnv10;
-  final Color refneutralvariantnv100;
-  final Color refneutralvariantnv15;
-  final Color refneutralvariantnv2;
-  final Color refneutralvariantnv20;
-  final Color refneutralvariantnv30;
-  final Color refneutralvariantnv4;
-  final Color refneutralvariantnv40;
-  final Color refneutralvariantnv50;
-  final Color refneutralvariantnv6;
-  final Color refneutralvariantnv60;
-  final Color refneutralvariantnv70;
-  final Color refneutralvariantnv8;
-  final Color refneutralvariantnv80;
-  final Color refneutralvariantnv85;
-  final Color refneutralvariantnv90;
-  final Color refneutralvariantnv93;
-  final Color refneutralvariantnv95;
-  final Color refneutralvariantnv98;
-  final Color refneutralvariantnv99;
-  final Color refprimaryp0;
-  final Color refprimaryp10;
-  final Color refprimaryp100;
-  final Color refprimaryp15;
-  final Color refprimaryp2;
-  final Color refprimaryp20;
-  final Color refprimaryp30;
-  final Color refprimaryp4;
-  final Color refprimaryp40;
-  final Color refprimaryp50;
-  final Color refprimaryp6;
-  final Color refprimaryp60;
-  final Color refprimaryp70;
-  final Color refprimaryp8;
-  final Color refprimaryp80;
-  final Color refprimaryp85;
-  final Color refprimaryp90;
-  final Color refprimaryp93;
-  final Color refprimaryp95;
-  final Color refprimaryp98;
-  final Color refprimaryp99;
-  final Color refsecondarys0;
-  final Color refsecondarys10;
-  final Color refsecondarys100;
-  final Color refsecondarys15;
-  final Color refsecondarys2;
-  final Color refsecondarys20;
-  final Color refsecondarys30;
-  final Color refsecondarys4;
-  final Color refsecondarys40;
-  final Color refsecondarys50;
-  final Color refsecondarys6;
-  final Color refsecondarys60;
-  final Color refsecondarys70;
-  final Color refsecondarys8;
-  final Color refsecondarys80;
-  final Color refsecondarys85;
-  final Color refsecondarys90;
-  final Color refsecondarys93;
-  final Color refsecondarys95;
-  final Color refsecondarys98;
-  final Color refsecondarys99;
-  final Color refsuccessu0;
-  final Color refsuccessu10;
-  final Color refsuccessu100;
-  final Color refsuccessu15;
-  final Color refsuccessu2;
-  final Color refsuccessu20;
-  final Color refsuccessu30;
-  final Color refsuccessu4;
-  final Color refsuccessu40;
-  final Color refsuccessu50;
-  final Color refsuccessu6;
-  final Color refsuccessu60;
-  final Color refsuccessu70;
-  final Color refsuccessu8;
-  final Color refsuccessu80;
-  final Color refsuccessu85;
-  final Color refsuccessu90;
-  final Color refsuccessu93;
-  final Color refsuccessu95;
-  final Color refsuccessu98;
-  final Color refsuccessu99;
-  final Color reftertiaryt0;
-  final Color reftertiaryt10;
-  final Color reftertiaryt100;
-  final Color reftertiaryt15;
-  final Color reftertiaryt2;
-  final Color reftertiaryt20;
-  final Color reftertiaryt30;
-  final Color reftertiaryt4;
-  final Color reftertiaryt40;
-  final Color reftertiaryt50;
-  final Color reftertiaryt6;
-  final Color reftertiaryt60;
-  final Color reftertiaryt70;
-  final Color reftertiaryt8;
-  final Color reftertiaryt80;
-  final Color reftertiaryt85;
-  final Color reftertiaryt90;
-  final Color reftertiaryt93;
-  final Color reftertiaryt95;
-  final Color reftertiaryt98;
-  final Color reftertiaryt99;
-  final Color refwarnw0;
-  final Color refwarnw10;
-  final Color refwarnw100;
-  final Color refwarnw15;
-  final Color refwarnw2;
-  final Color refwarnw20;
-  final Color refwarnw30;
-  final Color refwarnw4;
-  final Color refwarnw40;
-  final Color refwarnw50;
-  final Color refwarnw6;
-  final Color refwarnw60;
-  final Color refwarnw70;
-  final Color refwarnw8;
-  final Color refwarnw80;
-  final Color refwarnw85;
-  final Color refwarnw90;
-  final Color refwarnw93;
-  final Color refwarnw95;
-  final Color refwarnw98;
-  final Color refwarnw99;
-  final Color statelayerserrorcontaineropacity008;
-  final Color statelayerserrorcontaineropacity012;
-  final Color statelayerserrorcontaineropacity016;
-  final Color statelayerserroropacity008;
-  final Color statelayerserroropacity012;
-  final Color statelayerserroropacity016;
-  final Color statelayersinverseonsurfaceopacity008;
-  final Color statelayersinverseonsurfaceopacity012;
-  final Color statelayersinverseonsurfaceopacity016;
-  final Color statelayersinverseprimaryopacity008;
-  final Color statelayersinverseprimaryopacity012;
-  final Color statelayersinverseprimaryopacity016;
-  final Color statelayersinversesurfaceopacity008;
-  final Color statelayersinversesurfaceopacity012;
-  final Color statelayersinversesurfaceopacity016;
-  final Color statelayersonerrorcontaineropacity008;
-  final Color statelayersonerrorcontaineropacity012;
-  final Color statelayersonerrorcontaineropacity016;
-  final Color statelayersonerroropacity008;
-  final Color statelayersonerroropacity012;
-  final Color statelayersonerroropacity016;
-  final Color statelayersonprimarycontaineropacity008;
-  final Color statelayersonprimarycontaineropacity012;
-  final Color statelayersonprimarycontaineropacity016;
-  final Color statelayersonprimaryfixedopacity008;
-  final Color statelayersonprimaryfixedopacity012;
-  final Color statelayersonprimaryfixedopacity016;
-  final Color statelayersonprimaryfixedvariantopacity008;
-  final Color statelayersonprimaryfixedvariantopacity012;
-  final Color statelayersonprimaryfixedvariantopacity016;
-  final Color statelayersonprimaryopacity008;
-  final Color statelayersonprimaryopacity012;
-  final Color statelayersonprimaryopacity016;
-  final Color statelayersonsecondarycontaineropacity008;
-  final Color statelayersonsecondarycontaineropacity012;
-  final Color statelayersonsecondarycontaineropacity016;
-  final Color statelayersonsecondaryfixedopacity008;
-  final Color statelayersonsecondaryfixedopacity012;
-  final Color statelayersonsecondaryfixedopacity016;
-  final Color statelayersonsecondaryfixedvariantopacity008;
-  final Color statelayersonsecondaryfixedvariantopacity012;
-  final Color statelayersonsecondaryfixedvariantopacity016;
-  final Color statelayersonsecondaryopacity008;
-  final Color statelayersonsecondaryopacity012;
-  final Color statelayersonsecondaryopacity016;
-  final Color statelayersonsuccesscontaineropacity008;
-  final Color statelayersonsuccesscontaineropacity012;
-  final Color statelayersonsuccesscontaineropacity016;
-  final Color statelayersonsuccessopacity008;
-  final Color statelayersonsuccessopacity012;
-  final Color statelayersonsuccessopacity016;
-  final Color statelayersonsurfaceopacity008;
-  final Color statelayersonsurfaceopacity012;
-  final Color statelayersonsurfaceopacity016;
-  final Color statelayersonsurfacevariantopacity008;
-  final Color statelayersonsurfacevariantopacity012;
-  final Color statelayersonsurfacevariantopacity016;
-  final Color statelayersontertiarycontaineropacity008;
-  final Color statelayersontertiarycontaineropacity012;
-  final Color statelayersontertiarycontaineropacity016;
-  final Color statelayersontertiaryfixedopacity008;
-  final Color statelayersontertiaryfixedopacity012;
-  final Color statelayersontertiaryfixedopacity016;
-  final Color statelayersontertiaryfixedvariantopacity008;
-  final Color statelayersontertiaryfixedvariantopacity012;
-  final Color statelayersontertiaryfixedvariantopacity016;
-  final Color statelayersontertiaryopacity008;
-  final Color statelayersontertiaryopacity012;
-  final Color statelayersontertiaryopacity016;
-  final Color statelayersonwarncontaineropacity008;
-  final Color statelayersonwarncontaineropacity012;
-  final Color statelayersonwarncontaineropacity016;
-  final Color statelayersonwarnopacity008;
-  final Color statelayersonwarnopacity012;
-  final Color statelayersonwarnopacity016;
-  final Color statelayersoutlineopacity008;
-  final Color statelayersoutlineopacity012;
-  final Color statelayersoutlineopacity016;
-  final Color statelayersoutlinevariantopacity008;
-  final Color statelayersoutlinevariantopacity012;
-  final Color statelayersoutlinevariantopacity016;
-  final Color statelayersprimarycontaineropacity008;
-  final Color statelayersprimarycontaineropacity012;
-  final Color statelayersprimarycontaineropacity016;
-  final Color statelayersprimaryfixeddimopacity008;
-  final Color statelayersprimaryfixeddimopacity012;
-  final Color statelayersprimaryfixeddimopacity016;
-  final Color statelayersprimaryfixedopacity008;
-  final Color statelayersprimaryfixedopacity012;
-  final Color statelayersprimaryfixedopacity016;
-  final Color statelayersprimaryopacity008;
-  final Color statelayersprimaryopacity012;
-  final Color statelayersprimaryopacity016;
-  final Color statelayersscrimopacity008;
-  final Color statelayersscrimopacity012;
-  final Color statelayersscrimopacity016;
-  final Color statelayerssecondarycontaineropacity008;
-  final Color statelayerssecondarycontaineropacity012;
-  final Color statelayerssecondarycontaineropacity016;
-  final Color statelayerssecondaryfixeddimopacity008;
-  final Color statelayerssecondaryfixeddimopacity012;
-  final Color statelayerssecondaryfixeddimopacity016;
-  final Color statelayerssecondaryfixedopacity008;
-  final Color statelayerssecondaryfixedopacity012;
-  final Color statelayerssecondaryfixedopacity016;
-  final Color statelayerssecondaryopacity008;
-  final Color statelayerssecondaryopacity012;
-  final Color statelayerssecondaryopacity016;
-  final Color statelayersshadowopacity008;
-  final Color statelayersshadowopacity012;
-  final Color statelayersshadowopacity016;
-  final Color statelayerssuccesscontaineropacity008;
-  final Color statelayerssuccesscontaineropacity012;
-  final Color statelayerssuccesscontaineropacity016;
-  final Color statelayerssuccessopacity008;
-  final Color statelayerssuccessopacity012;
-  final Color statelayerssuccessopacity016;
-  final Color statelayerssurfacebrightopacity008;
-  final Color statelayerssurfacebrightopacity012;
-  final Color statelayerssurfacebrightopacity016;
-  final Color statelayerssurfacecontainerhighopacity008;
-  final Color statelayerssurfacecontainerhighopacity012;
-  final Color statelayerssurfacecontainerhighopacity016;
-  final Color statelayerssurfacecontainerhighestopacity008;
-  final Color statelayerssurfacecontainerhighestopacity012;
-  final Color statelayerssurfacecontainerhighestopacity016;
-  final Color statelayerssurfacecontainerlowopacity008;
-  final Color statelayerssurfacecontainerlowopacity012;
-  final Color statelayerssurfacecontainerlowopacity016;
-  final Color statelayerssurfacecontainerlowestopacity008;
-  final Color statelayerssurfacecontainerlowestopacity012;
-  final Color statelayerssurfacecontainerlowestopacity016;
-  final Color statelayerssurfacecontaineropacity008;
-  final Color statelayerssurfacecontaineropacity012;
-  final Color statelayerssurfacecontaineropacity016;
-  final Color statelayerssurfacedimopacity008;
-  final Color statelayerssurfacedimopacity012;
-  final Color statelayerssurfacedimopacity016;
-  final Color statelayerssurfaceopacity008;
-  final Color statelayerssurfaceopacity012;
-  final Color statelayerssurfaceopacity016;
-  final Color statelayerstertiarycontaineropacity008;
-  final Color statelayerstertiarycontaineropacity012;
-  final Color statelayerstertiarycontaineropacity016;
-  final Color statelayerstertiaryfixeddimopacity008;
-  final Color statelayerstertiaryfixeddimopacity012;
-  final Color statelayerstertiaryfixeddimopacity016;
-  final Color statelayerstertiaryfixedopacity008;
-  final Color statelayerstertiaryfixedopacity012;
-  final Color statelayerstertiaryfixedopacity016;
-  final Color statelayerstertiaryopacity008;
-  final Color statelayerstertiaryopacity012;
-  final Color statelayerstertiaryopacity016;
-  final Color statelayerswarncontaineropacity008;
-  final Color statelayerswarncontaineropacity012;
-  final Color statelayerswarncontaineropacity016;
-  final Color statelayerswarnopacity008;
-  final Color statelayerswarnopacity012;
-  final Color statelayerswarnopacity016;
+  final Color refErrorE0;
+  final Color refErrorE10;
+  final Color refErrorE100;
+  final Color refErrorE15;
+  final Color refErrorE2;
+  final Color refErrorE20;
+  final Color refErrorE30;
+  final Color refErrorE4;
+  final Color refErrorE40;
+  final Color refErrorE50;
+  final Color refErrorE6;
+  final Color refErrorE60;
+  final Color refErrorE70;
+  final Color refErrorE8;
+  final Color refErrorE80;
+  final Color refErrorE85;
+  final Color refErrorE90;
+  final Color refErrorE93;
+  final Color refErrorE95;
+  final Color refErrorE98;
+  final Color refErrorE99;
+  final Color refNeutralN0;
+  final Color refNeutralN10;
+  final Color refNeutralN100;
+  final Color refNeutralN15;
+  final Color refNeutralN2;
+  final Color refNeutralN20;
+  final Color refNeutralN30;
+  final Color refNeutralN4;
+  final Color refNeutralN40;
+  final Color refNeutralN50;
+  final Color refNeutralN6;
+  final Color refNeutralN60;
+  final Color refNeutralN70;
+  final Color refNeutralN8;
+  final Color refNeutralN80;
+  final Color refNeutralN85;
+  final Color refNeutralN90;
+  final Color refNeutralN93;
+  final Color refNeutralN95;
+  final Color refNeutralN98;
+  final Color refNeutralN99;
+  final Color refNeutralVariantNv0;
+  final Color refNeutralVariantNv10;
+  final Color refNeutralVariantNv100;
+  final Color refNeutralVariantNv15;
+  final Color refNeutralVariantNv2;
+  final Color refNeutralVariantNv20;
+  final Color refNeutralVariantNv30;
+  final Color refNeutralVariantNv4;
+  final Color refNeutralVariantNv40;
+  final Color refNeutralVariantNv50;
+  final Color refNeutralVariantNv6;
+  final Color refNeutralVariantNv60;
+  final Color refNeutralVariantNv70;
+  final Color refNeutralVariantNv8;
+  final Color refNeutralVariantNv80;
+  final Color refNeutralVariantNv85;
+  final Color refNeutralVariantNv90;
+  final Color refNeutralVariantNv93;
+  final Color refNeutralVariantNv95;
+  final Color refNeutralVariantNv98;
+  final Color refNeutralVariantNv99;
+  final Color refPrimaryP0;
+  final Color refPrimaryP10;
+  final Color refPrimaryP100;
+  final Color refPrimaryP15;
+  final Color refPrimaryP2;
+  final Color refPrimaryP20;
+  final Color refPrimaryP30;
+  final Color refPrimaryP4;
+  final Color refPrimaryP40;
+  final Color refPrimaryP50;
+  final Color refPrimaryP6;
+  final Color refPrimaryP60;
+  final Color refPrimaryP70;
+  final Color refPrimaryP8;
+  final Color refPrimaryP80;
+  final Color refPrimaryP85;
+  final Color refPrimaryP90;
+  final Color refPrimaryP93;
+  final Color refPrimaryP95;
+  final Color refPrimaryP98;
+  final Color refPrimaryP99;
+  final Color refSecondaryS0;
+  final Color refSecondaryS10;
+  final Color refSecondaryS100;
+  final Color refSecondaryS15;
+  final Color refSecondaryS2;
+  final Color refSecondaryS20;
+  final Color refSecondaryS30;
+  final Color refSecondaryS4;
+  final Color refSecondaryS40;
+  final Color refSecondaryS50;
+  final Color refSecondaryS6;
+  final Color refSecondaryS60;
+  final Color refSecondaryS70;
+  final Color refSecondaryS8;
+  final Color refSecondaryS80;
+  final Color refSecondaryS85;
+  final Color refSecondaryS90;
+  final Color refSecondaryS93;
+  final Color refSecondaryS95;
+  final Color refSecondaryS98;
+  final Color refSecondaryS99;
+  final Color refSuccessU0;
+  final Color refSuccessU10;
+  final Color refSuccessU100;
+  final Color refSuccessU15;
+  final Color refSuccessU2;
+  final Color refSuccessU20;
+  final Color refSuccessU30;
+  final Color refSuccessU4;
+  final Color refSuccessU40;
+  final Color refSuccessU50;
+  final Color refSuccessU6;
+  final Color refSuccessU60;
+  final Color refSuccessU70;
+  final Color refSuccessU8;
+  final Color refSuccessU80;
+  final Color refSuccessU85;
+  final Color refSuccessU90;
+  final Color refSuccessU93;
+  final Color refSuccessU95;
+  final Color refSuccessU98;
+  final Color refSuccessU99;
+  final Color refTertiaryT0;
+  final Color refTertiaryT10;
+  final Color refTertiaryT100;
+  final Color refTertiaryT15;
+  final Color refTertiaryT2;
+  final Color refTertiaryT20;
+  final Color refTertiaryT30;
+  final Color refTertiaryT4;
+  final Color refTertiaryT40;
+  final Color refTertiaryT50;
+  final Color refTertiaryT6;
+  final Color refTertiaryT60;
+  final Color refTertiaryT70;
+  final Color refTertiaryT8;
+  final Color refTertiaryT80;
+  final Color refTertiaryT85;
+  final Color refTertiaryT90;
+  final Color refTertiaryT93;
+  final Color refTertiaryT95;
+  final Color refTertiaryT98;
+  final Color refTertiaryT99;
+  final Color refWarnW0;
+  final Color refWarnW10;
+  final Color refWarnW100;
+  final Color refWarnW15;
+  final Color refWarnW2;
+  final Color refWarnW20;
+  final Color refWarnW30;
+  final Color refWarnW4;
+  final Color refWarnW40;
+  final Color refWarnW50;
+  final Color refWarnW6;
+  final Color refWarnW60;
+  final Color refWarnW70;
+  final Color refWarnW8;
+  final Color refWarnW80;
+  final Color refWarnW85;
+  final Color refWarnW90;
+  final Color refWarnW93;
+  final Color refWarnW95;
+  final Color refWarnW98;
+  final Color refWarnW99;
+  final Color stateLayersErrorContainerOpacity008;
+  final Color stateLayersErrorContainerOpacity012;
+  final Color stateLayersErrorContainerOpacity016;
+  final Color stateLayersErrorOpacity008;
+  final Color stateLayersErrorOpacity012;
+  final Color stateLayersErrorOpacity016;
+  final Color stateLayersInverseOnSurfaceOpacity008;
+  final Color stateLayersInverseOnSurfaceOpacity012;
+  final Color stateLayersInverseOnSurfaceOpacity016;
+  final Color stateLayersInversePrimaryOpacity008;
+  final Color stateLayersInversePrimaryOpacity012;
+  final Color stateLayersInversePrimaryOpacity016;
+  final Color stateLayersInverseSurfaceOpacity008;
+  final Color stateLayersInverseSurfaceOpacity012;
+  final Color stateLayersInverseSurfaceOpacity016;
+  final Color stateLayersOnErrorContainerOpacity008;
+  final Color stateLayersOnErrorContainerOpacity012;
+  final Color stateLayersOnErrorContainerOpacity016;
+  final Color stateLayersOnErrorOpacity008;
+  final Color stateLayersOnErrorOpacity012;
+  final Color stateLayersOnErrorOpacity016;
+  final Color stateLayersOnPrimaryContainerOpacity008;
+  final Color stateLayersOnPrimaryContainerOpacity012;
+  final Color stateLayersOnPrimaryContainerOpacity016;
+  final Color stateLayersOnPrimaryFixedOpacity008;
+  final Color stateLayersOnPrimaryFixedOpacity012;
+  final Color stateLayersOnPrimaryFixedOpacity016;
+  final Color stateLayersOnPrimaryFixedVariantOpacity008;
+  final Color stateLayersOnPrimaryFixedVariantOpacity012;
+  final Color stateLayersOnPrimaryFixedVariantOpacity016;
+  final Color stateLayersOnPrimaryOpacity008;
+  final Color stateLayersOnPrimaryOpacity012;
+  final Color stateLayersOnPrimaryOpacity016;
+  final Color stateLayersOnSecondaryContainerOpacity008;
+  final Color stateLayersOnSecondaryContainerOpacity012;
+  final Color stateLayersOnSecondaryContainerOpacity016;
+  final Color stateLayersOnSecondaryFixedOpacity008;
+  final Color stateLayersOnSecondaryFixedOpacity012;
+  final Color stateLayersOnSecondaryFixedOpacity016;
+  final Color stateLayersOnSecondaryFixedVariantOpacity008;
+  final Color stateLayersOnSecondaryFixedVariantOpacity012;
+  final Color stateLayersOnSecondaryFixedVariantOpacity016;
+  final Color stateLayersOnSecondaryOpacity008;
+  final Color stateLayersOnSecondaryOpacity012;
+  final Color stateLayersOnSecondaryOpacity016;
+  final Color stateLayersOnSuccessContainerOpacity008;
+  final Color stateLayersOnSuccessContainerOpacity012;
+  final Color stateLayersOnSuccessContainerOpacity016;
+  final Color stateLayersOnSuccessOpacity008;
+  final Color stateLayersOnSuccessOpacity012;
+  final Color stateLayersOnSuccessOpacity016;
+  final Color stateLayersOnSurfaceOpacity008;
+  final Color stateLayersOnSurfaceOpacity012;
+  final Color stateLayersOnSurfaceOpacity016;
+  final Color stateLayersOnSurfaceVariantOpacity008;
+  final Color stateLayersOnSurfaceVariantOpacity012;
+  final Color stateLayersOnSurfaceVariantOpacity016;
+  final Color stateLayersOnTertiaryContainerOpacity008;
+  final Color stateLayersOnTertiaryContainerOpacity012;
+  final Color stateLayersOnTertiaryContainerOpacity016;
+  final Color stateLayersOnTertiaryFixedOpacity008;
+  final Color stateLayersOnTertiaryFixedOpacity012;
+  final Color stateLayersOnTertiaryFixedOpacity016;
+  final Color stateLayersOnTertiaryFixedVariantOpacity008;
+  final Color stateLayersOnTertiaryFixedVariantOpacity012;
+  final Color stateLayersOnTertiaryFixedVariantOpacity016;
+  final Color stateLayersOnTertiaryOpacity008;
+  final Color stateLayersOnTertiaryOpacity012;
+  final Color stateLayersOnTertiaryOpacity016;
+  final Color stateLayersOnWarnContainerOpacity008;
+  final Color stateLayersOnWarnContainerOpacity012;
+  final Color stateLayersOnWarnContainerOpacity016;
+  final Color stateLayersOnWarnOpacity008;
+  final Color stateLayersOnWarnOpacity012;
+  final Color stateLayersOnWarnOpacity016;
+  final Color stateLayersOutlineOpacity008;
+  final Color stateLayersOutlineOpacity012;
+  final Color stateLayersOutlineOpacity016;
+  final Color stateLayersOutlineVariantOpacity008;
+  final Color stateLayersOutlineVariantOpacity012;
+  final Color stateLayersOutlineVariantOpacity016;
+  final Color stateLayersPrimaryContainerOpacity008;
+  final Color stateLayersPrimaryContainerOpacity012;
+  final Color stateLayersPrimaryContainerOpacity016;
+  final Color stateLayersPrimaryFixedDimOpacity008;
+  final Color stateLayersPrimaryFixedDimOpacity012;
+  final Color stateLayersPrimaryFixedDimOpacity016;
+  final Color stateLayersPrimaryFixedOpacity008;
+  final Color stateLayersPrimaryFixedOpacity012;
+  final Color stateLayersPrimaryFixedOpacity016;
+  final Color stateLayersPrimaryOpacity008;
+  final Color stateLayersPrimaryOpacity012;
+  final Color stateLayersPrimaryOpacity016;
+  final Color stateLayersScrimOpacity008;
+  final Color stateLayersScrimOpacity012;
+  final Color stateLayersScrimOpacity016;
+  final Color stateLayersSecondaryContainerOpacity008;
+  final Color stateLayersSecondaryContainerOpacity012;
+  final Color stateLayersSecondaryContainerOpacity016;
+  final Color stateLayersSecondaryFixedDimOpacity008;
+  final Color stateLayersSecondaryFixedDimOpacity012;
+  final Color stateLayersSecondaryFixedDimOpacity016;
+  final Color stateLayersSecondaryFixedOpacity008;
+  final Color stateLayersSecondaryFixedOpacity012;
+  final Color stateLayersSecondaryFixedOpacity016;
+  final Color stateLayersSecondaryOpacity008;
+  final Color stateLayersSecondaryOpacity012;
+  final Color stateLayersSecondaryOpacity016;
+  final Color stateLayersShadowOpacity008;
+  final Color stateLayersShadowOpacity012;
+  final Color stateLayersShadowOpacity016;
+  final Color stateLayersSuccessContainerOpacity008;
+  final Color stateLayersSuccessContainerOpacity012;
+  final Color stateLayersSuccessContainerOpacity016;
+  final Color stateLayersSuccessOpacity008;
+  final Color stateLayersSuccessOpacity012;
+  final Color stateLayersSuccessOpacity016;
+  final Color stateLayersSurfaceBrightOpacity008;
+  final Color stateLayersSurfaceBrightOpacity012;
+  final Color stateLayersSurfaceBrightOpacity016;
+  final Color stateLayersSurfaceContainerHighOpacity008;
+  final Color stateLayersSurfaceContainerHighOpacity012;
+  final Color stateLayersSurfaceContainerHighOpacity016;
+  final Color stateLayersSurfaceContainerHighestOpacity008;
+  final Color stateLayersSurfaceContainerHighestOpacity012;
+  final Color stateLayersSurfaceContainerHighestOpacity016;
+  final Color stateLayersSurfaceContainerLowOpacity008;
+  final Color stateLayersSurfaceContainerLowOpacity012;
+  final Color stateLayersSurfaceContainerLowOpacity016;
+  final Color stateLayersSurfaceContainerLowestOpacity008;
+  final Color stateLayersSurfaceContainerLowestOpacity012;
+  final Color stateLayersSurfaceContainerLowestOpacity016;
+  final Color stateLayersSurfaceContainerOpacity008;
+  final Color stateLayersSurfaceContainerOpacity012;
+  final Color stateLayersSurfaceContainerOpacity016;
+  final Color stateLayersSurfaceDimOpacity008;
+  final Color stateLayersSurfaceDimOpacity012;
+  final Color stateLayersSurfaceDimOpacity016;
+  final Color stateLayersSurfaceOpacity008;
+  final Color stateLayersSurfaceOpacity012;
+  final Color stateLayersSurfaceOpacity016;
+  final Color stateLayersTertiaryContainerOpacity008;
+  final Color stateLayersTertiaryContainerOpacity012;
+  final Color stateLayersTertiaryContainerOpacity016;
+  final Color stateLayersTertiaryFixedDimOpacity008;
+  final Color stateLayersTertiaryFixedDimOpacity012;
+  final Color stateLayersTertiaryFixedDimOpacity016;
+  final Color stateLayersTertiaryFixedOpacity008;
+  final Color stateLayersTertiaryFixedOpacity012;
+  final Color stateLayersTertiaryFixedOpacity016;
+  final Color stateLayersTertiaryOpacity008;
+  final Color stateLayersTertiaryOpacity012;
+  final Color stateLayersTertiaryOpacity016;
+  final Color stateLayersWarnContainerOpacity008;
+  final Color stateLayersWarnContainerOpacity012;
+  final Color stateLayersWarnContainerOpacity016;
+  final Color stateLayersWarnOpacity008;
+  final Color stateLayersWarnOpacity012;
+  final Color stateLayersWarnOpacity016;
   final Color sysError;
   final Color sysErrorContainer;
   final Color sysInverseOnSurface;
@@ -760,6 +787,7 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
   final Color sysShadow;
   final Color sysSuccess;
   final Color sysSuccessContainer;
+  final Color sysSurfaceTinted;
   final Color sysSurface;
   final Color sysSurfaceBright;
   final Color sysSurfaceContainer;
@@ -774,6 +802,32 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
   final Color sysTertiaryFixedDim;
   final Color sysWarn;
   final Color sysWarnContainer;
+  final Color aqua;
+  final Color black;
+  final Color blue;
+  final Color cyan;
+  final Color grape;
+  final Color green;
+  final Color lime;
+  final Color magenta;
+  final Color orange;
+  final Color pink;
+  final Color purple;
+  final Color red;
+  final Color white;
+  final Color yellow;
+  final Color onRed;
+  final Color onOrange;
+  final Color onYellow;
+  final Color onLime;
+  final Color onGreen;
+  final Color onAqua;
+  final Color onCyan;
+  final Color onBlue;
+  final Color onPurple;
+  final Color onGrape;
+  final Color onPink;
+  final Color onMagenta;
 
   @override
   ThemeExtension<ColorsThemeExtension> copyWith({
@@ -782,333 +836,333 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
     Color? hyperlinkHovered,
     Color? hyperlinkNormal,
     Color? hyperlinkVisited,
-    Color? referrore0,
-    Color? referrore10,
-    Color? referrore100,
-    Color? referrore15,
-    Color? referrore2,
-    Color? referrore20,
-    Color? referrore30,
-    Color? referrore4,
-    Color? referrore40,
-    Color? referrore50,
-    Color? referrore6,
-    Color? referrore60,
-    Color? referrore70,
-    Color? referrore8,
-    Color? referrore80,
-    Color? referrore85,
-    Color? referrore90,
-    Color? referrore93,
-    Color? referrore95,
-    Color? referrore98,
-    Color? referrore99,
-    Color? refneutraln0,
-    Color? refneutraln10,
-    Color? refneutraln100,
-    Color? refneutraln15,
-    Color? refneutraln2,
-    Color? refneutraln20,
-    Color? refneutraln30,
-    Color? refneutraln4,
-    Color? refneutraln40,
-    Color? refneutraln50,
-    Color? refneutraln6,
-    Color? refneutraln60,
-    Color? refneutraln70,
-    Color? refneutraln8,
-    Color? refneutraln80,
-    Color? refneutraln85,
-    Color? refneutraln90,
-    Color? refneutraln93,
-    Color? refneutraln95,
-    Color? refneutraln98,
-    Color? refneutraln99,
-    Color? refneutralvariantnv0,
-    Color? refneutralvariantnv10,
-    Color? refneutralvariantnv100,
-    Color? refneutralvariantnv15,
-    Color? refneutralvariantnv2,
-    Color? refneutralvariantnv20,
-    Color? refneutralvariantnv30,
-    Color? refneutralvariantnv4,
-    Color? refneutralvariantnv40,
-    Color? refneutralvariantnv50,
-    Color? refneutralvariantnv6,
-    Color? refneutralvariantnv60,
-    Color? refneutralvariantnv70,
-    Color? refneutralvariantnv8,
-    Color? refneutralvariantnv80,
-    Color? refneutralvariantnv85,
-    Color? refneutralvariantnv90,
-    Color? refneutralvariantnv93,
-    Color? refneutralvariantnv95,
-    Color? refneutralvariantnv98,
-    Color? refneutralvariantnv99,
-    Color? refprimaryp0,
-    Color? refprimaryp10,
-    Color? refprimaryp100,
-    Color? refprimaryp15,
-    Color? refprimaryp2,
-    Color? refprimaryp20,
-    Color? refprimaryp30,
-    Color? refprimaryp4,
-    Color? refprimaryp40,
-    Color? refprimaryp50,
-    Color? refprimaryp6,
-    Color? refprimaryp60,
-    Color? refprimaryp70,
-    Color? refprimaryp8,
-    Color? refprimaryp80,
-    Color? refprimaryp85,
-    Color? refprimaryp90,
-    Color? refprimaryp93,
-    Color? refprimaryp95,
-    Color? refprimaryp98,
-    Color? refprimaryp99,
-    Color? refsecondarys0,
-    Color? refsecondarys10,
-    Color? refsecondarys100,
-    Color? refsecondarys15,
-    Color? refsecondarys2,
-    Color? refsecondarys20,
-    Color? refsecondarys30,
-    Color? refsecondarys4,
-    Color? refsecondarys40,
-    Color? refsecondarys50,
-    Color? refsecondarys6,
-    Color? refsecondarys60,
-    Color? refsecondarys70,
-    Color? refsecondarys8,
-    Color? refsecondarys80,
-    Color? refsecondarys85,
-    Color? refsecondarys90,
-    Color? refsecondarys93,
-    Color? refsecondarys95,
-    Color? refsecondarys98,
-    Color? refsecondarys99,
-    Color? refsuccessu0,
-    Color? refsuccessu10,
-    Color? refsuccessu100,
-    Color? refsuccessu15,
-    Color? refsuccessu2,
-    Color? refsuccessu20,
-    Color? refsuccessu30,
-    Color? refsuccessu4,
-    Color? refsuccessu40,
-    Color? refsuccessu50,
-    Color? refsuccessu6,
-    Color? refsuccessu60,
-    Color? refsuccessu70,
-    Color? refsuccessu8,
-    Color? refsuccessu80,
-    Color? refsuccessu85,
-    Color? refsuccessu90,
-    Color? refsuccessu93,
-    Color? refsuccessu95,
-    Color? refsuccessu98,
-    Color? refsuccessu99,
-    Color? reftertiaryt0,
-    Color? reftertiaryt10,
-    Color? reftertiaryt100,
-    Color? reftertiaryt15,
-    Color? reftertiaryt2,
-    Color? reftertiaryt20,
-    Color? reftertiaryt30,
-    Color? reftertiaryt4,
-    Color? reftertiaryt40,
-    Color? reftertiaryt50,
-    Color? reftertiaryt6,
-    Color? reftertiaryt60,
-    Color? reftertiaryt70,
-    Color? reftertiaryt8,
-    Color? reftertiaryt80,
-    Color? reftertiaryt85,
-    Color? reftertiaryt90,
-    Color? reftertiaryt93,
-    Color? reftertiaryt95,
-    Color? reftertiaryt98,
-    Color? reftertiaryt99,
-    Color? refwarnw0,
-    Color? refwarnw10,
-    Color? refwarnw100,
-    Color? refwarnw15,
-    Color? refwarnw2,
-    Color? refwarnw20,
-    Color? refwarnw30,
-    Color? refwarnw4,
-    Color? refwarnw40,
-    Color? refwarnw50,
-    Color? refwarnw6,
-    Color? refwarnw60,
-    Color? refwarnw70,
-    Color? refwarnw8,
-    Color? refwarnw80,
-    Color? refwarnw85,
-    Color? refwarnw90,
-    Color? refwarnw93,
-    Color? refwarnw95,
-    Color? refwarnw98,
-    Color? refwarnw99,
-    Color? statelayerserrorcontaineropacity008,
-    Color? statelayerserrorcontaineropacity012,
-    Color? statelayerserrorcontaineropacity016,
-    Color? statelayerserroropacity008,
-    Color? statelayerserroropacity012,
-    Color? statelayerserroropacity016,
-    Color? statelayersinverseonsurfaceopacity008,
-    Color? statelayersinverseonsurfaceopacity012,
-    Color? statelayersinverseonsurfaceopacity016,
-    Color? statelayersinverseprimaryopacity008,
-    Color? statelayersinverseprimaryopacity012,
-    Color? statelayersinverseprimaryopacity016,
-    Color? statelayersinversesurfaceopacity008,
-    Color? statelayersinversesurfaceopacity012,
-    Color? statelayersinversesurfaceopacity016,
-    Color? statelayersonerrorcontaineropacity008,
-    Color? statelayersonerrorcontaineropacity012,
-    Color? statelayersonerrorcontaineropacity016,
-    Color? statelayersonerroropacity008,
-    Color? statelayersonerroropacity012,
-    Color? statelayersonerroropacity016,
-    Color? statelayersonprimarycontaineropacity008,
-    Color? statelayersonprimarycontaineropacity012,
-    Color? statelayersonprimarycontaineropacity016,
-    Color? statelayersonprimaryfixedopacity008,
-    Color? statelayersonprimaryfixedopacity012,
-    Color? statelayersonprimaryfixedopacity016,
-    Color? statelayersonprimaryfixedvariantopacity008,
-    Color? statelayersonprimaryfixedvariantopacity012,
-    Color? statelayersonprimaryfixedvariantopacity016,
-    Color? statelayersonprimaryopacity008,
-    Color? statelayersonprimaryopacity012,
-    Color? statelayersonprimaryopacity016,
-    Color? statelayersonsecondarycontaineropacity008,
-    Color? statelayersonsecondarycontaineropacity012,
-    Color? statelayersonsecondarycontaineropacity016,
-    Color? statelayersonsecondaryfixedopacity008,
-    Color? statelayersonsecondaryfixedopacity012,
-    Color? statelayersonsecondaryfixedopacity016,
-    Color? statelayersonsecondaryfixedvariantopacity008,
-    Color? statelayersonsecondaryfixedvariantopacity012,
-    Color? statelayersonsecondaryfixedvariantopacity016,
-    Color? statelayersonsecondaryopacity008,
-    Color? statelayersonsecondaryopacity012,
-    Color? statelayersonsecondaryopacity016,
-    Color? statelayersonsuccesscontaineropacity008,
-    Color? statelayersonsuccesscontaineropacity012,
-    Color? statelayersonsuccesscontaineropacity016,
-    Color? statelayersonsuccessopacity008,
-    Color? statelayersonsuccessopacity012,
-    Color? statelayersonsuccessopacity016,
-    Color? statelayersonsurfaceopacity008,
-    Color? statelayersonsurfaceopacity012,
-    Color? statelayersonsurfaceopacity016,
-    Color? statelayersonsurfacevariantopacity008,
-    Color? statelayersonsurfacevariantopacity012,
-    Color? statelayersonsurfacevariantopacity016,
-    Color? statelayersontertiarycontaineropacity008,
-    Color? statelayersontertiarycontaineropacity012,
-    Color? statelayersontertiarycontaineropacity016,
-    Color? statelayersontertiaryfixedopacity008,
-    Color? statelayersontertiaryfixedopacity012,
-    Color? statelayersontertiaryfixedopacity016,
-    Color? statelayersontertiaryfixedvariantopacity008,
-    Color? statelayersontertiaryfixedvariantopacity012,
-    Color? statelayersontertiaryfixedvariantopacity016,
-    Color? statelayersontertiaryopacity008,
-    Color? statelayersontertiaryopacity012,
-    Color? statelayersontertiaryopacity016,
-    Color? statelayersonwarncontaineropacity008,
-    Color? statelayersonwarncontaineropacity012,
-    Color? statelayersonwarncontaineropacity016,
-    Color? statelayersonwarnopacity008,
-    Color? statelayersonwarnopacity012,
-    Color? statelayersonwarnopacity016,
-    Color? statelayersoutlineopacity008,
-    Color? statelayersoutlineopacity012,
-    Color? statelayersoutlineopacity016,
-    Color? statelayersoutlinevariantopacity008,
-    Color? statelayersoutlinevariantopacity012,
-    Color? statelayersoutlinevariantopacity016,
-    Color? statelayersprimarycontaineropacity008,
-    Color? statelayersprimarycontaineropacity012,
-    Color? statelayersprimarycontaineropacity016,
-    Color? statelayersprimaryfixeddimopacity008,
-    Color? statelayersprimaryfixeddimopacity012,
-    Color? statelayersprimaryfixeddimopacity016,
-    Color? statelayersprimaryfixedopacity008,
-    Color? statelayersprimaryfixedopacity012,
-    Color? statelayersprimaryfixedopacity016,
-    Color? statelayersprimaryopacity008,
-    Color? statelayersprimaryopacity012,
-    Color? statelayersprimaryopacity016,
-    Color? statelayersscrimopacity008,
-    Color? statelayersscrimopacity012,
-    Color? statelayersscrimopacity016,
-    Color? statelayerssecondarycontaineropacity008,
-    Color? statelayerssecondarycontaineropacity012,
-    Color? statelayerssecondarycontaineropacity016,
-    Color? statelayerssecondaryfixeddimopacity008,
-    Color? statelayerssecondaryfixeddimopacity012,
-    Color? statelayerssecondaryfixeddimopacity016,
-    Color? statelayerssecondaryfixedopacity008,
-    Color? statelayerssecondaryfixedopacity012,
-    Color? statelayerssecondaryfixedopacity016,
-    Color? statelayerssecondaryopacity008,
-    Color? statelayerssecondaryopacity012,
-    Color? statelayerssecondaryopacity016,
-    Color? statelayersshadowopacity008,
-    Color? statelayersshadowopacity012,
-    Color? statelayersshadowopacity016,
-    Color? statelayerssuccesscontaineropacity008,
-    Color? statelayerssuccesscontaineropacity012,
-    Color? statelayerssuccesscontaineropacity016,
-    Color? statelayerssuccessopacity008,
-    Color? statelayerssuccessopacity012,
-    Color? statelayerssuccessopacity016,
-    Color? statelayerssurfacebrightopacity008,
-    Color? statelayerssurfacebrightopacity012,
-    Color? statelayerssurfacebrightopacity016,
-    Color? statelayerssurfacecontainerhighopacity008,
-    Color? statelayerssurfacecontainerhighopacity012,
-    Color? statelayerssurfacecontainerhighopacity016,
-    Color? statelayerssurfacecontainerhighestopacity008,
-    Color? statelayerssurfacecontainerhighestopacity012,
-    Color? statelayerssurfacecontainerhighestopacity016,
-    Color? statelayerssurfacecontainerlowopacity008,
-    Color? statelayerssurfacecontainerlowopacity012,
-    Color? statelayerssurfacecontainerlowopacity016,
-    Color? statelayerssurfacecontainerlowestopacity008,
-    Color? statelayerssurfacecontainerlowestopacity012,
-    Color? statelayerssurfacecontainerlowestopacity016,
-    Color? statelayerssurfacecontaineropacity008,
-    Color? statelayerssurfacecontaineropacity012,
-    Color? statelayerssurfacecontaineropacity016,
-    Color? statelayerssurfacedimopacity008,
-    Color? statelayerssurfacedimopacity012,
-    Color? statelayerssurfacedimopacity016,
-    Color? statelayerssurfaceopacity008,
-    Color? statelayerssurfaceopacity012,
-    Color? statelayerssurfaceopacity016,
-    Color? statelayerstertiarycontaineropacity008,
-    Color? statelayerstertiarycontaineropacity012,
-    Color? statelayerstertiarycontaineropacity016,
-    Color? statelayerstertiaryfixeddimopacity008,
-    Color? statelayerstertiaryfixeddimopacity012,
-    Color? statelayerstertiaryfixeddimopacity016,
-    Color? statelayerstertiaryfixedopacity008,
-    Color? statelayerstertiaryfixedopacity012,
-    Color? statelayerstertiaryfixedopacity016,
-    Color? statelayerstertiaryopacity008,
-    Color? statelayerstertiaryopacity012,
-    Color? statelayerstertiaryopacity016,
-    Color? statelayerswarncontaineropacity008,
-    Color? statelayerswarncontaineropacity012,
-    Color? statelayerswarncontaineropacity016,
-    Color? statelayerswarnopacity008,
-    Color? statelayerswarnopacity012,
-    Color? statelayerswarnopacity016,
+    Color? refErrorE0,
+    Color? refErrorE10,
+    Color? refErrorE100,
+    Color? refErrorE15,
+    Color? refErrorE2,
+    Color? refErrorE20,
+    Color? refErrorE30,
+    Color? refErrorE4,
+    Color? refErrorE40,
+    Color? refErrorE50,
+    Color? refErrorE6,
+    Color? refErrorE60,
+    Color? refErrorE70,
+    Color? refErrorE8,
+    Color? refErrorE80,
+    Color? refErrorE85,
+    Color? refErrorE90,
+    Color? refErrorE93,
+    Color? refErrorE95,
+    Color? refErrorE98,
+    Color? refErrorE99,
+    Color? refNeutralN0,
+    Color? refNeutralN10,
+    Color? refNeutralN100,
+    Color? refNeutralN15,
+    Color? refNeutralN2,
+    Color? refNeutralN20,
+    Color? refNeutralN30,
+    Color? refNeutralN4,
+    Color? refNeutralN40,
+    Color? refNeutralN50,
+    Color? refNeutralN6,
+    Color? refNeutralN60,
+    Color? refNeutralN70,
+    Color? refNeutralN8,
+    Color? refNeutralN80,
+    Color? refNeutralN85,
+    Color? refNeutralN90,
+    Color? refNeutralN93,
+    Color? refNeutralN95,
+    Color? refNeutralN98,
+    Color? refNeutralN99,
+    Color? refNeutralVariantNv0,
+    Color? refNeutralVariantNv10,
+    Color? refNeutralVariantNv100,
+    Color? refNeutralVariantNv15,
+    Color? refNeutralVariantNv2,
+    Color? refNeutralVariantNv20,
+    Color? refNeutralVariantNv30,
+    Color? refNeutralVariantNv4,
+    Color? refNeutralVariantNv40,
+    Color? refNeutralVariantNv50,
+    Color? refNeutralVariantNv6,
+    Color? refNeutralVariantNv60,
+    Color? refNeutralVariantNv70,
+    Color? refNeutralVariantNv8,
+    Color? refNeutralVariantNv80,
+    Color? refNeutralVariantNv85,
+    Color? refNeutralVariantNv90,
+    Color? refNeutralVariantNv93,
+    Color? refNeutralVariantNv95,
+    Color? refNeutralVariantNv98,
+    Color? refNeutralVariantNv99,
+    Color? refPrimaryP0,
+    Color? refPrimaryP10,
+    Color? refPrimaryP100,
+    Color? refPrimaryP15,
+    Color? refPrimaryP2,
+    Color? refPrimaryP20,
+    Color? refPrimaryP30,
+    Color? refPrimaryP4,
+    Color? refPrimaryP40,
+    Color? refPrimaryP50,
+    Color? refPrimaryP6,
+    Color? refPrimaryP60,
+    Color? refPrimaryP70,
+    Color? refPrimaryP8,
+    Color? refPrimaryP80,
+    Color? refPrimaryP85,
+    Color? refPrimaryP90,
+    Color? refPrimaryP93,
+    Color? refPrimaryP95,
+    Color? refPrimaryP98,
+    Color? refPrimaryP99,
+    Color? refSecondaryS0,
+    Color? refSecondaryS10,
+    Color? refSecondaryS100,
+    Color? refSecondaryS15,
+    Color? refSecondaryS2,
+    Color? refSecondaryS20,
+    Color? refSecondaryS30,
+    Color? refSecondaryS4,
+    Color? refSecondaryS40,
+    Color? refSecondaryS50,
+    Color? refSecondaryS6,
+    Color? refSecondaryS60,
+    Color? refSecondaryS70,
+    Color? refSecondaryS8,
+    Color? refSecondaryS80,
+    Color? refSecondaryS85,
+    Color? refSecondaryS90,
+    Color? refSecondaryS93,
+    Color? refSecondaryS95,
+    Color? refSecondaryS98,
+    Color? refSecondaryS99,
+    Color? refSuccessU0,
+    Color? refSuccessU10,
+    Color? refSuccessU100,
+    Color? refSuccessU15,
+    Color? refSuccessU2,
+    Color? refSuccessU20,
+    Color? refSuccessU30,
+    Color? refSuccessU4,
+    Color? refSuccessU40,
+    Color? refSuccessU50,
+    Color? refSuccessU6,
+    Color? refSuccessU60,
+    Color? refSuccessU70,
+    Color? refSuccessU8,
+    Color? refSuccessU80,
+    Color? refSuccessU85,
+    Color? refSuccessU90,
+    Color? refSuccessU93,
+    Color? refSuccessU95,
+    Color? refSuccessU98,
+    Color? refSuccessU99,
+    Color? refTertiaryT0,
+    Color? refTertiaryT10,
+    Color? refTertiaryT100,
+    Color? refTertiaryT15,
+    Color? refTertiaryT2,
+    Color? refTertiaryT20,
+    Color? refTertiaryT30,
+    Color? refTertiaryT4,
+    Color? refTertiaryT40,
+    Color? refTertiaryT50,
+    Color? refTertiaryT6,
+    Color? refTertiaryT60,
+    Color? refTertiaryT70,
+    Color? refTertiaryT8,
+    Color? refTertiaryT80,
+    Color? refTertiaryT85,
+    Color? refTertiaryT90,
+    Color? refTertiaryT93,
+    Color? refTertiaryT95,
+    Color? refTertiaryT98,
+    Color? refTertiaryT99,
+    Color? refWarnW0,
+    Color? refWarnW10,
+    Color? refWarnW100,
+    Color? refWarnW15,
+    Color? refWarnW2,
+    Color? refWarnW20,
+    Color? refWarnW30,
+    Color? refWarnW4,
+    Color? refWarnW40,
+    Color? refWarnW50,
+    Color? refWarnW6,
+    Color? refWarnW60,
+    Color? refWarnW70,
+    Color? refWarnW8,
+    Color? refWarnW80,
+    Color? refWarnW85,
+    Color? refWarnW90,
+    Color? refWarnW93,
+    Color? refWarnW95,
+    Color? refWarnW98,
+    Color? refWarnW99,
+    Color? stateLayersErrorContainerOpacity008,
+    Color? stateLayersErrorContainerOpacity012,
+    Color? stateLayersErrorContainerOpacity016,
+    Color? stateLayersErrorOpacity008,
+    Color? stateLayersErrorOpacity012,
+    Color? stateLayersErrorOpacity016,
+    Color? stateLayersInverseOnSurfaceOpacity008,
+    Color? stateLayersInverseOnSurfaceOpacity012,
+    Color? stateLayersInverseOnSurfaceOpacity016,
+    Color? stateLayersInversePrimaryOpacity008,
+    Color? stateLayersInversePrimaryOpacity012,
+    Color? stateLayersInversePrimaryOpacity016,
+    Color? stateLayersInverseSurfaceOpacity008,
+    Color? stateLayersInverseSurfaceOpacity012,
+    Color? stateLayersInverseSurfaceOpacity016,
+    Color? stateLayersOnErrorContainerOpacity008,
+    Color? stateLayersOnErrorContainerOpacity012,
+    Color? stateLayersOnErrorContainerOpacity016,
+    Color? stateLayersOnErrorOpacity008,
+    Color? stateLayersOnErrorOpacity012,
+    Color? stateLayersOnErrorOpacity016,
+    Color? stateLayersOnPrimaryContainerOpacity008,
+    Color? stateLayersOnPrimaryContainerOpacity012,
+    Color? stateLayersOnPrimaryContainerOpacity016,
+    Color? stateLayersOnPrimaryFixedOpacity008,
+    Color? stateLayersOnPrimaryFixedOpacity012,
+    Color? stateLayersOnPrimaryFixedOpacity016,
+    Color? stateLayersOnPrimaryFixedVariantOpacity008,
+    Color? stateLayersOnPrimaryFixedVariantOpacity012,
+    Color? stateLayersOnPrimaryFixedVariantOpacity016,
+    Color? stateLayersOnPrimaryOpacity008,
+    Color? stateLayersOnPrimaryOpacity012,
+    Color? stateLayersOnPrimaryOpacity016,
+    Color? stateLayersOnSecondaryContainerOpacity008,
+    Color? stateLayersOnSecondaryContainerOpacity012,
+    Color? stateLayersOnSecondaryContainerOpacity016,
+    Color? stateLayersOnSecondaryFixedOpacity008,
+    Color? stateLayersOnSecondaryFixedOpacity012,
+    Color? stateLayersOnSecondaryFixedOpacity016,
+    Color? stateLayersOnSecondaryFixedVariantOpacity008,
+    Color? stateLayersOnSecondaryFixedVariantOpacity012,
+    Color? stateLayersOnSecondaryFixedVariantOpacity016,
+    Color? stateLayersOnSecondaryOpacity008,
+    Color? stateLayersOnSecondaryOpacity012,
+    Color? stateLayersOnSecondaryOpacity016,
+    Color? stateLayersOnSuccessContainerOpacity008,
+    Color? stateLayersOnSuccessContainerOpacity012,
+    Color? stateLayersOnSuccessContainerOpacity016,
+    Color? stateLayersOnSuccessOpacity008,
+    Color? stateLayersOnSuccessOpacity012,
+    Color? stateLayersOnSuccessOpacity016,
+    Color? stateLayersOnSurfaceOpacity008,
+    Color? stateLayersOnSurfaceOpacity012,
+    Color? stateLayersOnSurfaceOpacity016,
+    Color? stateLayersOnSurfaceVariantOpacity008,
+    Color? stateLayersOnSurfaceVariantOpacity012,
+    Color? stateLayersOnSurfaceVariantOpacity016,
+    Color? stateLayersOnTertiaryContainerOpacity008,
+    Color? stateLayersOnTertiaryContainerOpacity012,
+    Color? stateLayersOnTertiaryContainerOpacity016,
+    Color? stateLayersOnTertiaryFixedOpacity008,
+    Color? stateLayersOnTertiaryFixedOpacity012,
+    Color? stateLayersOnTertiaryFixedOpacity016,
+    Color? stateLayersOnTertiaryFixedVariantOpacity008,
+    Color? stateLayersOnTertiaryFixedVariantOpacity012,
+    Color? stateLayersOnTertiaryFixedVariantOpacity016,
+    Color? stateLayersOnTertiaryOpacity008,
+    Color? stateLayersOnTertiaryOpacity012,
+    Color? stateLayersOnTertiaryOpacity016,
+    Color? stateLayersOnWarnContainerOpacity008,
+    Color? stateLayersOnWarnContainerOpacity012,
+    Color? stateLayersOnWarnContainerOpacity016,
+    Color? stateLayersOnWarnOpacity008,
+    Color? stateLayersOnWarnOpacity012,
+    Color? stateLayersOnWarnOpacity016,
+    Color? stateLayersOutlineOpacity008,
+    Color? stateLayersOutlineOpacity012,
+    Color? stateLayersOutlineOpacity016,
+    Color? stateLayersOutlineVariantOpacity008,
+    Color? stateLayersOutlineVariantOpacity012,
+    Color? stateLayersOutlineVariantOpacity016,
+    Color? stateLayersPrimaryContainerOpacity008,
+    Color? stateLayersPrimaryContainerOpacity012,
+    Color? stateLayersPrimaryContainerOpacity016,
+    Color? stateLayersPrimaryFixedDimOpacity008,
+    Color? stateLayersPrimaryFixedDimOpacity012,
+    Color? stateLayersPrimaryFixedDimOpacity016,
+    Color? stateLayersPrimaryFixedOpacity008,
+    Color? stateLayersPrimaryFixedOpacity012,
+    Color? stateLayersPrimaryFixedOpacity016,
+    Color? stateLayersPrimaryOpacity008,
+    Color? stateLayersPrimaryOpacity012,
+    Color? stateLayersPrimaryOpacity016,
+    Color? stateLayersScrimOpacity008,
+    Color? stateLayersScrimOpacity012,
+    Color? stateLayersScrimOpacity016,
+    Color? stateLayersSecondaryContainerOpacity008,
+    Color? stateLayersSecondaryContainerOpacity012,
+    Color? stateLayersSecondaryContainerOpacity016,
+    Color? stateLayersSecondaryFixedDimOpacity008,
+    Color? stateLayersSecondaryFixedDimOpacity012,
+    Color? stateLayersSecondaryFixedDimOpacity016,
+    Color? stateLayersSecondaryFixedOpacity008,
+    Color? stateLayersSecondaryFixedOpacity012,
+    Color? stateLayersSecondaryFixedOpacity016,
+    Color? stateLayersSecondaryOpacity008,
+    Color? stateLayersSecondaryOpacity012,
+    Color? stateLayersSecondaryOpacity016,
+    Color? stateLayersShadowOpacity008,
+    Color? stateLayersShadowOpacity012,
+    Color? stateLayersShadowOpacity016,
+    Color? stateLayersSuccessContainerOpacity008,
+    Color? stateLayersSuccessContainerOpacity012,
+    Color? stateLayersSuccessContainerOpacity016,
+    Color? stateLayersSuccessOpacity008,
+    Color? stateLayersSuccessOpacity012,
+    Color? stateLayersSuccessOpacity016,
+    Color? stateLayersSurfaceBrightOpacity008,
+    Color? stateLayersSurfaceBrightOpacity012,
+    Color? stateLayersSurfaceBrightOpacity016,
+    Color? stateLayersSurfaceContainerHighOpacity008,
+    Color? stateLayersSurfaceContainerHighOpacity012,
+    Color? stateLayersSurfaceContainerHighOpacity016,
+    Color? stateLayersSurfaceContainerHighestOpacity008,
+    Color? stateLayersSurfaceContainerHighestOpacity012,
+    Color? stateLayersSurfaceContainerHighestOpacity016,
+    Color? stateLayersSurfaceContainerLowOpacity008,
+    Color? stateLayersSurfaceContainerLowOpacity012,
+    Color? stateLayersSurfaceContainerLowOpacity016,
+    Color? stateLayersSurfaceContainerLowestOpacity008,
+    Color? stateLayersSurfaceContainerLowestOpacity012,
+    Color? stateLayersSurfaceContainerLowestOpacity016,
+    Color? stateLayersSurfaceContainerOpacity008,
+    Color? stateLayersSurfaceContainerOpacity012,
+    Color? stateLayersSurfaceContainerOpacity016,
+    Color? stateLayersSurfaceDimOpacity008,
+    Color? stateLayersSurfaceDimOpacity012,
+    Color? stateLayersSurfaceDimOpacity016,
+    Color? stateLayersSurfaceOpacity008,
+    Color? stateLayersSurfaceOpacity012,
+    Color? stateLayersSurfaceOpacity016,
+    Color? stateLayersTertiaryContainerOpacity008,
+    Color? stateLayersTertiaryContainerOpacity012,
+    Color? stateLayersTertiaryContainerOpacity016,
+    Color? stateLayersTertiaryFixedDimOpacity008,
+    Color? stateLayersTertiaryFixedDimOpacity012,
+    Color? stateLayersTertiaryFixedDimOpacity016,
+    Color? stateLayersTertiaryFixedOpacity008,
+    Color? stateLayersTertiaryFixedOpacity012,
+    Color? stateLayersTertiaryFixedOpacity016,
+    Color? stateLayersTertiaryOpacity008,
+    Color? stateLayersTertiaryOpacity012,
+    Color? stateLayersTertiaryOpacity016,
+    Color? stateLayersWarnContainerOpacity008,
+    Color? stateLayersWarnContainerOpacity012,
+    Color? stateLayersWarnContainerOpacity016,
+    Color? stateLayersWarnOpacity008,
+    Color? stateLayersWarnOpacity012,
+    Color? stateLayersWarnOpacity016,
     Color? sysError,
     Color? sysErrorContainer,
     Color? sysInverseOnSurface,
@@ -1148,6 +1202,7 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
     Color? sysShadow,
     Color? sysSuccess,
     Color? sysSuccessContainer,
+    Color? sysSurfaceTinted,
     Color? sysSurface,
     Color? sysSurfaceBright,
     Color? sysSurfaceContainer,
@@ -1162,6 +1217,32 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
     Color? sysTertiaryFixedDim,
     Color? sysWarn,
     Color? sysWarnContainer,
+    Color? aqua,
+    Color? black,
+    Color? blue,
+    Color? cyan,
+    Color? grape,
+    Color? green,
+    Color? lime,
+    Color? magenta,
+    Color? orange,
+    Color? pink,
+    Color? purple,
+    Color? red,
+    Color? white,
+    Color? yellow,
+    Color? onRed,
+    Color? onOrange,
+    Color? onYellow,
+    Color? onLime,
+    Color? onGreen,
+    Color? onAqua,
+    Color? onCyan,
+    Color? onBlue,
+    Color? onPurple,
+    Color? onGrape,
+    Color? onPink,
+    Color? onMagenta,
   }) {
     return ColorsThemeExtension(
       hyperlinkActive: hyperlinkActive ?? this.hyperlinkActive,
@@ -1169,601 +1250,601 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
       hyperlinkHovered: hyperlinkHovered ?? this.hyperlinkHovered,
       hyperlinkNormal: hyperlinkNormal ?? this.hyperlinkNormal,
       hyperlinkVisited: hyperlinkVisited ?? this.hyperlinkVisited,
-      referrore0: referrore0 ?? this.referrore0,
-      referrore10: referrore10 ?? this.referrore10,
-      referrore100: referrore100 ?? this.referrore100,
-      referrore15: referrore15 ?? this.referrore15,
-      referrore2: referrore2 ?? this.referrore2,
-      referrore20: referrore20 ?? this.referrore20,
-      referrore30: referrore30 ?? this.referrore30,
-      referrore4: referrore4 ?? this.referrore4,
-      referrore40: referrore40 ?? this.referrore40,
-      referrore50: referrore50 ?? this.referrore50,
-      referrore6: referrore6 ?? this.referrore6,
-      referrore60: referrore60 ?? this.referrore60,
-      referrore70: referrore70 ?? this.referrore70,
-      referrore8: referrore8 ?? this.referrore8,
-      referrore80: referrore80 ?? this.referrore80,
-      referrore85: referrore85 ?? this.referrore85,
-      referrore90: referrore90 ?? this.referrore90,
-      referrore93: referrore93 ?? this.referrore93,
-      referrore95: referrore95 ?? this.referrore95,
-      referrore98: referrore98 ?? this.referrore98,
-      referrore99: referrore99 ?? this.referrore99,
-      refneutraln0: refneutraln0 ?? this.refneutraln0,
-      refneutraln10: refneutraln10 ?? this.refneutraln10,
-      refneutraln100: refneutraln100 ?? this.refneutraln100,
-      refneutraln15: refneutraln15 ?? this.refneutraln15,
-      refneutraln2: refneutraln2 ?? this.refneutraln2,
-      refneutraln20: refneutraln20 ?? this.refneutraln20,
-      refneutraln30: refneutraln30 ?? this.refneutraln30,
-      refneutraln4: refneutraln4 ?? this.refneutraln4,
-      refneutraln40: refneutraln40 ?? this.refneutraln40,
-      refneutraln50: refneutraln50 ?? this.refneutraln50,
-      refneutraln6: refneutraln6 ?? this.refneutraln6,
-      refneutraln60: refneutraln60 ?? this.refneutraln60,
-      refneutraln70: refneutraln70 ?? this.refneutraln70,
-      refneutraln8: refneutraln8 ?? this.refneutraln8,
-      refneutraln80: refneutraln80 ?? this.refneutraln80,
-      refneutraln85: refneutraln85 ?? this.refneutraln85,
-      refneutraln90: refneutraln90 ?? this.refneutraln90,
-      refneutraln93: refneutraln93 ?? this.refneutraln93,
-      refneutraln95: refneutraln95 ?? this.refneutraln95,
-      refneutraln98: refneutraln98 ?? this.refneutraln98,
-      refneutraln99: refneutraln99 ?? this.refneutraln99,
-      refneutralvariantnv0: refneutralvariantnv0 ?? this.refneutralvariantnv0,
-      refneutralvariantnv10:
-          refneutralvariantnv10 ?? this.refneutralvariantnv10,
-      refneutralvariantnv100:
-          refneutralvariantnv100 ?? this.refneutralvariantnv100,
-      refneutralvariantnv15:
-          refneutralvariantnv15 ?? this.refneutralvariantnv15,
-      refneutralvariantnv2: refneutralvariantnv2 ?? this.refneutralvariantnv2,
-      refneutralvariantnv20:
-          refneutralvariantnv20 ?? this.refneutralvariantnv20,
-      refneutralvariantnv30:
-          refneutralvariantnv30 ?? this.refneutralvariantnv30,
-      refneutralvariantnv4: refneutralvariantnv4 ?? this.refneutralvariantnv4,
-      refneutralvariantnv40:
-          refneutralvariantnv40 ?? this.refneutralvariantnv40,
-      refneutralvariantnv50:
-          refneutralvariantnv50 ?? this.refneutralvariantnv50,
-      refneutralvariantnv6: refneutralvariantnv6 ?? this.refneutralvariantnv6,
-      refneutralvariantnv60:
-          refneutralvariantnv60 ?? this.refneutralvariantnv60,
-      refneutralvariantnv70:
-          refneutralvariantnv70 ?? this.refneutralvariantnv70,
-      refneutralvariantnv8: refneutralvariantnv8 ?? this.refneutralvariantnv8,
-      refneutralvariantnv80:
-          refneutralvariantnv80 ?? this.refneutralvariantnv80,
-      refneutralvariantnv85:
-          refneutralvariantnv85 ?? this.refneutralvariantnv85,
-      refneutralvariantnv90:
-          refneutralvariantnv90 ?? this.refneutralvariantnv90,
-      refneutralvariantnv93:
-          refneutralvariantnv93 ?? this.refneutralvariantnv93,
-      refneutralvariantnv95:
-          refneutralvariantnv95 ?? this.refneutralvariantnv95,
-      refneutralvariantnv98:
-          refneutralvariantnv98 ?? this.refneutralvariantnv98,
-      refneutralvariantnv99:
-          refneutralvariantnv99 ?? this.refneutralvariantnv99,
-      refprimaryp0: refprimaryp0 ?? this.refprimaryp0,
-      refprimaryp10: refprimaryp10 ?? this.refprimaryp10,
-      refprimaryp100: refprimaryp100 ?? this.refprimaryp100,
-      refprimaryp15: refprimaryp15 ?? this.refprimaryp15,
-      refprimaryp2: refprimaryp2 ?? this.refprimaryp2,
-      refprimaryp20: refprimaryp20 ?? this.refprimaryp20,
-      refprimaryp30: refprimaryp30 ?? this.refprimaryp30,
-      refprimaryp4: refprimaryp4 ?? this.refprimaryp4,
-      refprimaryp40: refprimaryp40 ?? this.refprimaryp40,
-      refprimaryp50: refprimaryp50 ?? this.refprimaryp50,
-      refprimaryp6: refprimaryp6 ?? this.refprimaryp6,
-      refprimaryp60: refprimaryp60 ?? this.refprimaryp60,
-      refprimaryp70: refprimaryp70 ?? this.refprimaryp70,
-      refprimaryp8: refprimaryp8 ?? this.refprimaryp8,
-      refprimaryp80: refprimaryp80 ?? this.refprimaryp80,
-      refprimaryp85: refprimaryp85 ?? this.refprimaryp85,
-      refprimaryp90: refprimaryp90 ?? this.refprimaryp90,
-      refprimaryp93: refprimaryp93 ?? this.refprimaryp93,
-      refprimaryp95: refprimaryp95 ?? this.refprimaryp95,
-      refprimaryp98: refprimaryp98 ?? this.refprimaryp98,
-      refprimaryp99: refprimaryp99 ?? this.refprimaryp99,
-      refsecondarys0: refsecondarys0 ?? this.refsecondarys0,
-      refsecondarys10: refsecondarys10 ?? this.refsecondarys10,
-      refsecondarys100: refsecondarys100 ?? this.refsecondarys100,
-      refsecondarys15: refsecondarys15 ?? this.refsecondarys15,
-      refsecondarys2: refsecondarys2 ?? this.refsecondarys2,
-      refsecondarys20: refsecondarys20 ?? this.refsecondarys20,
-      refsecondarys30: refsecondarys30 ?? this.refsecondarys30,
-      refsecondarys4: refsecondarys4 ?? this.refsecondarys4,
-      refsecondarys40: refsecondarys40 ?? this.refsecondarys40,
-      refsecondarys50: refsecondarys50 ?? this.refsecondarys50,
-      refsecondarys6: refsecondarys6 ?? this.refsecondarys6,
-      refsecondarys60: refsecondarys60 ?? this.refsecondarys60,
-      refsecondarys70: refsecondarys70 ?? this.refsecondarys70,
-      refsecondarys8: refsecondarys8 ?? this.refsecondarys8,
-      refsecondarys80: refsecondarys80 ?? this.refsecondarys80,
-      refsecondarys85: refsecondarys85 ?? this.refsecondarys85,
-      refsecondarys90: refsecondarys90 ?? this.refsecondarys90,
-      refsecondarys93: refsecondarys93 ?? this.refsecondarys93,
-      refsecondarys95: refsecondarys95 ?? this.refsecondarys95,
-      refsecondarys98: refsecondarys98 ?? this.refsecondarys98,
-      refsecondarys99: refsecondarys99 ?? this.refsecondarys99,
-      refsuccessu0: refsuccessu0 ?? this.refsuccessu0,
-      refsuccessu10: refsuccessu10 ?? this.refsuccessu10,
-      refsuccessu100: refsuccessu100 ?? this.refsuccessu100,
-      refsuccessu15: refsuccessu15 ?? this.refsuccessu15,
-      refsuccessu2: refsuccessu2 ?? this.refsuccessu2,
-      refsuccessu20: refsuccessu20 ?? this.refsuccessu20,
-      refsuccessu30: refsuccessu30 ?? this.refsuccessu30,
-      refsuccessu4: refsuccessu4 ?? this.refsuccessu4,
-      refsuccessu40: refsuccessu40 ?? this.refsuccessu40,
-      refsuccessu50: refsuccessu50 ?? this.refsuccessu50,
-      refsuccessu6: refsuccessu6 ?? this.refsuccessu6,
-      refsuccessu60: refsuccessu60 ?? this.refsuccessu60,
-      refsuccessu70: refsuccessu70 ?? this.refsuccessu70,
-      refsuccessu8: refsuccessu8 ?? this.refsuccessu8,
-      refsuccessu80: refsuccessu80 ?? this.refsuccessu80,
-      refsuccessu85: refsuccessu85 ?? this.refsuccessu85,
-      refsuccessu90: refsuccessu90 ?? this.refsuccessu90,
-      refsuccessu93: refsuccessu93 ?? this.refsuccessu93,
-      refsuccessu95: refsuccessu95 ?? this.refsuccessu95,
-      refsuccessu98: refsuccessu98 ?? this.refsuccessu98,
-      refsuccessu99: refsuccessu99 ?? this.refsuccessu99,
-      reftertiaryt0: reftertiaryt0 ?? this.reftertiaryt0,
-      reftertiaryt10: reftertiaryt10 ?? this.reftertiaryt10,
-      reftertiaryt100: reftertiaryt100 ?? this.reftertiaryt100,
-      reftertiaryt15: reftertiaryt15 ?? this.reftertiaryt15,
-      reftertiaryt2: reftertiaryt2 ?? this.reftertiaryt2,
-      reftertiaryt20: reftertiaryt20 ?? this.reftertiaryt20,
-      reftertiaryt30: reftertiaryt30 ?? this.reftertiaryt30,
-      reftertiaryt4: reftertiaryt4 ?? this.reftertiaryt4,
-      reftertiaryt40: reftertiaryt40 ?? this.reftertiaryt40,
-      reftertiaryt50: reftertiaryt50 ?? this.reftertiaryt50,
-      reftertiaryt6: reftertiaryt6 ?? this.reftertiaryt6,
-      reftertiaryt60: reftertiaryt60 ?? this.reftertiaryt60,
-      reftertiaryt70: reftertiaryt70 ?? this.reftertiaryt70,
-      reftertiaryt8: reftertiaryt8 ?? this.reftertiaryt8,
-      reftertiaryt80: reftertiaryt80 ?? this.reftertiaryt80,
-      reftertiaryt85: reftertiaryt85 ?? this.reftertiaryt85,
-      reftertiaryt90: reftertiaryt90 ?? this.reftertiaryt90,
-      reftertiaryt93: reftertiaryt93 ?? this.reftertiaryt93,
-      reftertiaryt95: reftertiaryt95 ?? this.reftertiaryt95,
-      reftertiaryt98: reftertiaryt98 ?? this.reftertiaryt98,
-      reftertiaryt99: reftertiaryt99 ?? this.reftertiaryt99,
-      refwarnw0: refwarnw0 ?? this.refwarnw0,
-      refwarnw10: refwarnw10 ?? this.refwarnw10,
-      refwarnw100: refwarnw100 ?? this.refwarnw100,
-      refwarnw15: refwarnw15 ?? this.refwarnw15,
-      refwarnw2: refwarnw2 ?? this.refwarnw2,
-      refwarnw20: refwarnw20 ?? this.refwarnw20,
-      refwarnw30: refwarnw30 ?? this.refwarnw30,
-      refwarnw4: refwarnw4 ?? this.refwarnw4,
-      refwarnw40: refwarnw40 ?? this.refwarnw40,
-      refwarnw50: refwarnw50 ?? this.refwarnw50,
-      refwarnw6: refwarnw6 ?? this.refwarnw6,
-      refwarnw60: refwarnw60 ?? this.refwarnw60,
-      refwarnw70: refwarnw70 ?? this.refwarnw70,
-      refwarnw8: refwarnw8 ?? this.refwarnw8,
-      refwarnw80: refwarnw80 ?? this.refwarnw80,
-      refwarnw85: refwarnw85 ?? this.refwarnw85,
-      refwarnw90: refwarnw90 ?? this.refwarnw90,
-      refwarnw93: refwarnw93 ?? this.refwarnw93,
-      refwarnw95: refwarnw95 ?? this.refwarnw95,
-      refwarnw98: refwarnw98 ?? this.refwarnw98,
-      refwarnw99: refwarnw99 ?? this.refwarnw99,
-      statelayerserrorcontaineropacity008:
-          statelayerserrorcontaineropacity008 ??
-              this.statelayerserrorcontaineropacity008,
-      statelayerserrorcontaineropacity012:
-          statelayerserrorcontaineropacity012 ??
-              this.statelayerserrorcontaineropacity012,
-      statelayerserrorcontaineropacity016:
-          statelayerserrorcontaineropacity016 ??
-              this.statelayerserrorcontaineropacity016,
-      statelayerserroropacity008:
-          statelayerserroropacity008 ?? this.statelayerserroropacity008,
-      statelayerserroropacity012:
-          statelayerserroropacity012 ?? this.statelayerserroropacity012,
-      statelayerserroropacity016:
-          statelayerserroropacity016 ?? this.statelayerserroropacity016,
-      statelayersinverseonsurfaceopacity008:
-          statelayersinverseonsurfaceopacity008 ??
-              this.statelayersinverseonsurfaceopacity008,
-      statelayersinverseonsurfaceopacity012:
-          statelayersinverseonsurfaceopacity012 ??
-              this.statelayersinverseonsurfaceopacity012,
-      statelayersinverseonsurfaceopacity016:
-          statelayersinverseonsurfaceopacity016 ??
-              this.statelayersinverseonsurfaceopacity016,
-      statelayersinverseprimaryopacity008:
-          statelayersinverseprimaryopacity008 ??
-              this.statelayersinverseprimaryopacity008,
-      statelayersinverseprimaryopacity012:
-          statelayersinverseprimaryopacity012 ??
-              this.statelayersinverseprimaryopacity012,
-      statelayersinverseprimaryopacity016:
-          statelayersinverseprimaryopacity016 ??
-              this.statelayersinverseprimaryopacity016,
-      statelayersinversesurfaceopacity008:
-          statelayersinversesurfaceopacity008 ??
-              this.statelayersinversesurfaceopacity008,
-      statelayersinversesurfaceopacity012:
-          statelayersinversesurfaceopacity012 ??
-              this.statelayersinversesurfaceopacity012,
-      statelayersinversesurfaceopacity016:
-          statelayersinversesurfaceopacity016 ??
-              this.statelayersinversesurfaceopacity016,
-      statelayersonerrorcontaineropacity008:
-          statelayersonerrorcontaineropacity008 ??
-              this.statelayersonerrorcontaineropacity008,
-      statelayersonerrorcontaineropacity012:
-          statelayersonerrorcontaineropacity012 ??
-              this.statelayersonerrorcontaineropacity012,
-      statelayersonerrorcontaineropacity016:
-          statelayersonerrorcontaineropacity016 ??
-              this.statelayersonerrorcontaineropacity016,
-      statelayersonerroropacity008:
-          statelayersonerroropacity008 ?? this.statelayersonerroropacity008,
-      statelayersonerroropacity012:
-          statelayersonerroropacity012 ?? this.statelayersonerroropacity012,
-      statelayersonerroropacity016:
-          statelayersonerroropacity016 ?? this.statelayersonerroropacity016,
-      statelayersonprimarycontaineropacity008:
-          statelayersonprimarycontaineropacity008 ??
-              this.statelayersonprimarycontaineropacity008,
-      statelayersonprimarycontaineropacity012:
-          statelayersonprimarycontaineropacity012 ??
-              this.statelayersonprimarycontaineropacity012,
-      statelayersonprimarycontaineropacity016:
-          statelayersonprimarycontaineropacity016 ??
-              this.statelayersonprimarycontaineropacity016,
-      statelayersonprimaryfixedopacity008:
-          statelayersonprimaryfixedopacity008 ??
-              this.statelayersonprimaryfixedopacity008,
-      statelayersonprimaryfixedopacity012:
-          statelayersonprimaryfixedopacity012 ??
-              this.statelayersonprimaryfixedopacity012,
-      statelayersonprimaryfixedopacity016:
-          statelayersonprimaryfixedopacity016 ??
-              this.statelayersonprimaryfixedopacity016,
-      statelayersonprimaryfixedvariantopacity008:
-          statelayersonprimaryfixedvariantopacity008 ??
-              this.statelayersonprimaryfixedvariantopacity008,
-      statelayersonprimaryfixedvariantopacity012:
-          statelayersonprimaryfixedvariantopacity012 ??
-              this.statelayersonprimaryfixedvariantopacity012,
-      statelayersonprimaryfixedvariantopacity016:
-          statelayersonprimaryfixedvariantopacity016 ??
-              this.statelayersonprimaryfixedvariantopacity016,
-      statelayersonprimaryopacity008:
-          statelayersonprimaryopacity008 ?? this.statelayersonprimaryopacity008,
-      statelayersonprimaryopacity012:
-          statelayersonprimaryopacity012 ?? this.statelayersonprimaryopacity012,
-      statelayersonprimaryopacity016:
-          statelayersonprimaryopacity016 ?? this.statelayersonprimaryopacity016,
-      statelayersonsecondarycontaineropacity008:
-          statelayersonsecondarycontaineropacity008 ??
-              this.statelayersonsecondarycontaineropacity008,
-      statelayersonsecondarycontaineropacity012:
-          statelayersonsecondarycontaineropacity012 ??
-              this.statelayersonsecondarycontaineropacity012,
-      statelayersonsecondarycontaineropacity016:
-          statelayersonsecondarycontaineropacity016 ??
-              this.statelayersonsecondarycontaineropacity016,
-      statelayersonsecondaryfixedopacity008:
-          statelayersonsecondaryfixedopacity008 ??
-              this.statelayersonsecondaryfixedopacity008,
-      statelayersonsecondaryfixedopacity012:
-          statelayersonsecondaryfixedopacity012 ??
-              this.statelayersonsecondaryfixedopacity012,
-      statelayersonsecondaryfixedopacity016:
-          statelayersonsecondaryfixedopacity016 ??
-              this.statelayersonsecondaryfixedopacity016,
-      statelayersonsecondaryfixedvariantopacity008:
-          statelayersonsecondaryfixedvariantopacity008 ??
-              this.statelayersonsecondaryfixedvariantopacity008,
-      statelayersonsecondaryfixedvariantopacity012:
-          statelayersonsecondaryfixedvariantopacity012 ??
-              this.statelayersonsecondaryfixedvariantopacity012,
-      statelayersonsecondaryfixedvariantopacity016:
-          statelayersonsecondaryfixedvariantopacity016 ??
-              this.statelayersonsecondaryfixedvariantopacity016,
-      statelayersonsecondaryopacity008: statelayersonsecondaryopacity008 ??
-          this.statelayersonsecondaryopacity008,
-      statelayersonsecondaryopacity012: statelayersonsecondaryopacity012 ??
-          this.statelayersonsecondaryopacity012,
-      statelayersonsecondaryopacity016: statelayersonsecondaryopacity016 ??
-          this.statelayersonsecondaryopacity016,
-      statelayersonsuccesscontaineropacity008:
-          statelayersonsuccesscontaineropacity008 ??
-              this.statelayersonsuccesscontaineropacity008,
-      statelayersonsuccesscontaineropacity012:
-          statelayersonsuccesscontaineropacity012 ??
-              this.statelayersonsuccesscontaineropacity012,
-      statelayersonsuccesscontaineropacity016:
-          statelayersonsuccesscontaineropacity016 ??
-              this.statelayersonsuccesscontaineropacity016,
-      statelayersonsuccessopacity008:
-          statelayersonsuccessopacity008 ?? this.statelayersonsuccessopacity008,
-      statelayersonsuccessopacity012:
-          statelayersonsuccessopacity012 ?? this.statelayersonsuccessopacity012,
-      statelayersonsuccessopacity016:
-          statelayersonsuccessopacity016 ?? this.statelayersonsuccessopacity016,
-      statelayersonsurfaceopacity008:
-          statelayersonsurfaceopacity008 ?? this.statelayersonsurfaceopacity008,
-      statelayersonsurfaceopacity012:
-          statelayersonsurfaceopacity012 ?? this.statelayersonsurfaceopacity012,
-      statelayersonsurfaceopacity016:
-          statelayersonsurfaceopacity016 ?? this.statelayersonsurfaceopacity016,
-      statelayersonsurfacevariantopacity008:
-          statelayersonsurfacevariantopacity008 ??
-              this.statelayersonsurfacevariantopacity008,
-      statelayersonsurfacevariantopacity012:
-          statelayersonsurfacevariantopacity012 ??
-              this.statelayersonsurfacevariantopacity012,
-      statelayersonsurfacevariantopacity016:
-          statelayersonsurfacevariantopacity016 ??
-              this.statelayersonsurfacevariantopacity016,
-      statelayersontertiarycontaineropacity008:
-          statelayersontertiarycontaineropacity008 ??
-              this.statelayersontertiarycontaineropacity008,
-      statelayersontertiarycontaineropacity012:
-          statelayersontertiarycontaineropacity012 ??
-              this.statelayersontertiarycontaineropacity012,
-      statelayersontertiarycontaineropacity016:
-          statelayersontertiarycontaineropacity016 ??
-              this.statelayersontertiarycontaineropacity016,
-      statelayersontertiaryfixedopacity008:
-          statelayersontertiaryfixedopacity008 ??
-              this.statelayersontertiaryfixedopacity008,
-      statelayersontertiaryfixedopacity012:
-          statelayersontertiaryfixedopacity012 ??
-              this.statelayersontertiaryfixedopacity012,
-      statelayersontertiaryfixedopacity016:
-          statelayersontertiaryfixedopacity016 ??
-              this.statelayersontertiaryfixedopacity016,
-      statelayersontertiaryfixedvariantopacity008:
-          statelayersontertiaryfixedvariantopacity008 ??
-              this.statelayersontertiaryfixedvariantopacity008,
-      statelayersontertiaryfixedvariantopacity012:
-          statelayersontertiaryfixedvariantopacity012 ??
-              this.statelayersontertiaryfixedvariantopacity012,
-      statelayersontertiaryfixedvariantopacity016:
-          statelayersontertiaryfixedvariantopacity016 ??
-              this.statelayersontertiaryfixedvariantopacity016,
-      statelayersontertiaryopacity008: statelayersontertiaryopacity008 ??
-          this.statelayersontertiaryopacity008,
-      statelayersontertiaryopacity012: statelayersontertiaryopacity012 ??
-          this.statelayersontertiaryopacity012,
-      statelayersontertiaryopacity016: statelayersontertiaryopacity016 ??
-          this.statelayersontertiaryopacity016,
-      statelayersonwarncontaineropacity008:
-          statelayersonwarncontaineropacity008 ??
-              this.statelayersonwarncontaineropacity008,
-      statelayersonwarncontaineropacity012:
-          statelayersonwarncontaineropacity012 ??
-              this.statelayersonwarncontaineropacity012,
-      statelayersonwarncontaineropacity016:
-          statelayersonwarncontaineropacity016 ??
-              this.statelayersonwarncontaineropacity016,
-      statelayersonwarnopacity008:
-          statelayersonwarnopacity008 ?? this.statelayersonwarnopacity008,
-      statelayersonwarnopacity012:
-          statelayersonwarnopacity012 ?? this.statelayersonwarnopacity012,
-      statelayersonwarnopacity016:
-          statelayersonwarnopacity016 ?? this.statelayersonwarnopacity016,
-      statelayersoutlineopacity008:
-          statelayersoutlineopacity008 ?? this.statelayersoutlineopacity008,
-      statelayersoutlineopacity012:
-          statelayersoutlineopacity012 ?? this.statelayersoutlineopacity012,
-      statelayersoutlineopacity016:
-          statelayersoutlineopacity016 ?? this.statelayersoutlineopacity016,
-      statelayersoutlinevariantopacity008:
-          statelayersoutlinevariantopacity008 ??
-              this.statelayersoutlinevariantopacity008,
-      statelayersoutlinevariantopacity012:
-          statelayersoutlinevariantopacity012 ??
-              this.statelayersoutlinevariantopacity012,
-      statelayersoutlinevariantopacity016:
-          statelayersoutlinevariantopacity016 ??
-              this.statelayersoutlinevariantopacity016,
-      statelayersprimarycontaineropacity008:
-          statelayersprimarycontaineropacity008 ??
-              this.statelayersprimarycontaineropacity008,
-      statelayersprimarycontaineropacity012:
-          statelayersprimarycontaineropacity012 ??
-              this.statelayersprimarycontaineropacity012,
-      statelayersprimarycontaineropacity016:
-          statelayersprimarycontaineropacity016 ??
-              this.statelayersprimarycontaineropacity016,
-      statelayersprimaryfixeddimopacity008:
-          statelayersprimaryfixeddimopacity008 ??
-              this.statelayersprimaryfixeddimopacity008,
-      statelayersprimaryfixeddimopacity012:
-          statelayersprimaryfixeddimopacity012 ??
-              this.statelayersprimaryfixeddimopacity012,
-      statelayersprimaryfixeddimopacity016:
-          statelayersprimaryfixeddimopacity016 ??
-              this.statelayersprimaryfixeddimopacity016,
-      statelayersprimaryfixedopacity008: statelayersprimaryfixedopacity008 ??
-          this.statelayersprimaryfixedopacity008,
-      statelayersprimaryfixedopacity012: statelayersprimaryfixedopacity012 ??
-          this.statelayersprimaryfixedopacity012,
-      statelayersprimaryfixedopacity016: statelayersprimaryfixedopacity016 ??
-          this.statelayersprimaryfixedopacity016,
-      statelayersprimaryopacity008:
-          statelayersprimaryopacity008 ?? this.statelayersprimaryopacity008,
-      statelayersprimaryopacity012:
-          statelayersprimaryopacity012 ?? this.statelayersprimaryopacity012,
-      statelayersprimaryopacity016:
-          statelayersprimaryopacity016 ?? this.statelayersprimaryopacity016,
-      statelayersscrimopacity008:
-          statelayersscrimopacity008 ?? this.statelayersscrimopacity008,
-      statelayersscrimopacity012:
-          statelayersscrimopacity012 ?? this.statelayersscrimopacity012,
-      statelayersscrimopacity016:
-          statelayersscrimopacity016 ?? this.statelayersscrimopacity016,
-      statelayerssecondarycontaineropacity008:
-          statelayerssecondarycontaineropacity008 ??
-              this.statelayerssecondarycontaineropacity008,
-      statelayerssecondarycontaineropacity012:
-          statelayerssecondarycontaineropacity012 ??
-              this.statelayerssecondarycontaineropacity012,
-      statelayerssecondarycontaineropacity016:
-          statelayerssecondarycontaineropacity016 ??
-              this.statelayerssecondarycontaineropacity016,
-      statelayerssecondaryfixeddimopacity008:
-          statelayerssecondaryfixeddimopacity008 ??
-              this.statelayerssecondaryfixeddimopacity008,
-      statelayerssecondaryfixeddimopacity012:
-          statelayerssecondaryfixeddimopacity012 ??
-              this.statelayerssecondaryfixeddimopacity012,
-      statelayerssecondaryfixeddimopacity016:
-          statelayerssecondaryfixeddimopacity016 ??
-              this.statelayerssecondaryfixeddimopacity016,
-      statelayerssecondaryfixedopacity008:
-          statelayerssecondaryfixedopacity008 ??
-              this.statelayerssecondaryfixedopacity008,
-      statelayerssecondaryfixedopacity012:
-          statelayerssecondaryfixedopacity012 ??
-              this.statelayerssecondaryfixedopacity012,
-      statelayerssecondaryfixedopacity016:
-          statelayerssecondaryfixedopacity016 ??
-              this.statelayerssecondaryfixedopacity016,
-      statelayerssecondaryopacity008:
-          statelayerssecondaryopacity008 ?? this.statelayerssecondaryopacity008,
-      statelayerssecondaryopacity012:
-          statelayerssecondaryopacity012 ?? this.statelayerssecondaryopacity012,
-      statelayerssecondaryopacity016:
-          statelayerssecondaryopacity016 ?? this.statelayerssecondaryopacity016,
-      statelayersshadowopacity008:
-          statelayersshadowopacity008 ?? this.statelayersshadowopacity008,
-      statelayersshadowopacity012:
-          statelayersshadowopacity012 ?? this.statelayersshadowopacity012,
-      statelayersshadowopacity016:
-          statelayersshadowopacity016 ?? this.statelayersshadowopacity016,
-      statelayerssuccesscontaineropacity008:
-          statelayerssuccesscontaineropacity008 ??
-              this.statelayerssuccesscontaineropacity008,
-      statelayerssuccesscontaineropacity012:
-          statelayerssuccesscontaineropacity012 ??
-              this.statelayerssuccesscontaineropacity012,
-      statelayerssuccesscontaineropacity016:
-          statelayerssuccesscontaineropacity016 ??
-              this.statelayerssuccesscontaineropacity016,
-      statelayerssuccessopacity008:
-          statelayerssuccessopacity008 ?? this.statelayerssuccessopacity008,
-      statelayerssuccessopacity012:
-          statelayerssuccessopacity012 ?? this.statelayerssuccessopacity012,
-      statelayerssuccessopacity016:
-          statelayerssuccessopacity016 ?? this.statelayerssuccessopacity016,
-      statelayerssurfacebrightopacity008: statelayerssurfacebrightopacity008 ??
-          this.statelayerssurfacebrightopacity008,
-      statelayerssurfacebrightopacity012: statelayerssurfacebrightopacity012 ??
-          this.statelayerssurfacebrightopacity012,
-      statelayerssurfacebrightopacity016: statelayerssurfacebrightopacity016 ??
-          this.statelayerssurfacebrightopacity016,
-      statelayerssurfacecontainerhighopacity008:
-          statelayerssurfacecontainerhighopacity008 ??
-              this.statelayerssurfacecontainerhighopacity008,
-      statelayerssurfacecontainerhighopacity012:
-          statelayerssurfacecontainerhighopacity012 ??
-              this.statelayerssurfacecontainerhighopacity012,
-      statelayerssurfacecontainerhighopacity016:
-          statelayerssurfacecontainerhighopacity016 ??
-              this.statelayerssurfacecontainerhighopacity016,
-      statelayerssurfacecontainerhighestopacity008:
-          statelayerssurfacecontainerhighestopacity008 ??
-              this.statelayerssurfacecontainerhighestopacity008,
-      statelayerssurfacecontainerhighestopacity012:
-          statelayerssurfacecontainerhighestopacity012 ??
-              this.statelayerssurfacecontainerhighestopacity012,
-      statelayerssurfacecontainerhighestopacity016:
-          statelayerssurfacecontainerhighestopacity016 ??
-              this.statelayerssurfacecontainerhighestopacity016,
-      statelayerssurfacecontainerlowopacity008:
-          statelayerssurfacecontainerlowopacity008 ??
-              this.statelayerssurfacecontainerlowopacity008,
-      statelayerssurfacecontainerlowopacity012:
-          statelayerssurfacecontainerlowopacity012 ??
-              this.statelayerssurfacecontainerlowopacity012,
-      statelayerssurfacecontainerlowopacity016:
-          statelayerssurfacecontainerlowopacity016 ??
-              this.statelayerssurfacecontainerlowopacity016,
-      statelayerssurfacecontainerlowestopacity008:
-          statelayerssurfacecontainerlowestopacity008 ??
-              this.statelayerssurfacecontainerlowestopacity008,
-      statelayerssurfacecontainerlowestopacity012:
-          statelayerssurfacecontainerlowestopacity012 ??
-              this.statelayerssurfacecontainerlowestopacity012,
-      statelayerssurfacecontainerlowestopacity016:
-          statelayerssurfacecontainerlowestopacity016 ??
-              this.statelayerssurfacecontainerlowestopacity016,
-      statelayerssurfacecontaineropacity008:
-          statelayerssurfacecontaineropacity008 ??
-              this.statelayerssurfacecontaineropacity008,
-      statelayerssurfacecontaineropacity012:
-          statelayerssurfacecontaineropacity012 ??
-              this.statelayerssurfacecontaineropacity012,
-      statelayerssurfacecontaineropacity016:
-          statelayerssurfacecontaineropacity016 ??
-              this.statelayerssurfacecontaineropacity016,
-      statelayerssurfacedimopacity008: statelayerssurfacedimopacity008 ??
-          this.statelayerssurfacedimopacity008,
-      statelayerssurfacedimopacity012: statelayerssurfacedimopacity012 ??
-          this.statelayerssurfacedimopacity012,
-      statelayerssurfacedimopacity016: statelayerssurfacedimopacity016 ??
-          this.statelayerssurfacedimopacity016,
-      statelayerssurfaceopacity008:
-          statelayerssurfaceopacity008 ?? this.statelayerssurfaceopacity008,
-      statelayerssurfaceopacity012:
-          statelayerssurfaceopacity012 ?? this.statelayerssurfaceopacity012,
-      statelayerssurfaceopacity016:
-          statelayerssurfaceopacity016 ?? this.statelayerssurfaceopacity016,
-      statelayerstertiarycontaineropacity008:
-          statelayerstertiarycontaineropacity008 ??
-              this.statelayerstertiarycontaineropacity008,
-      statelayerstertiarycontaineropacity012:
-          statelayerstertiarycontaineropacity012 ??
-              this.statelayerstertiarycontaineropacity012,
-      statelayerstertiarycontaineropacity016:
-          statelayerstertiarycontaineropacity016 ??
-              this.statelayerstertiarycontaineropacity016,
-      statelayerstertiaryfixeddimopacity008:
-          statelayerstertiaryfixeddimopacity008 ??
-              this.statelayerstertiaryfixeddimopacity008,
-      statelayerstertiaryfixeddimopacity012:
-          statelayerstertiaryfixeddimopacity012 ??
-              this.statelayerstertiaryfixeddimopacity012,
-      statelayerstertiaryfixeddimopacity016:
-          statelayerstertiaryfixeddimopacity016 ??
-              this.statelayerstertiaryfixeddimopacity016,
-      statelayerstertiaryfixedopacity008: statelayerstertiaryfixedopacity008 ??
-          this.statelayerstertiaryfixedopacity008,
-      statelayerstertiaryfixedopacity012: statelayerstertiaryfixedopacity012 ??
-          this.statelayerstertiaryfixedopacity012,
-      statelayerstertiaryfixedopacity016: statelayerstertiaryfixedopacity016 ??
-          this.statelayerstertiaryfixedopacity016,
-      statelayerstertiaryopacity008:
-          statelayerstertiaryopacity008 ?? this.statelayerstertiaryopacity008,
-      statelayerstertiaryopacity012:
-          statelayerstertiaryopacity012 ?? this.statelayerstertiaryopacity012,
-      statelayerstertiaryopacity016: statelayerstertiaryopacity016 ??
-          this.statelayerssurfacecontaineropacity016,
-      statelayerswarncontaineropacity008: statelayerswarncontaineropacity008 ??
-          this.statelayerswarncontaineropacity008,
-      statelayerswarncontaineropacity012: statelayerswarncontaineropacity012 ??
-          this.statelayerswarncontaineropacity012,
-      statelayerswarncontaineropacity016: statelayerswarncontaineropacity016 ??
-          this.statelayerswarncontaineropacity016,
-      statelayerswarnopacity008:
-          statelayerswarnopacity008 ?? this.statelayerswarnopacity008,
-      statelayerswarnopacity012:
-          statelayerswarnopacity012 ?? this.statelayerswarnopacity012,
-      statelayerswarnopacity016:
-          statelayerswarnopacity016 ?? this.statelayerswarnopacity016,
+      refErrorE0: refErrorE0 ?? this.refErrorE0,
+      refErrorE10: refErrorE10 ?? this.refErrorE10,
+      refErrorE100: refErrorE100 ?? this.refErrorE100,
+      refErrorE15: refErrorE15 ?? this.refErrorE15,
+      refErrorE2: refErrorE2 ?? this.refErrorE2,
+      refErrorE20: refErrorE20 ?? this.refErrorE20,
+      refErrorE30: refErrorE30 ?? this.refErrorE30,
+      refErrorE4: refErrorE4 ?? this.refErrorE4,
+      refErrorE40: refErrorE40 ?? this.refErrorE40,
+      refErrorE50: refErrorE50 ?? this.refErrorE50,
+      refErrorE6: refErrorE6 ?? this.refErrorE6,
+      refErrorE60: refErrorE60 ?? this.refErrorE60,
+      refErrorE70: refErrorE70 ?? this.refErrorE70,
+      refErrorE8: refErrorE8 ?? this.refErrorE8,
+      refErrorE80: refErrorE80 ?? this.refErrorE80,
+      refErrorE85: refErrorE85 ?? this.refErrorE85,
+      refErrorE90: refErrorE90 ?? this.refErrorE90,
+      refErrorE93: refErrorE93 ?? this.refErrorE93,
+      refErrorE95: refErrorE95 ?? this.refErrorE95,
+      refErrorE98: refErrorE98 ?? this.refErrorE98,
+      refErrorE99: refErrorE99 ?? this.refErrorE99,
+      refNeutralN0: refNeutralN0 ?? this.refNeutralN0,
+      refNeutralN10: refNeutralN10 ?? this.refNeutralN10,
+      refNeutralN100: refNeutralN100 ?? this.refNeutralN100,
+      refNeutralN15: refNeutralN15 ?? this.refNeutralN15,
+      refNeutralN2: refNeutralN2 ?? this.refNeutralN2,
+      refNeutralN20: refNeutralN20 ?? this.refNeutralN20,
+      refNeutralN30: refNeutralN30 ?? this.refNeutralN30,
+      refNeutralN4: refNeutralN4 ?? this.refNeutralN4,
+      refNeutralN40: refNeutralN40 ?? this.refNeutralN40,
+      refNeutralN50: refNeutralN50 ?? this.refNeutralN50,
+      refNeutralN6: refNeutralN6 ?? this.refNeutralN6,
+      refNeutralN60: refNeutralN60 ?? this.refNeutralN60,
+      refNeutralN70: refNeutralN70 ?? this.refNeutralN70,
+      refNeutralN8: refNeutralN8 ?? this.refNeutralN8,
+      refNeutralN80: refNeutralN80 ?? this.refNeutralN80,
+      refNeutralN85: refNeutralN85 ?? this.refNeutralN85,
+      refNeutralN90: refNeutralN90 ?? this.refNeutralN90,
+      refNeutralN93: refNeutralN93 ?? this.refNeutralN93,
+      refNeutralN95: refNeutralN95 ?? this.refNeutralN95,
+      refNeutralN98: refNeutralN98 ?? this.refNeutralN98,
+      refNeutralN99: refNeutralN99 ?? this.refNeutralN99,
+      refNeutralVariantNv0: refNeutralVariantNv0 ?? this.refNeutralVariantNv0,
+      refNeutralVariantNv10:
+          refNeutralVariantNv10 ?? this.refNeutralVariantNv10,
+      refNeutralVariantNv100:
+          refNeutralVariantNv100 ?? this.refNeutralVariantNv100,
+      refNeutralVariantNv15:
+          refNeutralVariantNv15 ?? this.refNeutralVariantNv15,
+      refNeutralVariantNv2: refNeutralVariantNv2 ?? this.refNeutralVariantNv2,
+      refNeutralVariantNv20:
+          refNeutralVariantNv20 ?? this.refNeutralVariantNv20,
+      refNeutralVariantNv30:
+          refNeutralVariantNv30 ?? this.refNeutralVariantNv30,
+      refNeutralVariantNv4: refNeutralVariantNv4 ?? this.refNeutralVariantNv4,
+      refNeutralVariantNv40:
+          refNeutralVariantNv40 ?? this.refNeutralVariantNv40,
+      refNeutralVariantNv50:
+          refNeutralVariantNv50 ?? this.refNeutralVariantNv50,
+      refNeutralVariantNv6: refNeutralVariantNv6 ?? this.refNeutralVariantNv6,
+      refNeutralVariantNv60:
+          refNeutralVariantNv60 ?? this.refNeutralVariantNv60,
+      refNeutralVariantNv70:
+          refNeutralVariantNv70 ?? this.refNeutralVariantNv70,
+      refNeutralVariantNv8: refNeutralVariantNv8 ?? this.refNeutralVariantNv8,
+      refNeutralVariantNv80:
+          refNeutralVariantNv80 ?? this.refNeutralVariantNv80,
+      refNeutralVariantNv85:
+          refNeutralVariantNv85 ?? this.refNeutralVariantNv85,
+      refNeutralVariantNv90:
+          refNeutralVariantNv90 ?? this.refNeutralVariantNv90,
+      refNeutralVariantNv93:
+          refNeutralVariantNv93 ?? this.refNeutralVariantNv93,
+      refNeutralVariantNv95:
+          refNeutralVariantNv95 ?? this.refNeutralVariantNv95,
+      refNeutralVariantNv98:
+          refNeutralVariantNv98 ?? this.refNeutralVariantNv98,
+      refNeutralVariantNv99:
+          refNeutralVariantNv99 ?? this.refNeutralVariantNv99,
+      refPrimaryP0: refPrimaryP0 ?? this.refPrimaryP0,
+      refPrimaryP10: refPrimaryP10 ?? this.refPrimaryP10,
+      refPrimaryP100: refPrimaryP100 ?? this.refPrimaryP100,
+      refPrimaryP15: refPrimaryP15 ?? this.refPrimaryP15,
+      refPrimaryP2: refPrimaryP2 ?? this.refPrimaryP2,
+      refPrimaryP20: refPrimaryP20 ?? this.refPrimaryP20,
+      refPrimaryP30: refPrimaryP30 ?? this.refPrimaryP30,
+      refPrimaryP4: refPrimaryP4 ?? this.refPrimaryP4,
+      refPrimaryP40: refPrimaryP40 ?? this.refPrimaryP40,
+      refPrimaryP50: refPrimaryP50 ?? this.refPrimaryP50,
+      refPrimaryP6: refPrimaryP6 ?? this.refPrimaryP6,
+      refPrimaryP60: refPrimaryP60 ?? this.refPrimaryP60,
+      refPrimaryP70: refPrimaryP70 ?? this.refPrimaryP70,
+      refPrimaryP8: refPrimaryP8 ?? this.refPrimaryP8,
+      refPrimaryP80: refPrimaryP80 ?? this.refPrimaryP80,
+      refPrimaryP85: refPrimaryP85 ?? this.refPrimaryP85,
+      refPrimaryP90: refPrimaryP90 ?? this.refPrimaryP90,
+      refPrimaryP93: refPrimaryP93 ?? this.refPrimaryP93,
+      refPrimaryP95: refPrimaryP95 ?? this.refPrimaryP95,
+      refPrimaryP98: refPrimaryP98 ?? this.refPrimaryP98,
+      refPrimaryP99: refPrimaryP99 ?? this.refPrimaryP99,
+      refSecondaryS0: refSecondaryS0 ?? this.refSecondaryS0,
+      refSecondaryS10: refSecondaryS10 ?? this.refSecondaryS10,
+      refSecondaryS100: refSecondaryS100 ?? this.refSecondaryS100,
+      refSecondaryS15: refSecondaryS15 ?? this.refSecondaryS15,
+      refSecondaryS2: refSecondaryS2 ?? this.refSecondaryS2,
+      refSecondaryS20: refSecondaryS20 ?? this.refSecondaryS20,
+      refSecondaryS30: refSecondaryS30 ?? this.refSecondaryS30,
+      refSecondaryS4: refSecondaryS4 ?? this.refSecondaryS4,
+      refSecondaryS40: refSecondaryS40 ?? this.refSecondaryS40,
+      refSecondaryS50: refSecondaryS50 ?? this.refSecondaryS50,
+      refSecondaryS6: refSecondaryS6 ?? this.refSecondaryS6,
+      refSecondaryS60: refSecondaryS60 ?? this.refSecondaryS60,
+      refSecondaryS70: refSecondaryS70 ?? this.refSecondaryS70,
+      refSecondaryS8: refSecondaryS8 ?? this.refSecondaryS8,
+      refSecondaryS80: refSecondaryS80 ?? this.refSecondaryS80,
+      refSecondaryS85: refSecondaryS85 ?? this.refSecondaryS85,
+      refSecondaryS90: refSecondaryS90 ?? this.refSecondaryS90,
+      refSecondaryS93: refSecondaryS93 ?? this.refSecondaryS93,
+      refSecondaryS95: refSecondaryS95 ?? this.refSecondaryS95,
+      refSecondaryS98: refSecondaryS98 ?? this.refSecondaryS98,
+      refSecondaryS99: refSecondaryS99 ?? this.refSecondaryS99,
+      refSuccessU0: refSuccessU0 ?? this.refSuccessU0,
+      refSuccessU10: refSuccessU10 ?? this.refSuccessU10,
+      refSuccessU100: refSuccessU100 ?? this.refSuccessU100,
+      refSuccessU15: refSuccessU15 ?? this.refSuccessU15,
+      refSuccessU2: refSuccessU2 ?? this.refSuccessU2,
+      refSuccessU20: refSuccessU20 ?? this.refSuccessU20,
+      refSuccessU30: refSuccessU30 ?? this.refSuccessU30,
+      refSuccessU4: refSuccessU4 ?? this.refSuccessU4,
+      refSuccessU40: refSuccessU40 ?? this.refSuccessU40,
+      refSuccessU50: refSuccessU50 ?? this.refSuccessU50,
+      refSuccessU6: refSuccessU6 ?? this.refSuccessU6,
+      refSuccessU60: refSuccessU60 ?? this.refSuccessU60,
+      refSuccessU70: refSuccessU70 ?? this.refSuccessU70,
+      refSuccessU8: refSuccessU8 ?? this.refSuccessU8,
+      refSuccessU80: refSuccessU80 ?? this.refSuccessU80,
+      refSuccessU85: refSuccessU85 ?? this.refSuccessU85,
+      refSuccessU90: refSuccessU90 ?? this.refSuccessU90,
+      refSuccessU93: refSuccessU93 ?? this.refSuccessU93,
+      refSuccessU95: refSuccessU95 ?? this.refSuccessU95,
+      refSuccessU98: refSuccessU98 ?? this.refSuccessU98,
+      refSuccessU99: refSuccessU99 ?? this.refSuccessU99,
+      refTertiaryT0: refTertiaryT0 ?? this.refTertiaryT0,
+      refTertiaryT10: refTertiaryT10 ?? this.refTertiaryT10,
+      refTertiaryT100: refTertiaryT100 ?? this.refTertiaryT100,
+      refTertiaryT15: refTertiaryT15 ?? this.refTertiaryT15,
+      refTertiaryT2: refTertiaryT2 ?? this.refTertiaryT2,
+      refTertiaryT20: refTertiaryT20 ?? this.refTertiaryT20,
+      refTertiaryT30: refTertiaryT30 ?? this.refTertiaryT30,
+      refTertiaryT4: refTertiaryT4 ?? this.refTertiaryT4,
+      refTertiaryT40: refTertiaryT40 ?? this.refTertiaryT40,
+      refTertiaryT50: refTertiaryT50 ?? this.refTertiaryT50,
+      refTertiaryT6: refTertiaryT6 ?? this.refTertiaryT6,
+      refTertiaryT60: refTertiaryT60 ?? this.refTertiaryT60,
+      refTertiaryT70: refTertiaryT70 ?? this.refTertiaryT70,
+      refTertiaryT8: refTertiaryT8 ?? this.refTertiaryT8,
+      refTertiaryT80: refTertiaryT80 ?? this.refTertiaryT80,
+      refTertiaryT85: refTertiaryT85 ?? this.refTertiaryT85,
+      refTertiaryT90: refTertiaryT90 ?? this.refTertiaryT90,
+      refTertiaryT93: refTertiaryT93 ?? this.refTertiaryT93,
+      refTertiaryT95: refTertiaryT95 ?? this.refTertiaryT95,
+      refTertiaryT98: refTertiaryT98 ?? this.refTertiaryT98,
+      refTertiaryT99: refTertiaryT99 ?? this.refTertiaryT99,
+      refWarnW0: refWarnW0 ?? this.refWarnW0,
+      refWarnW10: refWarnW10 ?? this.refWarnW10,
+      refWarnW100: refWarnW100 ?? this.refWarnW100,
+      refWarnW15: refWarnW15 ?? this.refWarnW15,
+      refWarnW2: refWarnW2 ?? this.refWarnW2,
+      refWarnW20: refWarnW20 ?? this.refWarnW20,
+      refWarnW30: refWarnW30 ?? this.refWarnW30,
+      refWarnW4: refWarnW4 ?? this.refWarnW4,
+      refWarnW40: refWarnW40 ?? this.refWarnW40,
+      refWarnW50: refWarnW50 ?? this.refWarnW50,
+      refWarnW6: refWarnW6 ?? this.refWarnW6,
+      refWarnW60: refWarnW60 ?? this.refWarnW60,
+      refWarnW70: refWarnW70 ?? this.refWarnW70,
+      refWarnW8: refWarnW8 ?? this.refWarnW8,
+      refWarnW80: refWarnW80 ?? this.refWarnW80,
+      refWarnW85: refWarnW85 ?? this.refWarnW85,
+      refWarnW90: refWarnW90 ?? this.refWarnW90,
+      refWarnW93: refWarnW93 ?? this.refWarnW93,
+      refWarnW95: refWarnW95 ?? this.refWarnW95,
+      refWarnW98: refWarnW98 ?? this.refWarnW98,
+      refWarnW99: refWarnW99 ?? this.refWarnW99,
+      stateLayersErrorContainerOpacity008:
+          stateLayersErrorContainerOpacity008 ??
+              this.stateLayersErrorContainerOpacity008,
+      stateLayersErrorContainerOpacity012:
+          stateLayersErrorContainerOpacity012 ??
+              this.stateLayersErrorContainerOpacity012,
+      stateLayersErrorContainerOpacity016:
+          stateLayersErrorContainerOpacity016 ??
+              this.stateLayersErrorContainerOpacity016,
+      stateLayersErrorOpacity008:
+          stateLayersErrorOpacity008 ?? this.stateLayersErrorOpacity008,
+      stateLayersErrorOpacity012:
+          stateLayersErrorOpacity012 ?? this.stateLayersErrorOpacity012,
+      stateLayersErrorOpacity016:
+          stateLayersErrorOpacity016 ?? this.stateLayersErrorOpacity016,
+      stateLayersInverseOnSurfaceOpacity008:
+          stateLayersInverseOnSurfaceOpacity008 ??
+              this.stateLayersInverseOnSurfaceOpacity008,
+      stateLayersInverseOnSurfaceOpacity012:
+          stateLayersInverseOnSurfaceOpacity012 ??
+              this.stateLayersInverseOnSurfaceOpacity012,
+      stateLayersInverseOnSurfaceOpacity016:
+          stateLayersInverseOnSurfaceOpacity016 ??
+              this.stateLayersInverseOnSurfaceOpacity016,
+      stateLayersInversePrimaryOpacity008:
+          stateLayersInversePrimaryOpacity008 ??
+              this.stateLayersInversePrimaryOpacity008,
+      stateLayersInversePrimaryOpacity012:
+          stateLayersInversePrimaryOpacity012 ??
+              this.stateLayersInversePrimaryOpacity012,
+      stateLayersInversePrimaryOpacity016:
+          stateLayersInversePrimaryOpacity016 ??
+              this.stateLayersInversePrimaryOpacity016,
+      stateLayersInverseSurfaceOpacity008:
+          stateLayersInverseSurfaceOpacity008 ??
+              this.stateLayersInverseSurfaceOpacity008,
+      stateLayersInverseSurfaceOpacity012:
+          stateLayersInverseSurfaceOpacity012 ??
+              this.stateLayersInverseSurfaceOpacity012,
+      stateLayersInverseSurfaceOpacity016:
+          stateLayersInverseSurfaceOpacity016 ??
+              this.stateLayersInverseSurfaceOpacity016,
+      stateLayersOnErrorContainerOpacity008:
+          stateLayersOnErrorContainerOpacity008 ??
+              this.stateLayersOnErrorContainerOpacity008,
+      stateLayersOnErrorContainerOpacity012:
+          stateLayersOnErrorContainerOpacity012 ??
+              this.stateLayersOnErrorContainerOpacity012,
+      stateLayersOnErrorContainerOpacity016:
+          stateLayersOnErrorContainerOpacity016 ??
+              this.stateLayersOnErrorContainerOpacity016,
+      stateLayersOnErrorOpacity008:
+          stateLayersOnErrorOpacity008 ?? this.stateLayersOnErrorOpacity008,
+      stateLayersOnErrorOpacity012:
+          stateLayersOnErrorOpacity012 ?? this.stateLayersOnErrorOpacity012,
+      stateLayersOnErrorOpacity016:
+          stateLayersOnErrorOpacity016 ?? this.stateLayersOnErrorOpacity016,
+      stateLayersOnPrimaryContainerOpacity008:
+          stateLayersOnPrimaryContainerOpacity008 ??
+              this.stateLayersOnPrimaryContainerOpacity008,
+      stateLayersOnPrimaryContainerOpacity012:
+          stateLayersOnPrimaryContainerOpacity012 ??
+              this.stateLayersOnPrimaryContainerOpacity012,
+      stateLayersOnPrimaryContainerOpacity016:
+          stateLayersOnPrimaryContainerOpacity016 ??
+              this.stateLayersOnPrimaryContainerOpacity016,
+      stateLayersOnPrimaryFixedOpacity008:
+          stateLayersOnPrimaryFixedOpacity008 ??
+              this.stateLayersOnPrimaryFixedOpacity008,
+      stateLayersOnPrimaryFixedOpacity012:
+          stateLayersOnPrimaryFixedOpacity012 ??
+              this.stateLayersOnPrimaryFixedOpacity012,
+      stateLayersOnPrimaryFixedOpacity016:
+          stateLayersOnPrimaryFixedOpacity016 ??
+              this.stateLayersOnPrimaryFixedOpacity016,
+      stateLayersOnPrimaryFixedVariantOpacity008:
+          stateLayersOnPrimaryFixedVariantOpacity008 ??
+              this.stateLayersOnPrimaryFixedVariantOpacity008,
+      stateLayersOnPrimaryFixedVariantOpacity012:
+          stateLayersOnPrimaryFixedVariantOpacity012 ??
+              this.stateLayersOnPrimaryFixedVariantOpacity012,
+      stateLayersOnPrimaryFixedVariantOpacity016:
+          stateLayersOnPrimaryFixedVariantOpacity016 ??
+              this.stateLayersOnPrimaryFixedVariantOpacity016,
+      stateLayersOnPrimaryOpacity008:
+          stateLayersOnPrimaryOpacity008 ?? this.stateLayersOnPrimaryOpacity008,
+      stateLayersOnPrimaryOpacity012:
+          stateLayersOnPrimaryOpacity012 ?? this.stateLayersOnPrimaryOpacity012,
+      stateLayersOnPrimaryOpacity016:
+          stateLayersOnPrimaryOpacity016 ?? this.stateLayersOnPrimaryOpacity016,
+      stateLayersOnSecondaryContainerOpacity008:
+          stateLayersOnSecondaryContainerOpacity008 ??
+              this.stateLayersOnSecondaryContainerOpacity008,
+      stateLayersOnSecondaryContainerOpacity012:
+          stateLayersOnSecondaryContainerOpacity012 ??
+              this.stateLayersOnSecondaryContainerOpacity012,
+      stateLayersOnSecondaryContainerOpacity016:
+          stateLayersOnSecondaryContainerOpacity016 ??
+              this.stateLayersOnSecondaryContainerOpacity016,
+      stateLayersOnSecondaryFixedOpacity008:
+          stateLayersOnSecondaryFixedOpacity008 ??
+              this.stateLayersOnSecondaryFixedOpacity008,
+      stateLayersOnSecondaryFixedOpacity012:
+          stateLayersOnSecondaryFixedOpacity012 ??
+              this.stateLayersOnSecondaryFixedOpacity012,
+      stateLayersOnSecondaryFixedOpacity016:
+          stateLayersOnSecondaryFixedOpacity016 ??
+              this.stateLayersOnSecondaryFixedOpacity016,
+      stateLayersOnSecondaryFixedVariantOpacity008:
+          stateLayersOnSecondaryFixedVariantOpacity008 ??
+              this.stateLayersOnSecondaryFixedVariantOpacity008,
+      stateLayersOnSecondaryFixedVariantOpacity012:
+          stateLayersOnSecondaryFixedVariantOpacity012 ??
+              this.stateLayersOnSecondaryFixedVariantOpacity012,
+      stateLayersOnSecondaryFixedVariantOpacity016:
+          stateLayersOnSecondaryFixedVariantOpacity016 ??
+              this.stateLayersOnSecondaryFixedVariantOpacity016,
+      stateLayersOnSecondaryOpacity008: stateLayersOnSecondaryOpacity008 ??
+          this.stateLayersOnSecondaryOpacity008,
+      stateLayersOnSecondaryOpacity012: stateLayersOnSecondaryOpacity012 ??
+          this.stateLayersOnSecondaryOpacity012,
+      stateLayersOnSecondaryOpacity016: stateLayersOnSecondaryOpacity016 ??
+          this.stateLayersOnSecondaryOpacity016,
+      stateLayersOnSuccessContainerOpacity008:
+          stateLayersOnSuccessContainerOpacity008 ??
+              this.stateLayersOnSuccessContainerOpacity008,
+      stateLayersOnSuccessContainerOpacity012:
+          stateLayersOnSuccessContainerOpacity012 ??
+              this.stateLayersOnSuccessContainerOpacity012,
+      stateLayersOnSuccessContainerOpacity016:
+          stateLayersOnSuccessContainerOpacity016 ??
+              this.stateLayersOnSuccessContainerOpacity016,
+      stateLayersOnSuccessOpacity008:
+          stateLayersOnSuccessOpacity008 ?? this.stateLayersOnSuccessOpacity008,
+      stateLayersOnSuccessOpacity012:
+          stateLayersOnSuccessOpacity012 ?? this.stateLayersOnSuccessOpacity012,
+      stateLayersOnSuccessOpacity016:
+          stateLayersOnSuccessOpacity016 ?? this.stateLayersOnSuccessOpacity016,
+      stateLayersOnSurfaceOpacity008:
+          stateLayersOnSurfaceOpacity008 ?? this.stateLayersOnSurfaceOpacity008,
+      stateLayersOnSurfaceOpacity012:
+          stateLayersOnSurfaceOpacity012 ?? this.stateLayersOnSurfaceOpacity012,
+      stateLayersOnSurfaceOpacity016:
+          stateLayersOnSurfaceOpacity016 ?? this.stateLayersOnSurfaceOpacity016,
+      stateLayersOnSurfaceVariantOpacity008:
+          stateLayersOnSurfaceVariantOpacity008 ??
+              this.stateLayersOnSurfaceVariantOpacity008,
+      stateLayersOnSurfaceVariantOpacity012:
+          stateLayersOnSurfaceVariantOpacity012 ??
+              this.stateLayersOnSurfaceVariantOpacity012,
+      stateLayersOnSurfaceVariantOpacity016:
+          stateLayersOnSurfaceVariantOpacity016 ??
+              this.stateLayersOnSurfaceVariantOpacity016,
+      stateLayersOnTertiaryContainerOpacity008:
+          stateLayersOnTertiaryContainerOpacity008 ??
+              this.stateLayersOnTertiaryContainerOpacity008,
+      stateLayersOnTertiaryContainerOpacity012:
+          stateLayersOnTertiaryContainerOpacity012 ??
+              this.stateLayersOnTertiaryContainerOpacity012,
+      stateLayersOnTertiaryContainerOpacity016:
+          stateLayersOnTertiaryContainerOpacity016 ??
+              this.stateLayersOnTertiaryContainerOpacity016,
+      stateLayersOnTertiaryFixedOpacity008:
+          stateLayersOnTertiaryFixedOpacity008 ??
+              this.stateLayersOnTertiaryFixedOpacity008,
+      stateLayersOnTertiaryFixedOpacity012:
+          stateLayersOnTertiaryFixedOpacity012 ??
+              this.stateLayersOnTertiaryFixedOpacity012,
+      stateLayersOnTertiaryFixedOpacity016:
+          stateLayersOnTertiaryFixedOpacity016 ??
+              this.stateLayersOnTertiaryFixedOpacity016,
+      stateLayersOnTertiaryFixedVariantOpacity008:
+          stateLayersOnTertiaryFixedVariantOpacity008 ??
+              this.stateLayersOnTertiaryFixedVariantOpacity008,
+      stateLayersOnTertiaryFixedVariantOpacity012:
+          stateLayersOnTertiaryFixedVariantOpacity012 ??
+              this.stateLayersOnTertiaryFixedVariantOpacity012,
+      stateLayersOnTertiaryFixedVariantOpacity016:
+          stateLayersOnTertiaryFixedVariantOpacity016 ??
+              this.stateLayersOnTertiaryFixedVariantOpacity016,
+      stateLayersOnTertiaryOpacity008: stateLayersOnTertiaryOpacity008 ??
+          this.stateLayersOnTertiaryOpacity008,
+      stateLayersOnTertiaryOpacity012: stateLayersOnTertiaryOpacity012 ??
+          this.stateLayersOnTertiaryOpacity012,
+      stateLayersOnTertiaryOpacity016: stateLayersOnTertiaryOpacity016 ??
+          this.stateLayersOnTertiaryOpacity016,
+      stateLayersOnWarnContainerOpacity008:
+          stateLayersOnWarnContainerOpacity008 ??
+              this.stateLayersOnWarnContainerOpacity008,
+      stateLayersOnWarnContainerOpacity012:
+          stateLayersOnWarnContainerOpacity012 ??
+              this.stateLayersOnWarnContainerOpacity012,
+      stateLayersOnWarnContainerOpacity016:
+          stateLayersOnWarnContainerOpacity016 ??
+              this.stateLayersOnWarnContainerOpacity016,
+      stateLayersOnWarnOpacity008:
+          stateLayersOnWarnOpacity008 ?? this.stateLayersOnWarnOpacity008,
+      stateLayersOnWarnOpacity012:
+          stateLayersOnWarnOpacity012 ?? this.stateLayersOnWarnOpacity012,
+      stateLayersOnWarnOpacity016:
+          stateLayersOnWarnOpacity016 ?? this.stateLayersOnWarnOpacity016,
+      stateLayersOutlineOpacity008:
+          stateLayersOutlineOpacity008 ?? this.stateLayersOutlineOpacity008,
+      stateLayersOutlineOpacity012:
+          stateLayersOutlineOpacity012 ?? this.stateLayersOutlineOpacity012,
+      stateLayersOutlineOpacity016:
+          stateLayersOutlineOpacity016 ?? this.stateLayersOutlineOpacity016,
+      stateLayersOutlineVariantOpacity008:
+          stateLayersOutlineVariantOpacity008 ??
+              this.stateLayersOutlineVariantOpacity008,
+      stateLayersOutlineVariantOpacity012:
+          stateLayersOutlineVariantOpacity012 ??
+              this.stateLayersOutlineVariantOpacity012,
+      stateLayersOutlineVariantOpacity016:
+          stateLayersOutlineVariantOpacity016 ??
+              this.stateLayersOutlineVariantOpacity016,
+      stateLayersPrimaryContainerOpacity008:
+          stateLayersPrimaryContainerOpacity008 ??
+              this.stateLayersPrimaryContainerOpacity008,
+      stateLayersPrimaryContainerOpacity012:
+          stateLayersPrimaryContainerOpacity012 ??
+              this.stateLayersPrimaryContainerOpacity012,
+      stateLayersPrimaryContainerOpacity016:
+          stateLayersPrimaryContainerOpacity016 ??
+              this.stateLayersPrimaryContainerOpacity016,
+      stateLayersPrimaryFixedDimOpacity008:
+          stateLayersPrimaryFixedDimOpacity008 ??
+              this.stateLayersPrimaryFixedDimOpacity008,
+      stateLayersPrimaryFixedDimOpacity012:
+          stateLayersPrimaryFixedDimOpacity012 ??
+              this.stateLayersPrimaryFixedDimOpacity012,
+      stateLayersPrimaryFixedDimOpacity016:
+          stateLayersPrimaryFixedDimOpacity016 ??
+              this.stateLayersPrimaryFixedDimOpacity016,
+      stateLayersPrimaryFixedOpacity008: stateLayersPrimaryFixedOpacity008 ??
+          this.stateLayersPrimaryFixedOpacity008,
+      stateLayersPrimaryFixedOpacity012: stateLayersPrimaryFixedOpacity012 ??
+          this.stateLayersPrimaryFixedOpacity012,
+      stateLayersPrimaryFixedOpacity016: stateLayersPrimaryFixedOpacity016 ??
+          this.stateLayersPrimaryFixedOpacity016,
+      stateLayersPrimaryOpacity008:
+          stateLayersPrimaryOpacity008 ?? this.stateLayersPrimaryOpacity008,
+      stateLayersPrimaryOpacity012:
+          stateLayersPrimaryOpacity012 ?? this.stateLayersPrimaryOpacity012,
+      stateLayersPrimaryOpacity016:
+          stateLayersPrimaryOpacity016 ?? this.stateLayersPrimaryOpacity016,
+      stateLayersScrimOpacity008:
+          stateLayersScrimOpacity008 ?? this.stateLayersScrimOpacity008,
+      stateLayersScrimOpacity012:
+          stateLayersScrimOpacity012 ?? this.stateLayersScrimOpacity012,
+      stateLayersScrimOpacity016:
+          stateLayersScrimOpacity016 ?? this.stateLayersScrimOpacity016,
+      stateLayersSecondaryContainerOpacity008:
+          stateLayersSecondaryContainerOpacity008 ??
+              this.stateLayersSecondaryContainerOpacity008,
+      stateLayersSecondaryContainerOpacity012:
+          stateLayersSecondaryContainerOpacity012 ??
+              this.stateLayersSecondaryContainerOpacity012,
+      stateLayersSecondaryContainerOpacity016:
+          stateLayersSecondaryContainerOpacity016 ??
+              this.stateLayersSecondaryContainerOpacity016,
+      stateLayersSecondaryFixedDimOpacity008:
+          stateLayersSecondaryFixedDimOpacity008 ??
+              this.stateLayersSecondaryFixedDimOpacity008,
+      stateLayersSecondaryFixedDimOpacity012:
+          stateLayersSecondaryFixedDimOpacity012 ??
+              this.stateLayersSecondaryFixedDimOpacity012,
+      stateLayersSecondaryFixedDimOpacity016:
+          stateLayersSecondaryFixedDimOpacity016 ??
+              this.stateLayersSecondaryFixedDimOpacity016,
+      stateLayersSecondaryFixedOpacity008:
+          stateLayersSecondaryFixedOpacity008 ??
+              this.stateLayersSecondaryFixedOpacity008,
+      stateLayersSecondaryFixedOpacity012:
+          stateLayersSecondaryFixedOpacity012 ??
+              this.stateLayersSecondaryFixedOpacity012,
+      stateLayersSecondaryFixedOpacity016:
+          stateLayersSecondaryFixedOpacity016 ??
+              this.stateLayersSecondaryFixedOpacity016,
+      stateLayersSecondaryOpacity008:
+          stateLayersSecondaryOpacity008 ?? this.stateLayersSecondaryOpacity008,
+      stateLayersSecondaryOpacity012:
+          stateLayersSecondaryOpacity012 ?? this.stateLayersSecondaryOpacity012,
+      stateLayersSecondaryOpacity016:
+          stateLayersSecondaryOpacity016 ?? this.stateLayersSecondaryOpacity016,
+      stateLayersShadowOpacity008:
+          stateLayersShadowOpacity008 ?? this.stateLayersShadowOpacity008,
+      stateLayersShadowOpacity012:
+          stateLayersShadowOpacity012 ?? this.stateLayersShadowOpacity012,
+      stateLayersShadowOpacity016:
+          stateLayersShadowOpacity016 ?? this.stateLayersShadowOpacity016,
+      stateLayersSuccessContainerOpacity008:
+          stateLayersSuccessContainerOpacity008 ??
+              this.stateLayersSuccessContainerOpacity008,
+      stateLayersSuccessContainerOpacity012:
+          stateLayersSuccessContainerOpacity012 ??
+              this.stateLayersSuccessContainerOpacity012,
+      stateLayersSuccessContainerOpacity016:
+          stateLayersSuccessContainerOpacity016 ??
+              this.stateLayersSuccessContainerOpacity016,
+      stateLayersSuccessOpacity008:
+          stateLayersSuccessOpacity008 ?? this.stateLayersSuccessOpacity008,
+      stateLayersSuccessOpacity012:
+          stateLayersSuccessOpacity012 ?? this.stateLayersSuccessOpacity012,
+      stateLayersSuccessOpacity016:
+          stateLayersSuccessOpacity016 ?? this.stateLayersSuccessOpacity016,
+      stateLayersSurfaceBrightOpacity008: stateLayersSurfaceBrightOpacity008 ??
+          this.stateLayersSurfaceBrightOpacity008,
+      stateLayersSurfaceBrightOpacity012: stateLayersSurfaceBrightOpacity012 ??
+          this.stateLayersSurfaceBrightOpacity012,
+      stateLayersSurfaceBrightOpacity016: stateLayersSurfaceBrightOpacity016 ??
+          this.stateLayersSurfaceBrightOpacity016,
+      stateLayersSurfaceContainerHighOpacity008:
+          stateLayersSurfaceContainerHighOpacity008 ??
+              this.stateLayersSurfaceContainerHighOpacity008,
+      stateLayersSurfaceContainerHighOpacity012:
+          stateLayersSurfaceContainerHighOpacity012 ??
+              this.stateLayersSurfaceContainerHighOpacity012,
+      stateLayersSurfaceContainerHighOpacity016:
+          stateLayersSurfaceContainerHighOpacity016 ??
+              this.stateLayersSurfaceContainerHighOpacity016,
+      stateLayersSurfaceContainerHighestOpacity008:
+          stateLayersSurfaceContainerHighestOpacity008 ??
+              this.stateLayersSurfaceContainerHighestOpacity008,
+      stateLayersSurfaceContainerHighestOpacity012:
+          stateLayersSurfaceContainerHighestOpacity012 ??
+              this.stateLayersSurfaceContainerHighestOpacity012,
+      stateLayersSurfaceContainerHighestOpacity016:
+          stateLayersSurfaceContainerHighestOpacity016 ??
+              this.stateLayersSurfaceContainerHighestOpacity016,
+      stateLayersSurfaceContainerLowOpacity008:
+          stateLayersSurfaceContainerLowOpacity008 ??
+              this.stateLayersSurfaceContainerLowOpacity008,
+      stateLayersSurfaceContainerLowOpacity012:
+          stateLayersSurfaceContainerLowOpacity012 ??
+              this.stateLayersSurfaceContainerLowOpacity012,
+      stateLayersSurfaceContainerLowOpacity016:
+          stateLayersSurfaceContainerLowOpacity016 ??
+              this.stateLayersSurfaceContainerLowOpacity016,
+      stateLayersSurfaceContainerLowestOpacity008:
+          stateLayersSurfaceContainerLowestOpacity008 ??
+              this.stateLayersSurfaceContainerLowestOpacity008,
+      stateLayersSurfaceContainerLowestOpacity012:
+          stateLayersSurfaceContainerLowestOpacity012 ??
+              this.stateLayersSurfaceContainerLowestOpacity012,
+      stateLayersSurfaceContainerLowestOpacity016:
+          stateLayersSurfaceContainerLowestOpacity016 ??
+              this.stateLayersSurfaceContainerLowestOpacity016,
+      stateLayersSurfaceContainerOpacity008:
+          stateLayersSurfaceContainerOpacity008 ??
+              this.stateLayersSurfaceContainerOpacity008,
+      stateLayersSurfaceContainerOpacity012:
+          stateLayersSurfaceContainerOpacity012 ??
+              this.stateLayersSurfaceContainerOpacity012,
+      stateLayersSurfaceContainerOpacity016:
+          stateLayersSurfaceContainerOpacity016 ??
+              this.stateLayersSurfaceContainerOpacity016,
+      stateLayersSurfaceDimOpacity008: stateLayersSurfaceDimOpacity008 ??
+          this.stateLayersSurfaceDimOpacity008,
+      stateLayersSurfaceDimOpacity012: stateLayersSurfaceDimOpacity012 ??
+          this.stateLayersSurfaceDimOpacity012,
+      stateLayersSurfaceDimOpacity016: stateLayersSurfaceDimOpacity016 ??
+          this.stateLayersSurfaceDimOpacity016,
+      stateLayersSurfaceOpacity008:
+          stateLayersSurfaceOpacity008 ?? this.stateLayersSurfaceOpacity008,
+      stateLayersSurfaceOpacity012:
+          stateLayersSurfaceOpacity012 ?? this.stateLayersSurfaceOpacity012,
+      stateLayersSurfaceOpacity016:
+          stateLayersSurfaceOpacity016 ?? this.stateLayersSurfaceOpacity016,
+      stateLayersTertiaryContainerOpacity008:
+          stateLayersTertiaryContainerOpacity008 ??
+              this.stateLayersTertiaryContainerOpacity008,
+      stateLayersTertiaryContainerOpacity012:
+          stateLayersTertiaryContainerOpacity012 ??
+              this.stateLayersTertiaryContainerOpacity012,
+      stateLayersTertiaryContainerOpacity016:
+          stateLayersTertiaryContainerOpacity016 ??
+              this.stateLayersTertiaryContainerOpacity016,
+      stateLayersTertiaryFixedDimOpacity008:
+          stateLayersTertiaryFixedDimOpacity008 ??
+              this.stateLayersTertiaryFixedDimOpacity008,
+      stateLayersTertiaryFixedDimOpacity012:
+          stateLayersTertiaryFixedDimOpacity012 ??
+              this.stateLayersTertiaryFixedDimOpacity012,
+      stateLayersTertiaryFixedDimOpacity016:
+          stateLayersTertiaryFixedDimOpacity016 ??
+              this.stateLayersTertiaryFixedDimOpacity016,
+      stateLayersTertiaryFixedOpacity008: stateLayersTertiaryFixedOpacity008 ??
+          this.stateLayersTertiaryFixedOpacity008,
+      stateLayersTertiaryFixedOpacity012: stateLayersTertiaryFixedOpacity012 ??
+          this.stateLayersTertiaryFixedOpacity012,
+      stateLayersTertiaryFixedOpacity016: stateLayersTertiaryFixedOpacity016 ??
+          this.stateLayersTertiaryFixedOpacity016,
+      stateLayersTertiaryOpacity008:
+          stateLayersTertiaryOpacity008 ?? this.stateLayersTertiaryOpacity008,
+      stateLayersTertiaryOpacity012:
+          stateLayersTertiaryOpacity012 ?? this.stateLayersTertiaryOpacity012,
+      stateLayersTertiaryOpacity016: stateLayersTertiaryOpacity016 ??
+          this.stateLayersSurfaceContainerOpacity016,
+      stateLayersWarnContainerOpacity008: stateLayersWarnContainerOpacity008 ??
+          this.stateLayersWarnContainerOpacity008,
+      stateLayersWarnContainerOpacity012: stateLayersWarnContainerOpacity012 ??
+          this.stateLayersWarnContainerOpacity012,
+      stateLayersWarnContainerOpacity016: stateLayersWarnContainerOpacity016 ??
+          this.stateLayersWarnContainerOpacity016,
+      stateLayersWarnOpacity008:
+          stateLayersWarnOpacity008 ?? this.stateLayersWarnOpacity008,
+      stateLayersWarnOpacity012:
+          stateLayersWarnOpacity012 ?? this.stateLayersWarnOpacity012,
+      stateLayersWarnOpacity016:
+          stateLayersWarnOpacity016 ?? this.stateLayersWarnOpacity016,
       sysError: sysError ?? this.sysError,
       sysErrorContainer: sysErrorContainer ?? this.sysErrorContainer,
       sysInverseOnSurface: sysInverseOnSurface ?? this.sysInverseOnSurface,
@@ -1811,6 +1892,7 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
       sysShadow: sysShadow ?? this.sysShadow,
       sysSuccess: sysSuccess ?? this.sysSuccess,
       sysSuccessContainer: sysSuccessContainer ?? this.sysSuccessContainer,
+      sysSurfaceTinted: sysSurfaceTinted ?? this.sysSurfaceTinted,
       sysSurface: sysSurface ?? this.sysSurface,
       sysSurfaceBright: sysSurfaceBright ?? this.sysSurfaceBright,
       sysSurfaceContainer: sysSurfaceContainer ?? this.sysSurfaceContainer,
@@ -1829,6 +1911,32 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
       sysTertiaryFixedDim: sysTertiaryFixedDim ?? this.sysTertiaryFixedDim,
       sysWarn: sysWarn ?? this.sysWarn,
       sysWarnContainer: sysWarnContainer ?? this.sysWarnContainer,
+      aqua: aqua ?? this.aqua,
+      black: black ?? this.black,
+      blue: blue ?? this.blue,
+      cyan: cyan ?? this.cyan,
+      grape: grape ?? this.grape,
+      green: green ?? this.green,
+      lime: lime ?? this.lime,
+      magenta: magenta ?? this.magenta,
+      orange: orange ?? this.orange,
+      pink: pink ?? this.pink,
+      purple: purple ?? this.purple,
+      red: red ?? this.red,
+      white: white ?? this.white,
+      yellow: yellow ?? this.yellow,
+      onRed: onRed ?? this.onRed,
+      onOrange: onOrange ?? this.onOrange,
+      onYellow: onYellow ?? this.onYellow,
+      onLime: onLime ?? this.onLime,
+      onGreen: onGreen ?? this.onGreen,
+      onAqua: onAqua ?? this.onAqua,
+      onCyan: onCyan ?? this.onCyan,
+      onBlue: onBlue ?? this.onBlue,
+      onPurple: onPurple ?? this.onPurple,
+      onGrape: onGrape ?? this.onGrape,
+      onPink: onPink ?? this.onPink,
+      onMagenta: onMagenta ?? this.onMagenta,
     );
   }
 
@@ -1847,742 +1955,742 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
       hyperlinkNormal: Color.lerp(hyperlinkNormal, other.hyperlinkNormal, t)!,
       hyperlinkVisited:
           Color.lerp(hyperlinkVisited, other.hyperlinkVisited, t)!,
-      referrore0: Color.lerp(referrore0, other.referrore0, t)!,
-      referrore10: Color.lerp(referrore10, other.referrore10, t)!,
-      referrore100: Color.lerp(referrore100, other.referrore100, t)!,
-      referrore15: Color.lerp(referrore15, other.referrore15, t)!,
-      referrore2: Color.lerp(referrore2, other.referrore2, t)!,
-      referrore20: Color.lerp(referrore20, other.referrore20, t)!,
-      referrore30: Color.lerp(referrore30, other.referrore30, t)!,
-      referrore4: Color.lerp(referrore4, other.referrore4, t)!,
-      referrore40: Color.lerp(referrore40, other.referrore40, t)!,
-      referrore50: Color.lerp(referrore50, other.referrore50, t)!,
-      referrore6: Color.lerp(referrore6, other.referrore6, t)!,
-      referrore60: Color.lerp(referrore60, other.referrore60, t)!,
-      referrore70: Color.lerp(referrore70, other.referrore70, t)!,
-      referrore8: Color.lerp(referrore8, other.referrore8, t)!,
-      referrore80: Color.lerp(referrore80, other.referrore80, t)!,
-      referrore85: Color.lerp(referrore85, other.referrore85, t)!,
-      referrore90: Color.lerp(referrore90, other.referrore90, t)!,
-      referrore93: Color.lerp(referrore93, other.referrore93, t)!,
-      referrore95: Color.lerp(referrore95, other.referrore95, t)!,
-      referrore98: Color.lerp(referrore98, other.referrore98, t)!,
-      referrore99: Color.lerp(referrore99, other.referrore99, t)!,
-      refneutraln0: Color.lerp(refneutraln0, other.refneutraln0, t)!,
-      refneutraln10: Color.lerp(refneutraln10, other.refneutraln10, t)!,
-      refneutraln100: Color.lerp(refneutraln100, other.refneutraln100, t)!,
-      refneutraln15: Color.lerp(refneutraln15, other.refneutraln15, t)!,
-      refneutraln2: Color.lerp(refneutraln2, other.refneutraln2, t)!,
-      refneutraln20: Color.lerp(refneutraln20, other.refneutraln20, t)!,
-      refneutraln30: Color.lerp(refneutraln30, other.refneutraln30, t)!,
-      refneutraln4: Color.lerp(refneutraln4, other.refneutraln4, t)!,
-      refneutraln40: Color.lerp(refneutraln40, other.refneutraln40, t)!,
-      refneutraln50: Color.lerp(refneutraln50, other.refneutraln50, t)!,
-      refneutraln6: Color.lerp(refneutraln6, other.refneutraln6, t)!,
-      refneutraln60: Color.lerp(refneutraln60, other.refneutraln60, t)!,
-      refneutraln70: Color.lerp(refneutraln70, other.refneutraln70, t)!,
-      refneutraln8: Color.lerp(refneutraln8, other.refneutraln8, t)!,
-      refneutraln80: Color.lerp(refneutraln80, other.refneutraln80, t)!,
-      refneutraln85: Color.lerp(refneutraln85, other.refneutraln85, t)!,
-      refneutraln90: Color.lerp(refneutraln90, other.refneutraln90, t)!,
-      refneutraln93: Color.lerp(refneutraln93, other.refneutraln93, t)!,
-      refneutraln95: Color.lerp(refneutraln95, other.refneutraln95, t)!,
-      refneutraln98: Color.lerp(refneutraln98, other.refneutraln98, t)!,
-      refneutraln99: Color.lerp(refneutraln99, other.refneutraln99, t)!,
-      refneutralvariantnv0:
-          Color.lerp(refneutralvariantnv0, other.refneutralvariantnv0, t)!,
-      refneutralvariantnv10:
-          Color.lerp(refneutralvariantnv10, other.refneutralvariantnv10, t)!,
-      refneutralvariantnv100:
-          Color.lerp(refneutralvariantnv100, other.refneutralvariantnv100, t)!,
-      refneutralvariantnv15:
-          Color.lerp(refneutralvariantnv15, other.refneutralvariantnv15, t)!,
-      refneutralvariantnv2:
-          Color.lerp(refneutralvariantnv2, other.refneutralvariantnv2, t)!,
-      refneutralvariantnv20:
-          Color.lerp(refneutralvariantnv20, other.refneutralvariantnv20, t)!,
-      refneutralvariantnv30:
-          Color.lerp(refneutralvariantnv30, other.refneutralvariantnv30, t)!,
-      refneutralvariantnv4:
-          Color.lerp(refneutralvariantnv4, other.refneutralvariantnv4, t)!,
-      refneutralvariantnv40:
-          Color.lerp(refneutralvariantnv40, other.refneutralvariantnv40, t)!,
-      refneutralvariantnv50:
-          Color.lerp(refneutralvariantnv50, other.refneutralvariantnv50, t)!,
-      refneutralvariantnv6:
-          Color.lerp(refneutralvariantnv6, other.refneutralvariantnv6, t)!,
-      refneutralvariantnv60:
-          Color.lerp(refneutralvariantnv60, other.refneutralvariantnv60, t)!,
-      refneutralvariantnv70:
-          Color.lerp(refneutralvariantnv70, other.refneutralvariantnv70, t)!,
-      refneutralvariantnv8:
-          Color.lerp(refneutralvariantnv8, other.refneutralvariantnv8, t)!,
-      refneutralvariantnv80:
-          Color.lerp(refneutralvariantnv80, other.refneutralvariantnv80, t)!,
-      refneutralvariantnv85:
-          Color.lerp(refneutralvariantnv85, other.refneutralvariantnv85, t)!,
-      refneutralvariantnv90:
-          Color.lerp(refneutralvariantnv90, other.refneutralvariantnv90, t)!,
-      refneutralvariantnv93:
-          Color.lerp(refneutralvariantnv93, other.refneutralvariantnv93, t)!,
-      refneutralvariantnv95:
-          Color.lerp(refneutralvariantnv95, other.refneutralvariantnv95, t)!,
-      refneutralvariantnv98:
-          Color.lerp(refneutralvariantnv98, other.refneutralvariantnv98, t)!,
-      refneutralvariantnv99:
-          Color.lerp(refneutralvariantnv99, other.refneutralvariantnv99, t)!,
-      refprimaryp0: Color.lerp(refprimaryp0, other.refprimaryp0, t)!,
-      refprimaryp10: Color.lerp(refprimaryp10, other.refprimaryp10, t)!,
-      refprimaryp100: Color.lerp(refprimaryp100, other.refprimaryp100, t)!,
-      refprimaryp15: Color.lerp(refprimaryp15, other.refprimaryp15, t)!,
-      refprimaryp2: Color.lerp(refprimaryp2, other.refprimaryp2, t)!,
-      refprimaryp20: Color.lerp(refprimaryp20, other.refprimaryp20, t)!,
-      refprimaryp30: Color.lerp(refprimaryp30, other.refprimaryp30, t)!,
-      refprimaryp4: Color.lerp(refprimaryp4, other.refprimaryp4, t)!,
-      refprimaryp40: Color.lerp(refprimaryp40, other.refprimaryp40, t)!,
-      refprimaryp50: Color.lerp(refprimaryp50, other.refprimaryp50, t)!,
-      refprimaryp6: Color.lerp(refprimaryp6, other.refprimaryp6, t)!,
-      refprimaryp60: Color.lerp(refprimaryp60, other.refprimaryp60, t)!,
-      refprimaryp70: Color.lerp(refprimaryp70, other.refprimaryp70, t)!,
-      refprimaryp8: Color.lerp(refprimaryp8, other.refprimaryp8, t)!,
-      refprimaryp80: Color.lerp(refprimaryp80, other.refprimaryp80, t)!,
-      refprimaryp85: Color.lerp(refprimaryp85, other.refprimaryp85, t)!,
-      refprimaryp90: Color.lerp(refprimaryp90, other.refprimaryp90, t)!,
-      refprimaryp93: Color.lerp(refprimaryp93, other.refprimaryp93, t)!,
-      refprimaryp95: Color.lerp(refprimaryp95, other.refprimaryp95, t)!,
-      refprimaryp98: Color.lerp(refprimaryp98, other.refprimaryp98, t)!,
-      refprimaryp99: Color.lerp(refprimaryp99, other.refprimaryp99, t)!,
-      refsecondarys0: Color.lerp(refsecondarys0, other.refsecondarys0, t)!,
-      refsecondarys10: Color.lerp(refsecondarys10, other.refsecondarys10, t)!,
-      refsecondarys100:
-          Color.lerp(refsecondarys100, other.refsecondarys100, t)!,
-      refsecondarys15: Color.lerp(refsecondarys15, other.refsecondarys15, t)!,
-      refsecondarys2: Color.lerp(refsecondarys2, other.refsecondarys2, t)!,
-      refsecondarys20: Color.lerp(refsecondarys20, other.refsecondarys20, t)!,
-      refsecondarys30: Color.lerp(refsecondarys30, other.refsecondarys30, t)!,
-      refsecondarys4: Color.lerp(refsecondarys4, other.refsecondarys4, t)!,
-      refsecondarys40: Color.lerp(refsecondarys40, other.refsecondarys40, t)!,
-      refsecondarys50: Color.lerp(refsecondarys50, other.refsecondarys50, t)!,
-      refsecondarys6: Color.lerp(refsecondarys6, other.refsecondarys6, t)!,
-      refsecondarys60: Color.lerp(refsecondarys60, other.refsecondarys60, t)!,
-      refsecondarys70: Color.lerp(refsecondarys70, other.refsecondarys70, t)!,
-      refsecondarys8: Color.lerp(refsecondarys8, other.refsecondarys8, t)!,
-      refsecondarys80: Color.lerp(refsecondarys80, other.refsecondarys80, t)!,
-      refsecondarys85: Color.lerp(refsecondarys85, other.refsecondarys85, t)!,
-      refsecondarys90: Color.lerp(refsecondarys90, other.refsecondarys90, t)!,
-      refsecondarys93: Color.lerp(refsecondarys93, other.refsecondarys93, t)!,
-      refsecondarys95: Color.lerp(refsecondarys95, other.refsecondarys95, t)!,
-      refsecondarys98: Color.lerp(refsecondarys98, other.refsecondarys98, t)!,
-      refsecondarys99: Color.lerp(refsecondarys99, other.refsecondarys99, t)!,
-      refsuccessu0: Color.lerp(refsuccessu0, other.refsuccessu0, t)!,
-      refsuccessu10: Color.lerp(refsuccessu10, other.refsuccessu10, t)!,
-      refsuccessu100: Color.lerp(refsuccessu100, other.refsuccessu100, t)!,
-      refsuccessu15: Color.lerp(refsuccessu15, other.refsuccessu15, t)!,
-      refsuccessu2: Color.lerp(refsuccessu2, other.refsuccessu2, t)!,
-      refsuccessu20: Color.lerp(refsuccessu20, other.refsuccessu20, t)!,
-      refsuccessu30: Color.lerp(refsuccessu30, other.refsuccessu30, t)!,
-      refsuccessu4: Color.lerp(refsuccessu4, other.refsuccessu4, t)!,
-      refsuccessu40: Color.lerp(refsuccessu40, other.refsuccessu40, t)!,
-      refsuccessu50: Color.lerp(refsuccessu50, other.refsuccessu50, t)!,
-      refsuccessu6: Color.lerp(refsuccessu6, other.refsuccessu6, t)!,
-      refsuccessu60: Color.lerp(refsuccessu60, other.refsuccessu60, t)!,
-      refsuccessu70: Color.lerp(refsuccessu70, other.refsuccessu70, t)!,
-      refsuccessu8: Color.lerp(refsuccessu8, other.refsuccessu8, t)!,
-      refsuccessu80: Color.lerp(refsuccessu80, other.refsuccessu80, t)!,
-      refsuccessu85: Color.lerp(refsuccessu85, other.refsuccessu85, t)!,
-      refsuccessu90: Color.lerp(refsuccessu90, other.refsuccessu90, t)!,
-      refsuccessu93: Color.lerp(refsuccessu93, other.refsuccessu93, t)!,
-      refsuccessu95: Color.lerp(refsuccessu95, other.refsuccessu95, t)!,
-      refsuccessu98: Color.lerp(refsuccessu98, other.refsuccessu98, t)!,
-      refsuccessu99: Color.lerp(refsuccessu99, other.refsuccessu99, t)!,
-      reftertiaryt0: Color.lerp(reftertiaryt0, other.reftertiaryt0, t)!,
-      reftertiaryt10: Color.lerp(reftertiaryt10, other.reftertiaryt10, t)!,
-      reftertiaryt100: Color.lerp(reftertiaryt100, other.reftertiaryt100, t)!,
-      reftertiaryt15: Color.lerp(reftertiaryt15, other.reftertiaryt15, t)!,
-      reftertiaryt2: Color.lerp(reftertiaryt2, other.reftertiaryt2, t)!,
-      reftertiaryt20: Color.lerp(reftertiaryt20, other.reftertiaryt20, t)!,
-      reftertiaryt30: Color.lerp(reftertiaryt30, other.reftertiaryt30, t)!,
-      reftertiaryt4: Color.lerp(reftertiaryt4, other.reftertiaryt4, t)!,
-      reftertiaryt40: Color.lerp(reftertiaryt40, other.reftertiaryt40, t)!,
-      reftertiaryt50: Color.lerp(reftertiaryt50, other.reftertiaryt50, t)!,
-      reftertiaryt6: Color.lerp(reftertiaryt6, other.reftertiaryt6, t)!,
-      reftertiaryt60: Color.lerp(reftertiaryt60, other.reftertiaryt60, t)!,
-      reftertiaryt70: Color.lerp(reftertiaryt70, other.reftertiaryt70, t)!,
-      reftertiaryt8: Color.lerp(reftertiaryt8, other.reftertiaryt8, t)!,
-      reftertiaryt80: Color.lerp(reftertiaryt80, other.reftertiaryt80, t)!,
-      reftertiaryt85: Color.lerp(reftertiaryt85, other.reftertiaryt85, t)!,
-      reftertiaryt90: Color.lerp(reftertiaryt90, other.reftertiaryt90, t)!,
-      reftertiaryt93: Color.lerp(reftertiaryt93, other.reftertiaryt93, t)!,
-      reftertiaryt95: Color.lerp(reftertiaryt95, other.reftertiaryt95, t)!,
-      reftertiaryt98: Color.lerp(reftertiaryt98, other.reftertiaryt98, t)!,
-      reftertiaryt99: Color.lerp(reftertiaryt99, other.reftertiaryt99, t)!,
-      refwarnw0: Color.lerp(refwarnw0, other.refwarnw0, t)!,
-      refwarnw10: Color.lerp(refwarnw10, other.refwarnw10, t)!,
-      refwarnw100: Color.lerp(refwarnw100, other.refwarnw100, t)!,
-      refwarnw15: Color.lerp(refwarnw15, other.refwarnw15, t)!,
-      refwarnw2: Color.lerp(refwarnw2, other.refwarnw2, t)!,
-      refwarnw20: Color.lerp(refwarnw20, other.refwarnw20, t)!,
-      refwarnw30: Color.lerp(refwarnw30, other.refwarnw30, t)!,
-      refwarnw4: Color.lerp(refwarnw4, other.refwarnw4, t)!,
-      refwarnw40: Color.lerp(refwarnw40, other.refwarnw40, t)!,
-      refwarnw50: Color.lerp(refwarnw50, other.refwarnw50, t)!,
-      refwarnw6: Color.lerp(refwarnw6, other.refwarnw6, t)!,
-      refwarnw60: Color.lerp(refwarnw60, other.refwarnw60, t)!,
-      refwarnw70: Color.lerp(refwarnw70, other.refwarnw70, t)!,
-      refwarnw8: Color.lerp(refwarnw8, other.refwarnw8, t)!,
-      refwarnw80: Color.lerp(refwarnw80, other.refwarnw80, t)!,
-      refwarnw85: Color.lerp(refwarnw85, other.refwarnw85, t)!,
-      refwarnw90: Color.lerp(refwarnw90, other.refwarnw90, t)!,
-      refwarnw93: Color.lerp(refwarnw93, other.refwarnw93, t)!,
-      refwarnw95: Color.lerp(refwarnw95, other.refwarnw95, t)!,
-      refwarnw98: Color.lerp(refwarnw98, other.refwarnw98, t)!,
-      refwarnw99: Color.lerp(refwarnw99, other.refwarnw99, t)!,
-      statelayerserrorcontaineropacity008: Color.lerp(
-          statelayerserrorcontaineropacity008,
-          other.statelayerserrorcontaineropacity008,
-          t)!,
-      statelayerserrorcontaineropacity012: Color.lerp(
-          statelayerserrorcontaineropacity012,
-          other.statelayerserrorcontaineropacity012,
-          t)!,
-      statelayerserrorcontaineropacity016: Color.lerp(
-          statelayerserrorcontaineropacity016,
-          other.statelayerserrorcontaineropacity016,
-          t)!,
-      statelayerserroropacity008: Color.lerp(
-          statelayerserroropacity008, other.statelayerserroropacity008, t)!,
-      statelayerserroropacity012: Color.lerp(
-          statelayerserroropacity012, other.statelayerserroropacity012, t)!,
-      statelayerserroropacity016: Color.lerp(
-          statelayerserroropacity016, other.statelayerserroropacity016, t)!,
-      statelayersinverseonsurfaceopacity008: Color.lerp(
-          statelayersinverseonsurfaceopacity008,
-          other.statelayersinverseonsurfaceopacity008,
-          t)!,
-      statelayersinverseonsurfaceopacity012: Color.lerp(
-          statelayersinverseonsurfaceopacity012,
-          other.statelayersinverseonsurfaceopacity012,
-          t)!,
-      statelayersinverseonsurfaceopacity016: Color.lerp(
-          statelayersinverseonsurfaceopacity016,
-          other.statelayersinverseonsurfaceopacity016,
-          t)!,
-      statelayersinverseprimaryopacity008: Color.lerp(
-          statelayersinverseprimaryopacity008,
-          other.statelayersinverseprimaryopacity008,
-          t)!,
-      statelayersinverseprimaryopacity012: Color.lerp(
-          statelayersinverseprimaryopacity012,
-          other.statelayersinverseprimaryopacity012,
-          t)!,
-      statelayersinverseprimaryopacity016: Color.lerp(
-          statelayersinverseprimaryopacity016,
-          other.statelayersinverseprimaryopacity016,
-          t)!,
-      statelayersinversesurfaceopacity008: Color.lerp(
-          statelayersinversesurfaceopacity008,
-          other.statelayersinversesurfaceopacity008,
-          t)!,
-      statelayersinversesurfaceopacity012: Color.lerp(
-          statelayersinversesurfaceopacity012,
-          other.statelayersinversesurfaceopacity012,
-          t)!,
-      statelayersinversesurfaceopacity016: Color.lerp(
-          statelayersinversesurfaceopacity016,
-          other.statelayersinversesurfaceopacity016,
-          t)!,
-      statelayersonerrorcontaineropacity008: Color.lerp(
-          statelayersonerrorcontaineropacity008,
-          other.statelayersonerrorcontaineropacity008,
-          t)!,
-      statelayersonerrorcontaineropacity012: Color.lerp(
-          statelayersonerrorcontaineropacity012,
-          other.statelayersonerrorcontaineropacity012,
-          t)!,
-      statelayersonerrorcontaineropacity016: Color.lerp(
-          statelayersonerrorcontaineropacity016,
-          other.statelayersonerrorcontaineropacity016,
-          t)!,
-      statelayersonerroropacity008: Color.lerp(
-          statelayersonerroropacity008, other.statelayersonerroropacity008, t)!,
-      statelayersonerroropacity012: Color.lerp(
-          statelayersonerroropacity012, other.statelayersonerroropacity012, t)!,
-      statelayersonerroropacity016: Color.lerp(
-          statelayersonerroropacity016, other.statelayersonerroropacity016, t)!,
-      statelayersonprimarycontaineropacity008: Color.lerp(
-          statelayersonprimarycontaineropacity008,
-          other.statelayersonprimarycontaineropacity008,
-          t)!,
-      statelayersonprimarycontaineropacity012: Color.lerp(
-          statelayersonprimarycontaineropacity012,
-          other.statelayersonprimarycontaineropacity012,
-          t)!,
-      statelayersonprimarycontaineropacity016: Color.lerp(
-          statelayersonprimarycontaineropacity016,
-          other.statelayersonprimarycontaineropacity016,
-          t)!,
-      statelayersonprimaryfixedopacity008: Color.lerp(
-          statelayersonprimaryfixedopacity008,
-          other.statelayersonprimaryfixedopacity008,
-          t)!,
-      statelayersonprimaryfixedopacity012: Color.lerp(
-          statelayersonprimaryfixedopacity012,
-          other.statelayersonprimaryfixedopacity012,
-          t)!,
-      statelayersonprimaryfixedopacity016: Color.lerp(
-          statelayersonprimaryfixedopacity016,
-          other.statelayersonprimaryfixedopacity016,
-          t)!,
-      statelayersonprimaryfixedvariantopacity008: Color.lerp(
-          statelayersonprimaryfixedvariantopacity008,
-          other.statelayersonprimaryfixedvariantopacity008,
-          t)!,
-      statelayersonprimaryfixedvariantopacity012: Color.lerp(
-          statelayersonprimaryfixedvariantopacity012,
-          other.statelayersonprimaryfixedvariantopacity012,
-          t)!,
-      statelayersonprimaryfixedvariantopacity016: Color.lerp(
-          statelayersonprimaryfixedvariantopacity016,
-          other.statelayersonprimaryfixedvariantopacity016,
-          t)!,
-      statelayersonprimaryopacity008: Color.lerp(statelayersonprimaryopacity008,
-          other.statelayersonprimaryopacity008, t)!,
-      statelayersonprimaryopacity012: Color.lerp(statelayersonprimaryopacity012,
-          other.statelayersonprimaryopacity012, t)!,
-      statelayersonprimaryopacity016: Color.lerp(statelayersonprimaryopacity016,
-          other.statelayersonprimaryopacity016, t)!,
-      statelayersonsecondarycontaineropacity008: Color.lerp(
-          statelayersonsecondarycontaineropacity008,
-          other.statelayersonsecondarycontaineropacity008,
-          t)!,
-      statelayersonsecondarycontaineropacity012: Color.lerp(
-          statelayersonsecondarycontaineropacity012,
-          other.statelayersonsecondarycontaineropacity012,
-          t)!,
-      statelayersonsecondarycontaineropacity016: Color.lerp(
-          statelayersonsecondarycontaineropacity016,
-          other.statelayersonsecondarycontaineropacity016,
-          t)!,
-      statelayersonsecondaryfixedopacity008: Color.lerp(
-          statelayersonsecondaryfixedopacity008,
-          other.statelayersonsecondaryfixedopacity008,
-          t)!,
-      statelayersonsecondaryfixedopacity012: Color.lerp(
-          statelayersonsecondaryfixedopacity012,
-          other.statelayersonsecondaryfixedopacity012,
-          t)!,
-      statelayersonsecondaryfixedopacity016: Color.lerp(
-          statelayersonsecondaryfixedopacity016,
-          other.statelayersonsecondaryfixedopacity016,
-          t)!,
-      statelayersonsecondaryfixedvariantopacity008: Color.lerp(
-          statelayersonsecondaryfixedvariantopacity008,
-          other.statelayersonsecondaryfixedvariantopacity008,
-          t)!,
-      statelayersonsecondaryfixedvariantopacity012: Color.lerp(
-          statelayersonsecondaryfixedvariantopacity012,
-          other.statelayersonsecondaryfixedvariantopacity012,
-          t)!,
-      statelayersonsecondaryfixedvariantopacity016: Color.lerp(
-          statelayersonsecondaryfixedvariantopacity016,
-          other.statelayersonsecondaryfixedvariantopacity016,
-          t)!,
-      statelayersonsecondaryopacity008: Color.lerp(
-          statelayersonsecondaryopacity008,
-          other.statelayersonsecondaryopacity008,
-          t)!,
-      statelayersonsecondaryopacity012: Color.lerp(
-          statelayersonsecondaryopacity012,
-          other.statelayersonsecondaryopacity012,
-          t)!,
-      statelayersonsecondaryopacity016: Color.lerp(
-          statelayersonsecondaryopacity016,
-          other.statelayersonsecondaryopacity016,
-          t)!,
-      statelayersonsuccesscontaineropacity008: Color.lerp(
-          statelayersonsuccesscontaineropacity008,
-          other.statelayersonsuccesscontaineropacity008,
-          t)!,
-      statelayersonsuccesscontaineropacity012: Color.lerp(
-          statelayersonsuccesscontaineropacity012,
-          other.statelayersonsuccesscontaineropacity012,
-          t)!,
-      statelayersonsuccesscontaineropacity016: Color.lerp(
-          statelayersonsuccesscontaineropacity016,
-          other.statelayersonsuccesscontaineropacity016,
-          t)!,
-      statelayersonsuccessopacity008: Color.lerp(statelayersonsuccessopacity008,
-          other.statelayersonsuccessopacity008, t)!,
-      statelayersonsuccessopacity012: Color.lerp(statelayersonsuccessopacity012,
-          other.statelayersonsuccessopacity012, t)!,
-      statelayersonsuccessopacity016: Color.lerp(statelayersonsuccessopacity016,
-          other.statelayersonsuccessopacity016, t)!,
-      statelayersonsurfaceopacity008: Color.lerp(statelayersonsurfaceopacity008,
-          other.statelayersonsurfaceopacity008, t)!,
-      statelayersonsurfaceopacity012: Color.lerp(statelayersonsurfaceopacity012,
-          other.statelayersonsurfaceopacity012, t)!,
-      statelayersonsurfaceopacity016: Color.lerp(statelayersonsurfaceopacity016,
-          other.statelayersonsurfaceopacity016, t)!,
-      statelayersonsurfacevariantopacity008: Color.lerp(
-          statelayersonsurfacevariantopacity008,
-          other.statelayersonsurfacevariantopacity008,
-          t)!,
-      statelayersonsurfacevariantopacity012: Color.lerp(
-          statelayersonsurfacevariantopacity012,
-          other.statelayersonsurfacevariantopacity012,
-          t)!,
-      statelayersonsurfacevariantopacity016: Color.lerp(
-          statelayersonsurfacevariantopacity016,
-          other.statelayersonsurfacevariantopacity016,
-          t)!,
-      statelayersontertiarycontaineropacity008: Color.lerp(
-          statelayersontertiarycontaineropacity008,
-          other.statelayersontertiarycontaineropacity008,
-          t)!,
-      statelayersontertiarycontaineropacity012: Color.lerp(
-          statelayersontertiarycontaineropacity012,
-          other.statelayersontertiarycontaineropacity012,
-          t)!,
-      statelayersontertiarycontaineropacity016: Color.lerp(
-          statelayersontertiarycontaineropacity016,
-          other.statelayersontertiarycontaineropacity016,
-          t)!,
-      statelayersontertiaryfixedopacity008: Color.lerp(
-          statelayersontertiaryfixedopacity008,
-          other.statelayersontertiaryfixedopacity008,
-          t)!,
-      statelayersontertiaryfixedopacity012: Color.lerp(
-          statelayersontertiaryfixedopacity012,
-          other.statelayersontertiaryfixedopacity012,
-          t)!,
-      statelayersontertiaryfixedopacity016: Color.lerp(
-          statelayersontertiaryfixedopacity016,
-          other.statelayersontertiaryfixedopacity016,
-          t)!,
-      statelayersontertiaryfixedvariantopacity008: Color.lerp(
-          statelayersontertiaryfixedvariantopacity008,
-          other.statelayersontertiaryfixedvariantopacity008,
-          t)!,
-      statelayersontertiaryfixedvariantopacity012: Color.lerp(
-          statelayersontertiaryfixedvariantopacity012,
-          other.statelayersontertiaryfixedvariantopacity012,
-          t)!,
-      statelayersontertiaryfixedvariantopacity016: Color.lerp(
-          statelayersontertiaryfixedvariantopacity016,
-          other.statelayersontertiaryfixedvariantopacity016,
-          t)!,
-      statelayersontertiaryopacity008: Color.lerp(
-          statelayersontertiaryopacity008,
-          other.statelayersontertiaryopacity008,
-          t)!,
-      statelayersontertiaryopacity012: Color.lerp(
-          statelayersontertiaryopacity012,
-          other.statelayersontertiaryopacity012,
-          t)!,
-      statelayersontertiaryopacity016: Color.lerp(
-          statelayersontertiaryopacity016,
-          other.statelayersontertiaryopacity016,
-          t)!,
-      statelayersonwarncontaineropacity008: Color.lerp(
-          statelayersonwarncontaineropacity008,
-          other.statelayersonwarncontaineropacity008,
-          t)!,
-      statelayersonwarncontaineropacity012: Color.lerp(
-          statelayersonwarncontaineropacity012,
-          other.statelayersonwarncontaineropacity012,
-          t)!,
-      statelayersonwarncontaineropacity016: Color.lerp(
-          statelayersonwarncontaineropacity016,
-          other.statelayersonwarncontaineropacity016,
-          t)!,
-      statelayersonwarnopacity008: Color.lerp(
-          statelayersonwarnopacity008, other.statelayersonwarnopacity008, t)!,
-      statelayersonwarnopacity012: Color.lerp(
-          statelayersonwarnopacity012, other.statelayersonwarnopacity012, t)!,
-      statelayersonwarnopacity016: Color.lerp(
-          statelayersonwarnopacity016, other.statelayersonwarnopacity016, t)!,
-      statelayersoutlineopacity008: Color.lerp(
-          statelayersoutlineopacity008, other.statelayersoutlineopacity008, t)!,
-      statelayersoutlineopacity012: Color.lerp(
-          statelayersoutlineopacity012, other.statelayersoutlineopacity012, t)!,
-      statelayersoutlineopacity016: Color.lerp(
-          statelayersoutlineopacity016, other.statelayersoutlineopacity016, t)!,
-      statelayersoutlinevariantopacity008: Color.lerp(
-          statelayersoutlinevariantopacity008,
-          other.statelayersoutlinevariantopacity008,
-          t)!,
-      statelayersoutlinevariantopacity012: Color.lerp(
-          statelayersoutlinevariantopacity012,
-          other.statelayersoutlinevariantopacity012,
-          t)!,
-      statelayersoutlinevariantopacity016: Color.lerp(
-          statelayersoutlinevariantopacity016,
-          other.statelayersoutlinevariantopacity016,
-          t)!,
-      statelayersprimarycontaineropacity008: Color.lerp(
-          statelayersprimarycontaineropacity008,
-          other.statelayersprimarycontaineropacity008,
-          t)!,
-      statelayersprimarycontaineropacity012: Color.lerp(
-          statelayersprimarycontaineropacity012,
-          other.statelayersprimarycontaineropacity012,
-          t)!,
-      statelayersprimarycontaineropacity016: Color.lerp(
-          statelayersprimarycontaineropacity016,
-          other.statelayersprimarycontaineropacity016,
-          t)!,
-      statelayersprimaryfixeddimopacity008: Color.lerp(
-          statelayersprimaryfixeddimopacity008,
-          other.statelayersprimaryfixeddimopacity008,
-          t)!,
-      statelayersprimaryfixeddimopacity012: Color.lerp(
-          statelayersprimaryfixeddimopacity012,
-          other.statelayersprimaryfixeddimopacity012,
-          t)!,
-      statelayersprimaryfixeddimopacity016: Color.lerp(
-          statelayersprimaryfixeddimopacity016,
-          other.statelayersprimaryfixeddimopacity016,
-          t)!,
-      statelayersprimaryfixedopacity008: Color.lerp(
-          statelayersprimaryfixedopacity008,
-          other.statelayersprimaryfixedopacity008,
-          t)!,
-      statelayersprimaryfixedopacity012: Color.lerp(
-          statelayersprimaryfixedopacity012,
-          other.statelayersprimaryfixedopacity012,
-          t)!,
-      statelayersprimaryfixedopacity016: Color.lerp(
-          statelayersprimaryfixedopacity016,
-          other.statelayersprimaryfixedopacity016,
-          t)!,
-      statelayersprimaryopacity008: Color.lerp(
-          statelayersprimaryopacity008, other.statelayersprimaryopacity008, t)!,
-      statelayersprimaryopacity012: Color.lerp(
-          statelayersprimaryopacity012, other.statelayersprimaryopacity012, t)!,
-      statelayersprimaryopacity016: Color.lerp(
-          statelayersprimaryopacity016, other.statelayersprimaryopacity016, t)!,
-      statelayersscrimopacity008: Color.lerp(
-          statelayersscrimopacity008, other.statelayersscrimopacity008, t)!,
-      statelayersscrimopacity012: Color.lerp(
-          statelayersscrimopacity012, other.statelayersscrimopacity012, t)!,
-      statelayersscrimopacity016: Color.lerp(
-          statelayersscrimopacity016, other.statelayersscrimopacity016, t)!,
-      statelayerssecondarycontaineropacity008: Color.lerp(
-          statelayerssecondarycontaineropacity008,
-          other.statelayerssecondarycontaineropacity008,
-          t)!,
-      statelayerssecondarycontaineropacity012: Color.lerp(
-          statelayerssecondarycontaineropacity012,
-          other.statelayerssecondarycontaineropacity012,
-          t)!,
-      statelayerssecondarycontaineropacity016: Color.lerp(
-          statelayerssecondarycontaineropacity016,
-          other.statelayerssecondarycontaineropacity016,
-          t)!,
-      statelayerssecondaryfixeddimopacity008: Color.lerp(
-          statelayerssecondaryfixeddimopacity008,
-          other.statelayerssecondaryfixeddimopacity008,
-          t)!,
-      statelayerssecondaryfixeddimopacity012: Color.lerp(
-          statelayerssecondaryfixeddimopacity012,
-          other.statelayerssecondaryfixeddimopacity012,
-          t)!,
-      statelayerssecondaryfixeddimopacity016: Color.lerp(
-          statelayerssecondaryfixeddimopacity016,
-          other.statelayerssecondaryfixeddimopacity016,
-          t)!,
-      statelayerssecondaryfixedopacity008: Color.lerp(
-          statelayerssecondaryfixedopacity008,
-          other.statelayerssecondaryfixedopacity008,
-          t)!,
-      statelayerssecondaryfixedopacity012: Color.lerp(
-          statelayerssecondaryfixedopacity012,
-          other.statelayerssecondaryfixedopacity012,
-          t)!,
-      statelayerssecondaryfixedopacity016: Color.lerp(
-          statelayerssecondaryfixedopacity016,
-          other.statelayerssecondaryfixedopacity016,
-          t)!,
-      statelayerssecondaryopacity008: Color.lerp(statelayerssecondaryopacity008,
-          other.statelayerssecondaryopacity008, t)!,
-      statelayerssecondaryopacity012: Color.lerp(statelayerssecondaryopacity012,
-          other.statelayerssecondaryopacity012, t)!,
-      statelayerssecondaryopacity016: Color.lerp(statelayerssecondaryopacity016,
-          other.statelayerssecondaryopacity016, t)!,
-      statelayersshadowopacity008: Color.lerp(
-          statelayersshadowopacity008, other.statelayersshadowopacity008, t)!,
-      statelayersshadowopacity012: Color.lerp(
-          statelayersshadowopacity012, other.statelayersshadowopacity012, t)!,
-      statelayersshadowopacity016: Color.lerp(
-          statelayersshadowopacity016, other.statelayersshadowopacity016, t)!,
-      statelayerssuccesscontaineropacity008: Color.lerp(
-          statelayerssuccesscontaineropacity008,
-          other.statelayerssuccesscontaineropacity008,
-          t)!,
-      statelayerssuccesscontaineropacity012: Color.lerp(
-          statelayerssuccesscontaineropacity012,
-          other.statelayerssuccesscontaineropacity012,
-          t)!,
-      statelayerssuccesscontaineropacity016: Color.lerp(
-          statelayerssuccesscontaineropacity016,
-          other.statelayerssuccesscontaineropacity016,
-          t)!,
-      statelayerssuccessopacity008: Color.lerp(
-          statelayerssuccessopacity008, other.statelayerssuccessopacity008, t)!,
-      statelayerssuccessopacity012: Color.lerp(
-          statelayerssuccessopacity012, other.statelayerssuccessopacity012, t)!,
-      statelayerssuccessopacity016: Color.lerp(
-          statelayerssuccessopacity016, other.statelayerssuccessopacity016, t)!,
-      statelayerssurfacebrightopacity008: Color.lerp(
-          statelayerssurfacebrightopacity008,
-          other.statelayerssurfacebrightopacity008,
-          t)!,
-      statelayerssurfacebrightopacity012: Color.lerp(
-          statelayerssurfacebrightopacity012,
-          other.statelayerssurfacebrightopacity012,
-          t)!,
-      statelayerssurfacebrightopacity016: Color.lerp(
-          statelayerssurfacebrightopacity016,
-          other.statelayerssurfacebrightopacity016,
-          t)!,
-      statelayerssurfacecontainerhighopacity008: Color.lerp(
-          statelayerssurfacecontainerhighopacity008,
-          other.statelayerssurfacecontainerhighopacity008,
-          t)!,
-      statelayerssurfacecontainerhighopacity012: Color.lerp(
-          statelayerssurfacecontainerhighopacity012,
-          other.statelayerssurfacecontainerhighopacity012,
-          t)!,
-      statelayerssurfacecontainerhighopacity016: Color.lerp(
-          statelayerssurfacecontainerhighopacity016,
-          other.statelayerssurfacecontainerhighopacity016,
-          t)!,
-      statelayerssurfacecontainerhighestopacity008: Color.lerp(
-          statelayerssurfacecontainerhighestopacity008,
-          other.statelayerssurfacecontainerhighestopacity008,
-          t)!,
-      statelayerssurfacecontainerhighestopacity012: Color.lerp(
-          statelayerssurfacecontainerhighestopacity012,
-          other.statelayerssurfacecontainerhighestopacity012,
-          t)!,
-      statelayerssurfacecontainerhighestopacity016: Color.lerp(
-          statelayerssurfacecontainerhighestopacity016,
-          other.statelayerssurfacecontainerhighestopacity016,
-          t)!,
-      statelayerssurfacecontainerlowopacity008: Color.lerp(
-          statelayerssurfacecontainerlowopacity008,
-          other.statelayerssurfacecontainerlowopacity008,
-          t)!,
-      statelayerssurfacecontainerlowopacity012: Color.lerp(
-          statelayerssurfacecontainerlowopacity012,
-          other.statelayerssurfacecontainerlowopacity012,
-          t)!,
-      statelayerssurfacecontainerlowopacity016: Color.lerp(
-          statelayerssurfacecontainerlowopacity016,
-          other.statelayerssurfacecontainerlowopacity016,
-          t)!,
-      statelayerssurfacecontainerlowestopacity008: Color.lerp(
-          statelayerssurfacecontainerlowestopacity008,
-          other.statelayerssurfacecontainerlowestopacity008,
-          t)!,
-      statelayerssurfacecontainerlowestopacity012: Color.lerp(
-          statelayerssurfacecontainerlowestopacity012,
-          other.statelayerssurfacecontainerlowestopacity012,
-          t)!,
-      statelayerssurfacecontainerlowestopacity016: Color.lerp(
-          statelayerssurfacecontainerlowestopacity016,
-          other.statelayerssurfacecontainerlowestopacity016,
-          t)!,
-      statelayerssurfacecontaineropacity008: Color.lerp(
-          statelayerssurfacecontaineropacity008,
-          other.statelayerssurfacecontaineropacity008,
-          t)!,
-      statelayerssurfacecontaineropacity012: Color.lerp(
-          statelayerssurfacecontaineropacity012,
-          other.statelayerssurfacecontaineropacity012,
-          t)!,
-      statelayerssurfacecontaineropacity016: Color.lerp(
-          statelayerssurfacecontaineropacity016,
-          other.statelayerssurfacecontaineropacity016,
-          t)!,
-      statelayerssurfacedimopacity008: Color.lerp(
-          statelayerssurfacedimopacity008,
-          other.statelayerssurfacedimopacity008,
-          t)!,
-      statelayerssurfacedimopacity012: Color.lerp(
-          statelayerssurfacedimopacity012,
-          other.statelayerssurfacedimopacity012,
-          t)!,
-      statelayerssurfacedimopacity016: Color.lerp(
-          statelayerssurfacedimopacity016,
-          other.statelayerssurfacedimopacity016,
-          t)!,
-      statelayerssurfaceopacity008: Color.lerp(
-          statelayerssurfaceopacity008, other.statelayerssurfaceopacity008, t)!,
-      statelayerssurfaceopacity012: Color.lerp(
-          statelayerssurfaceopacity012, other.statelayerssurfaceopacity012, t)!,
-      statelayerssurfaceopacity016: Color.lerp(
-          statelayerssurfaceopacity016, other.statelayerssurfaceopacity016, t)!,
-      statelayerstertiarycontaineropacity008: Color.lerp(
-          statelayerstertiarycontaineropacity008,
-          other.statelayerstertiarycontaineropacity008,
-          t)!,
-      statelayerstertiarycontaineropacity012: Color.lerp(
-          statelayerstertiarycontaineropacity012,
-          other.statelayerstertiarycontaineropacity012,
-          t)!,
-      statelayerstertiarycontaineropacity016: Color.lerp(
-          statelayerstertiarycontaineropacity016,
-          other.statelayerstertiarycontaineropacity016,
-          t)!,
-      statelayerstertiaryfixeddimopacity008: Color.lerp(
-          statelayerstertiaryfixeddimopacity008,
-          other.statelayerstertiaryfixeddimopacity008,
-          t)!,
-      statelayerstertiaryfixeddimopacity012: Color.lerp(
-          statelayerstertiaryfixeddimopacity012,
-          other.statelayerstertiaryfixeddimopacity012,
-          t)!,
-      statelayerstertiaryfixeddimopacity016: Color.lerp(
-          statelayerstertiaryfixeddimopacity016,
-          other.statelayerstertiaryfixeddimopacity016,
-          t)!,
-      statelayerstertiaryfixedopacity008: Color.lerp(
-          statelayerstertiaryfixedopacity008,
-          other.statelayerstertiaryfixedopacity008,
-          t)!,
-      statelayerstertiaryfixedopacity012: Color.lerp(
-          statelayerstertiaryfixedopacity012,
-          other.statelayerstertiaryfixedopacity012,
-          t)!,
-      statelayerstertiaryfixedopacity016: Color.lerp(
-          statelayerstertiaryfixedopacity016,
-          other.statelayerstertiaryfixedopacity016,
-          t)!,
-      statelayerstertiaryopacity008: Color.lerp(statelayerstertiaryopacity008,
-          other.statelayerstertiaryopacity008, t)!,
-      statelayerstertiaryopacity012: Color.lerp(statelayerstertiaryopacity012,
-          other.statelayerstertiaryopacity012, t)!,
-      statelayerstertiaryopacity016: Color.lerp(statelayerstertiaryopacity016,
-          other.statelayerstertiaryopacity016, t)!,
-      statelayerswarncontaineropacity008: Color.lerp(
-          statelayerswarncontaineropacity008,
-          other.statelayerswarncontaineropacity008,
-          t)!,
-      statelayerswarncontaineropacity012: Color.lerp(
-          statelayerswarncontaineropacity012,
-          other.statelayerswarncontaineropacity012,
-          t)!,
-      statelayerswarncontaineropacity016: Color.lerp(
-          statelayerswarncontaineropacity016,
-          other.statelayerswarncontaineropacity016,
-          t)!,
-      statelayerswarnopacity008: Color.lerp(
-          statelayerswarnopacity008, other.statelayerswarnopacity008, t)!,
-      statelayerswarnopacity012: Color.lerp(
-          statelayerswarnopacity012, other.statelayerswarnopacity012, t)!,
-      statelayerswarnopacity016: Color.lerp(
-          statelayerswarnopacity016, other.statelayerswarnopacity016, t)!,
+      refErrorE0: Color.lerp(refErrorE0, other.refErrorE0, t)!,
+      refErrorE10: Color.lerp(refErrorE10, other.refErrorE10, t)!,
+      refErrorE100: Color.lerp(refErrorE100, other.refErrorE100, t)!,
+      refErrorE15: Color.lerp(refErrorE15, other.refErrorE15, t)!,
+      refErrorE2: Color.lerp(refErrorE2, other.refErrorE2, t)!,
+      refErrorE20: Color.lerp(refErrorE20, other.refErrorE20, t)!,
+      refErrorE30: Color.lerp(refErrorE30, other.refErrorE30, t)!,
+      refErrorE4: Color.lerp(refErrorE4, other.refErrorE4, t)!,
+      refErrorE40: Color.lerp(refErrorE40, other.refErrorE40, t)!,
+      refErrorE50: Color.lerp(refErrorE50, other.refErrorE50, t)!,
+      refErrorE6: Color.lerp(refErrorE6, other.refErrorE6, t)!,
+      refErrorE60: Color.lerp(refErrorE60, other.refErrorE60, t)!,
+      refErrorE70: Color.lerp(refErrorE70, other.refErrorE70, t)!,
+      refErrorE8: Color.lerp(refErrorE8, other.refErrorE8, t)!,
+      refErrorE80: Color.lerp(refErrorE80, other.refErrorE80, t)!,
+      refErrorE85: Color.lerp(refErrorE85, other.refErrorE85, t)!,
+      refErrorE90: Color.lerp(refErrorE90, other.refErrorE90, t)!,
+      refErrorE93: Color.lerp(refErrorE93, other.refErrorE93, t)!,
+      refErrorE95: Color.lerp(refErrorE95, other.refErrorE95, t)!,
+      refErrorE98: Color.lerp(refErrorE98, other.refErrorE98, t)!,
+      refErrorE99: Color.lerp(refErrorE99, other.refErrorE99, t)!,
+      refNeutralN0: Color.lerp(refNeutralN0, other.refNeutralN0, t)!,
+      refNeutralN10: Color.lerp(refNeutralN10, other.refNeutralN10, t)!,
+      refNeutralN100: Color.lerp(refNeutralN100, other.refNeutralN100, t)!,
+      refNeutralN15: Color.lerp(refNeutralN15, other.refNeutralN15, t)!,
+      refNeutralN2: Color.lerp(refNeutralN2, other.refNeutralN2, t)!,
+      refNeutralN20: Color.lerp(refNeutralN20, other.refNeutralN20, t)!,
+      refNeutralN30: Color.lerp(refNeutralN30, other.refNeutralN30, t)!,
+      refNeutralN4: Color.lerp(refNeutralN4, other.refNeutralN4, t)!,
+      refNeutralN40: Color.lerp(refNeutralN40, other.refNeutralN40, t)!,
+      refNeutralN50: Color.lerp(refNeutralN50, other.refNeutralN50, t)!,
+      refNeutralN6: Color.lerp(refNeutralN6, other.refNeutralN6, t)!,
+      refNeutralN60: Color.lerp(refNeutralN60, other.refNeutralN60, t)!,
+      refNeutralN70: Color.lerp(refNeutralN70, other.refNeutralN70, t)!,
+      refNeutralN8: Color.lerp(refNeutralN8, other.refNeutralN8, t)!,
+      refNeutralN80: Color.lerp(refNeutralN80, other.refNeutralN80, t)!,
+      refNeutralN85: Color.lerp(refNeutralN85, other.refNeutralN85, t)!,
+      refNeutralN90: Color.lerp(refNeutralN90, other.refNeutralN90, t)!,
+      refNeutralN93: Color.lerp(refNeutralN93, other.refNeutralN93, t)!,
+      refNeutralN95: Color.lerp(refNeutralN95, other.refNeutralN95, t)!,
+      refNeutralN98: Color.lerp(refNeutralN98, other.refNeutralN98, t)!,
+      refNeutralN99: Color.lerp(refNeutralN99, other.refNeutralN99, t)!,
+      refNeutralVariantNv0:
+          Color.lerp(refNeutralVariantNv0, other.refNeutralVariantNv0, t)!,
+      refNeutralVariantNv10:
+          Color.lerp(refNeutralVariantNv10, other.refNeutralVariantNv10, t)!,
+      refNeutralVariantNv100:
+          Color.lerp(refNeutralVariantNv100, other.refNeutralVariantNv100, t)!,
+      refNeutralVariantNv15:
+          Color.lerp(refNeutralVariantNv15, other.refNeutralVariantNv15, t)!,
+      refNeutralVariantNv2:
+          Color.lerp(refNeutralVariantNv2, other.refNeutralVariantNv2, t)!,
+      refNeutralVariantNv20:
+          Color.lerp(refNeutralVariantNv20, other.refNeutralVariantNv20, t)!,
+      refNeutralVariantNv30:
+          Color.lerp(refNeutralVariantNv30, other.refNeutralVariantNv30, t)!,
+      refNeutralVariantNv4:
+          Color.lerp(refNeutralVariantNv4, other.refNeutralVariantNv4, t)!,
+      refNeutralVariantNv40:
+          Color.lerp(refNeutralVariantNv40, other.refNeutralVariantNv40, t)!,
+      refNeutralVariantNv50:
+          Color.lerp(refNeutralVariantNv50, other.refNeutralVariantNv50, t)!,
+      refNeutralVariantNv6:
+          Color.lerp(refNeutralVariantNv6, other.refNeutralVariantNv6, t)!,
+      refNeutralVariantNv60:
+          Color.lerp(refNeutralVariantNv60, other.refNeutralVariantNv60, t)!,
+      refNeutralVariantNv70:
+          Color.lerp(refNeutralVariantNv70, other.refNeutralVariantNv70, t)!,
+      refNeutralVariantNv8:
+          Color.lerp(refNeutralVariantNv8, other.refNeutralVariantNv8, t)!,
+      refNeutralVariantNv80:
+          Color.lerp(refNeutralVariantNv80, other.refNeutralVariantNv80, t)!,
+      refNeutralVariantNv85:
+          Color.lerp(refNeutralVariantNv85, other.refNeutralVariantNv85, t)!,
+      refNeutralVariantNv90:
+          Color.lerp(refNeutralVariantNv90, other.refNeutralVariantNv90, t)!,
+      refNeutralVariantNv93:
+          Color.lerp(refNeutralVariantNv93, other.refNeutralVariantNv93, t)!,
+      refNeutralVariantNv95:
+          Color.lerp(refNeutralVariantNv95, other.refNeutralVariantNv95, t)!,
+      refNeutralVariantNv98:
+          Color.lerp(refNeutralVariantNv98, other.refNeutralVariantNv98, t)!,
+      refNeutralVariantNv99:
+          Color.lerp(refNeutralVariantNv99, other.refNeutralVariantNv99, t)!,
+      refPrimaryP0: Color.lerp(refPrimaryP0, other.refPrimaryP0, t)!,
+      refPrimaryP10: Color.lerp(refPrimaryP10, other.refPrimaryP10, t)!,
+      refPrimaryP100: Color.lerp(refPrimaryP100, other.refPrimaryP100, t)!,
+      refPrimaryP15: Color.lerp(refPrimaryP15, other.refPrimaryP15, t)!,
+      refPrimaryP2: Color.lerp(refPrimaryP2, other.refPrimaryP2, t)!,
+      refPrimaryP20: Color.lerp(refPrimaryP20, other.refPrimaryP20, t)!,
+      refPrimaryP30: Color.lerp(refPrimaryP30, other.refPrimaryP30, t)!,
+      refPrimaryP4: Color.lerp(refPrimaryP4, other.refPrimaryP4, t)!,
+      refPrimaryP40: Color.lerp(refPrimaryP40, other.refPrimaryP40, t)!,
+      refPrimaryP50: Color.lerp(refPrimaryP50, other.refPrimaryP50, t)!,
+      refPrimaryP6: Color.lerp(refPrimaryP6, other.refPrimaryP6, t)!,
+      refPrimaryP60: Color.lerp(refPrimaryP60, other.refPrimaryP60, t)!,
+      refPrimaryP70: Color.lerp(refPrimaryP70, other.refPrimaryP70, t)!,
+      refPrimaryP8: Color.lerp(refPrimaryP8, other.refPrimaryP8, t)!,
+      refPrimaryP80: Color.lerp(refPrimaryP80, other.refPrimaryP80, t)!,
+      refPrimaryP85: Color.lerp(refPrimaryP85, other.refPrimaryP85, t)!,
+      refPrimaryP90: Color.lerp(refPrimaryP90, other.refPrimaryP90, t)!,
+      refPrimaryP93: Color.lerp(refPrimaryP93, other.refPrimaryP93, t)!,
+      refPrimaryP95: Color.lerp(refPrimaryP95, other.refPrimaryP95, t)!,
+      refPrimaryP98: Color.lerp(refPrimaryP98, other.refPrimaryP98, t)!,
+      refPrimaryP99: Color.lerp(refPrimaryP99, other.refPrimaryP99, t)!,
+      refSecondaryS0: Color.lerp(refSecondaryS0, other.refSecondaryS0, t)!,
+      refSecondaryS10: Color.lerp(refSecondaryS10, other.refSecondaryS10, t)!,
+      refSecondaryS100:
+          Color.lerp(refSecondaryS100, other.refSecondaryS100, t)!,
+      refSecondaryS15: Color.lerp(refSecondaryS15, other.refSecondaryS15, t)!,
+      refSecondaryS2: Color.lerp(refSecondaryS2, other.refSecondaryS2, t)!,
+      refSecondaryS20: Color.lerp(refSecondaryS20, other.refSecondaryS20, t)!,
+      refSecondaryS30: Color.lerp(refSecondaryS30, other.refSecondaryS30, t)!,
+      refSecondaryS4: Color.lerp(refSecondaryS4, other.refSecondaryS4, t)!,
+      refSecondaryS40: Color.lerp(refSecondaryS40, other.refSecondaryS40, t)!,
+      refSecondaryS50: Color.lerp(refSecondaryS50, other.refSecondaryS50, t)!,
+      refSecondaryS6: Color.lerp(refSecondaryS6, other.refSecondaryS6, t)!,
+      refSecondaryS60: Color.lerp(refSecondaryS60, other.refSecondaryS60, t)!,
+      refSecondaryS70: Color.lerp(refSecondaryS70, other.refSecondaryS70, t)!,
+      refSecondaryS8: Color.lerp(refSecondaryS8, other.refSecondaryS8, t)!,
+      refSecondaryS80: Color.lerp(refSecondaryS80, other.refSecondaryS80, t)!,
+      refSecondaryS85: Color.lerp(refSecondaryS85, other.refSecondaryS85, t)!,
+      refSecondaryS90: Color.lerp(refSecondaryS90, other.refSecondaryS90, t)!,
+      refSecondaryS93: Color.lerp(refSecondaryS93, other.refSecondaryS93, t)!,
+      refSecondaryS95: Color.lerp(refSecondaryS95, other.refSecondaryS95, t)!,
+      refSecondaryS98: Color.lerp(refSecondaryS98, other.refSecondaryS98, t)!,
+      refSecondaryS99: Color.lerp(refSecondaryS99, other.refSecondaryS99, t)!,
+      refSuccessU0: Color.lerp(refSuccessU0, other.refSuccessU0, t)!,
+      refSuccessU10: Color.lerp(refSuccessU10, other.refSuccessU10, t)!,
+      refSuccessU100: Color.lerp(refSuccessU100, other.refSuccessU100, t)!,
+      refSuccessU15: Color.lerp(refSuccessU15, other.refSuccessU15, t)!,
+      refSuccessU2: Color.lerp(refSuccessU2, other.refSuccessU2, t)!,
+      refSuccessU20: Color.lerp(refSuccessU20, other.refSuccessU20, t)!,
+      refSuccessU30: Color.lerp(refSuccessU30, other.refSuccessU30, t)!,
+      refSuccessU4: Color.lerp(refSuccessU4, other.refSuccessU4, t)!,
+      refSuccessU40: Color.lerp(refSuccessU40, other.refSuccessU40, t)!,
+      refSuccessU50: Color.lerp(refSuccessU50, other.refSuccessU50, t)!,
+      refSuccessU6: Color.lerp(refSuccessU6, other.refSuccessU6, t)!,
+      refSuccessU60: Color.lerp(refSuccessU60, other.refSuccessU60, t)!,
+      refSuccessU70: Color.lerp(refSuccessU70, other.refSuccessU70, t)!,
+      refSuccessU8: Color.lerp(refSuccessU8, other.refSuccessU8, t)!,
+      refSuccessU80: Color.lerp(refSuccessU80, other.refSuccessU80, t)!,
+      refSuccessU85: Color.lerp(refSuccessU85, other.refSuccessU85, t)!,
+      refSuccessU90: Color.lerp(refSuccessU90, other.refSuccessU90, t)!,
+      refSuccessU93: Color.lerp(refSuccessU93, other.refSuccessU93, t)!,
+      refSuccessU95: Color.lerp(refSuccessU95, other.refSuccessU95, t)!,
+      refSuccessU98: Color.lerp(refSuccessU98, other.refSuccessU98, t)!,
+      refSuccessU99: Color.lerp(refSuccessU99, other.refSuccessU99, t)!,
+      refTertiaryT0: Color.lerp(refTertiaryT0, other.refTertiaryT0, t)!,
+      refTertiaryT10: Color.lerp(refTertiaryT10, other.refTertiaryT10, t)!,
+      refTertiaryT100: Color.lerp(refTertiaryT100, other.refTertiaryT100, t)!,
+      refTertiaryT15: Color.lerp(refTertiaryT15, other.refTertiaryT15, t)!,
+      refTertiaryT2: Color.lerp(refTertiaryT2, other.refTertiaryT2, t)!,
+      refTertiaryT20: Color.lerp(refTertiaryT20, other.refTertiaryT20, t)!,
+      refTertiaryT30: Color.lerp(refTertiaryT30, other.refTertiaryT30, t)!,
+      refTertiaryT4: Color.lerp(refTertiaryT4, other.refTertiaryT4, t)!,
+      refTertiaryT40: Color.lerp(refTertiaryT40, other.refTertiaryT40, t)!,
+      refTertiaryT50: Color.lerp(refTertiaryT50, other.refTertiaryT50, t)!,
+      refTertiaryT6: Color.lerp(refTertiaryT6, other.refTertiaryT6, t)!,
+      refTertiaryT60: Color.lerp(refTertiaryT60, other.refTertiaryT60, t)!,
+      refTertiaryT70: Color.lerp(refTertiaryT70, other.refTertiaryT70, t)!,
+      refTertiaryT8: Color.lerp(refTertiaryT8, other.refTertiaryT8, t)!,
+      refTertiaryT80: Color.lerp(refTertiaryT80, other.refTertiaryT80, t)!,
+      refTertiaryT85: Color.lerp(refTertiaryT85, other.refTertiaryT85, t)!,
+      refTertiaryT90: Color.lerp(refTertiaryT90, other.refTertiaryT90, t)!,
+      refTertiaryT93: Color.lerp(refTertiaryT93, other.refTertiaryT93, t)!,
+      refTertiaryT95: Color.lerp(refTertiaryT95, other.refTertiaryT95, t)!,
+      refTertiaryT98: Color.lerp(refTertiaryT98, other.refTertiaryT98, t)!,
+      refTertiaryT99: Color.lerp(refTertiaryT99, other.refTertiaryT99, t)!,
+      refWarnW0: Color.lerp(refWarnW0, other.refWarnW0, t)!,
+      refWarnW10: Color.lerp(refWarnW10, other.refWarnW10, t)!,
+      refWarnW100: Color.lerp(refWarnW100, other.refWarnW100, t)!,
+      refWarnW15: Color.lerp(refWarnW15, other.refWarnW15, t)!,
+      refWarnW2: Color.lerp(refWarnW2, other.refWarnW2, t)!,
+      refWarnW20: Color.lerp(refWarnW20, other.refWarnW20, t)!,
+      refWarnW30: Color.lerp(refWarnW30, other.refWarnW30, t)!,
+      refWarnW4: Color.lerp(refWarnW4, other.refWarnW4, t)!,
+      refWarnW40: Color.lerp(refWarnW40, other.refWarnW40, t)!,
+      refWarnW50: Color.lerp(refWarnW50, other.refWarnW50, t)!,
+      refWarnW6: Color.lerp(refWarnW6, other.refWarnW6, t)!,
+      refWarnW60: Color.lerp(refWarnW60, other.refWarnW60, t)!,
+      refWarnW70: Color.lerp(refWarnW70, other.refWarnW70, t)!,
+      refWarnW8: Color.lerp(refWarnW8, other.refWarnW8, t)!,
+      refWarnW80: Color.lerp(refWarnW80, other.refWarnW80, t)!,
+      refWarnW85: Color.lerp(refWarnW85, other.refWarnW85, t)!,
+      refWarnW90: Color.lerp(refWarnW90, other.refWarnW90, t)!,
+      refWarnW93: Color.lerp(refWarnW93, other.refWarnW93, t)!,
+      refWarnW95: Color.lerp(refWarnW95, other.refWarnW95, t)!,
+      refWarnW98: Color.lerp(refWarnW98, other.refWarnW98, t)!,
+      refWarnW99: Color.lerp(refWarnW99, other.refWarnW99, t)!,
+      stateLayersErrorContainerOpacity008: Color.lerp(
+          stateLayersErrorContainerOpacity008,
+          other.stateLayersErrorContainerOpacity008,
+          t)!,
+      stateLayersErrorContainerOpacity012: Color.lerp(
+          stateLayersErrorContainerOpacity012,
+          other.stateLayersErrorContainerOpacity012,
+          t)!,
+      stateLayersErrorContainerOpacity016: Color.lerp(
+          stateLayersErrorContainerOpacity016,
+          other.stateLayersErrorContainerOpacity016,
+          t)!,
+      stateLayersErrorOpacity008: Color.lerp(
+          stateLayersErrorOpacity008, other.stateLayersErrorOpacity008, t)!,
+      stateLayersErrorOpacity012: Color.lerp(
+          stateLayersErrorOpacity012, other.stateLayersErrorOpacity012, t)!,
+      stateLayersErrorOpacity016: Color.lerp(
+          stateLayersErrorOpacity016, other.stateLayersErrorOpacity016, t)!,
+      stateLayersInverseOnSurfaceOpacity008: Color.lerp(
+          stateLayersInverseOnSurfaceOpacity008,
+          other.stateLayersInverseOnSurfaceOpacity008,
+          t)!,
+      stateLayersInverseOnSurfaceOpacity012: Color.lerp(
+          stateLayersInverseOnSurfaceOpacity012,
+          other.stateLayersInverseOnSurfaceOpacity012,
+          t)!,
+      stateLayersInverseOnSurfaceOpacity016: Color.lerp(
+          stateLayersInverseOnSurfaceOpacity016,
+          other.stateLayersInverseOnSurfaceOpacity016,
+          t)!,
+      stateLayersInversePrimaryOpacity008: Color.lerp(
+          stateLayersInversePrimaryOpacity008,
+          other.stateLayersInversePrimaryOpacity008,
+          t)!,
+      stateLayersInversePrimaryOpacity012: Color.lerp(
+          stateLayersInversePrimaryOpacity012,
+          other.stateLayersInversePrimaryOpacity012,
+          t)!,
+      stateLayersInversePrimaryOpacity016: Color.lerp(
+          stateLayersInversePrimaryOpacity016,
+          other.stateLayersInversePrimaryOpacity016,
+          t)!,
+      stateLayersInverseSurfaceOpacity008: Color.lerp(
+          stateLayersInverseSurfaceOpacity008,
+          other.stateLayersInverseSurfaceOpacity008,
+          t)!,
+      stateLayersInverseSurfaceOpacity012: Color.lerp(
+          stateLayersInverseSurfaceOpacity012,
+          other.stateLayersInverseSurfaceOpacity012,
+          t)!,
+      stateLayersInverseSurfaceOpacity016: Color.lerp(
+          stateLayersInverseSurfaceOpacity016,
+          other.stateLayersInverseSurfaceOpacity016,
+          t)!,
+      stateLayersOnErrorContainerOpacity008: Color.lerp(
+          stateLayersOnErrorContainerOpacity008,
+          other.stateLayersOnErrorContainerOpacity008,
+          t)!,
+      stateLayersOnErrorContainerOpacity012: Color.lerp(
+          stateLayersOnErrorContainerOpacity012,
+          other.stateLayersOnErrorContainerOpacity012,
+          t)!,
+      stateLayersOnErrorContainerOpacity016: Color.lerp(
+          stateLayersOnErrorContainerOpacity016,
+          other.stateLayersOnErrorContainerOpacity016,
+          t)!,
+      stateLayersOnErrorOpacity008: Color.lerp(
+          stateLayersOnErrorOpacity008, other.stateLayersOnErrorOpacity008, t)!,
+      stateLayersOnErrorOpacity012: Color.lerp(
+          stateLayersOnErrorOpacity012, other.stateLayersOnErrorOpacity012, t)!,
+      stateLayersOnErrorOpacity016: Color.lerp(
+          stateLayersOnErrorOpacity016, other.stateLayersOnErrorOpacity016, t)!,
+      stateLayersOnPrimaryContainerOpacity008: Color.lerp(
+          stateLayersOnPrimaryContainerOpacity008,
+          other.stateLayersOnPrimaryContainerOpacity008,
+          t)!,
+      stateLayersOnPrimaryContainerOpacity012: Color.lerp(
+          stateLayersOnPrimaryContainerOpacity012,
+          other.stateLayersOnPrimaryContainerOpacity012,
+          t)!,
+      stateLayersOnPrimaryContainerOpacity016: Color.lerp(
+          stateLayersOnPrimaryContainerOpacity016,
+          other.stateLayersOnPrimaryContainerOpacity016,
+          t)!,
+      stateLayersOnPrimaryFixedOpacity008: Color.lerp(
+          stateLayersOnPrimaryFixedOpacity008,
+          other.stateLayersOnPrimaryFixedOpacity008,
+          t)!,
+      stateLayersOnPrimaryFixedOpacity012: Color.lerp(
+          stateLayersOnPrimaryFixedOpacity012,
+          other.stateLayersOnPrimaryFixedOpacity012,
+          t)!,
+      stateLayersOnPrimaryFixedOpacity016: Color.lerp(
+          stateLayersOnPrimaryFixedOpacity016,
+          other.stateLayersOnPrimaryFixedOpacity016,
+          t)!,
+      stateLayersOnPrimaryFixedVariantOpacity008: Color.lerp(
+          stateLayersOnPrimaryFixedVariantOpacity008,
+          other.stateLayersOnPrimaryFixedVariantOpacity008,
+          t)!,
+      stateLayersOnPrimaryFixedVariantOpacity012: Color.lerp(
+          stateLayersOnPrimaryFixedVariantOpacity012,
+          other.stateLayersOnPrimaryFixedVariantOpacity012,
+          t)!,
+      stateLayersOnPrimaryFixedVariantOpacity016: Color.lerp(
+          stateLayersOnPrimaryFixedVariantOpacity016,
+          other.stateLayersOnPrimaryFixedVariantOpacity016,
+          t)!,
+      stateLayersOnPrimaryOpacity008: Color.lerp(stateLayersOnPrimaryOpacity008,
+          other.stateLayersOnPrimaryOpacity008, t)!,
+      stateLayersOnPrimaryOpacity012: Color.lerp(stateLayersOnPrimaryOpacity012,
+          other.stateLayersOnPrimaryOpacity012, t)!,
+      stateLayersOnPrimaryOpacity016: Color.lerp(stateLayersOnPrimaryOpacity016,
+          other.stateLayersOnPrimaryOpacity016, t)!,
+      stateLayersOnSecondaryContainerOpacity008: Color.lerp(
+          stateLayersOnSecondaryContainerOpacity008,
+          other.stateLayersOnSecondaryContainerOpacity008,
+          t)!,
+      stateLayersOnSecondaryContainerOpacity012: Color.lerp(
+          stateLayersOnSecondaryContainerOpacity012,
+          other.stateLayersOnSecondaryContainerOpacity012,
+          t)!,
+      stateLayersOnSecondaryContainerOpacity016: Color.lerp(
+          stateLayersOnSecondaryContainerOpacity016,
+          other.stateLayersOnSecondaryContainerOpacity016,
+          t)!,
+      stateLayersOnSecondaryFixedOpacity008: Color.lerp(
+          stateLayersOnSecondaryFixedOpacity008,
+          other.stateLayersOnSecondaryFixedOpacity008,
+          t)!,
+      stateLayersOnSecondaryFixedOpacity012: Color.lerp(
+          stateLayersOnSecondaryFixedOpacity012,
+          other.stateLayersOnSecondaryFixedOpacity012,
+          t)!,
+      stateLayersOnSecondaryFixedOpacity016: Color.lerp(
+          stateLayersOnSecondaryFixedOpacity016,
+          other.stateLayersOnSecondaryFixedOpacity016,
+          t)!,
+      stateLayersOnSecondaryFixedVariantOpacity008: Color.lerp(
+          stateLayersOnSecondaryFixedVariantOpacity008,
+          other.stateLayersOnSecondaryFixedVariantOpacity008,
+          t)!,
+      stateLayersOnSecondaryFixedVariantOpacity012: Color.lerp(
+          stateLayersOnSecondaryFixedVariantOpacity012,
+          other.stateLayersOnSecondaryFixedVariantOpacity012,
+          t)!,
+      stateLayersOnSecondaryFixedVariantOpacity016: Color.lerp(
+          stateLayersOnSecondaryFixedVariantOpacity016,
+          other.stateLayersOnSecondaryFixedVariantOpacity016,
+          t)!,
+      stateLayersOnSecondaryOpacity008: Color.lerp(
+          stateLayersOnSecondaryOpacity008,
+          other.stateLayersOnSecondaryOpacity008,
+          t)!,
+      stateLayersOnSecondaryOpacity012: Color.lerp(
+          stateLayersOnSecondaryOpacity012,
+          other.stateLayersOnSecondaryOpacity012,
+          t)!,
+      stateLayersOnSecondaryOpacity016: Color.lerp(
+          stateLayersOnSecondaryOpacity016,
+          other.stateLayersOnSecondaryOpacity016,
+          t)!,
+      stateLayersOnSuccessContainerOpacity008: Color.lerp(
+          stateLayersOnSuccessContainerOpacity008,
+          other.stateLayersOnSuccessContainerOpacity008,
+          t)!,
+      stateLayersOnSuccessContainerOpacity012: Color.lerp(
+          stateLayersOnSuccessContainerOpacity012,
+          other.stateLayersOnSuccessContainerOpacity012,
+          t)!,
+      stateLayersOnSuccessContainerOpacity016: Color.lerp(
+          stateLayersOnSuccessContainerOpacity016,
+          other.stateLayersOnSuccessContainerOpacity016,
+          t)!,
+      stateLayersOnSuccessOpacity008: Color.lerp(stateLayersOnSuccessOpacity008,
+          other.stateLayersOnSuccessOpacity008, t)!,
+      stateLayersOnSuccessOpacity012: Color.lerp(stateLayersOnSuccessOpacity012,
+          other.stateLayersOnSuccessOpacity012, t)!,
+      stateLayersOnSuccessOpacity016: Color.lerp(stateLayersOnSuccessOpacity016,
+          other.stateLayersOnSuccessOpacity016, t)!,
+      stateLayersOnSurfaceOpacity008: Color.lerp(stateLayersOnSurfaceOpacity008,
+          other.stateLayersOnSurfaceOpacity008, t)!,
+      stateLayersOnSurfaceOpacity012: Color.lerp(stateLayersOnSurfaceOpacity012,
+          other.stateLayersOnSurfaceOpacity012, t)!,
+      stateLayersOnSurfaceOpacity016: Color.lerp(stateLayersOnSurfaceOpacity016,
+          other.stateLayersOnSurfaceOpacity016, t)!,
+      stateLayersOnSurfaceVariantOpacity008: Color.lerp(
+          stateLayersOnSurfaceVariantOpacity008,
+          other.stateLayersOnSurfaceVariantOpacity008,
+          t)!,
+      stateLayersOnSurfaceVariantOpacity012: Color.lerp(
+          stateLayersOnSurfaceVariantOpacity012,
+          other.stateLayersOnSurfaceVariantOpacity012,
+          t)!,
+      stateLayersOnSurfaceVariantOpacity016: Color.lerp(
+          stateLayersOnSurfaceVariantOpacity016,
+          other.stateLayersOnSurfaceVariantOpacity016,
+          t)!,
+      stateLayersOnTertiaryContainerOpacity008: Color.lerp(
+          stateLayersOnTertiaryContainerOpacity008,
+          other.stateLayersOnTertiaryContainerOpacity008,
+          t)!,
+      stateLayersOnTertiaryContainerOpacity012: Color.lerp(
+          stateLayersOnTertiaryContainerOpacity012,
+          other.stateLayersOnTertiaryContainerOpacity012,
+          t)!,
+      stateLayersOnTertiaryContainerOpacity016: Color.lerp(
+          stateLayersOnTertiaryContainerOpacity016,
+          other.stateLayersOnTertiaryContainerOpacity016,
+          t)!,
+      stateLayersOnTertiaryFixedOpacity008: Color.lerp(
+          stateLayersOnTertiaryFixedOpacity008,
+          other.stateLayersOnTertiaryFixedOpacity008,
+          t)!,
+      stateLayersOnTertiaryFixedOpacity012: Color.lerp(
+          stateLayersOnTertiaryFixedOpacity012,
+          other.stateLayersOnTertiaryFixedOpacity012,
+          t)!,
+      stateLayersOnTertiaryFixedOpacity016: Color.lerp(
+          stateLayersOnTertiaryFixedOpacity016,
+          other.stateLayersOnTertiaryFixedOpacity016,
+          t)!,
+      stateLayersOnTertiaryFixedVariantOpacity008: Color.lerp(
+          stateLayersOnTertiaryFixedVariantOpacity008,
+          other.stateLayersOnTertiaryFixedVariantOpacity008,
+          t)!,
+      stateLayersOnTertiaryFixedVariantOpacity012: Color.lerp(
+          stateLayersOnTertiaryFixedVariantOpacity012,
+          other.stateLayersOnTertiaryFixedVariantOpacity012,
+          t)!,
+      stateLayersOnTertiaryFixedVariantOpacity016: Color.lerp(
+          stateLayersOnTertiaryFixedVariantOpacity016,
+          other.stateLayersOnTertiaryFixedVariantOpacity016,
+          t)!,
+      stateLayersOnTertiaryOpacity008: Color.lerp(
+          stateLayersOnTertiaryOpacity008,
+          other.stateLayersOnTertiaryOpacity008,
+          t)!,
+      stateLayersOnTertiaryOpacity012: Color.lerp(
+          stateLayersOnTertiaryOpacity012,
+          other.stateLayersOnTertiaryOpacity012,
+          t)!,
+      stateLayersOnTertiaryOpacity016: Color.lerp(
+          stateLayersOnTertiaryOpacity016,
+          other.stateLayersOnTertiaryOpacity016,
+          t)!,
+      stateLayersOnWarnContainerOpacity008: Color.lerp(
+          stateLayersOnWarnContainerOpacity008,
+          other.stateLayersOnWarnContainerOpacity008,
+          t)!,
+      stateLayersOnWarnContainerOpacity012: Color.lerp(
+          stateLayersOnWarnContainerOpacity012,
+          other.stateLayersOnWarnContainerOpacity012,
+          t)!,
+      stateLayersOnWarnContainerOpacity016: Color.lerp(
+          stateLayersOnWarnContainerOpacity016,
+          other.stateLayersOnWarnContainerOpacity016,
+          t)!,
+      stateLayersOnWarnOpacity008: Color.lerp(
+          stateLayersOnWarnOpacity008, other.stateLayersOnWarnOpacity008, t)!,
+      stateLayersOnWarnOpacity012: Color.lerp(
+          stateLayersOnWarnOpacity012, other.stateLayersOnWarnOpacity012, t)!,
+      stateLayersOnWarnOpacity016: Color.lerp(
+          stateLayersOnWarnOpacity016, other.stateLayersOnWarnOpacity016, t)!,
+      stateLayersOutlineOpacity008: Color.lerp(
+          stateLayersOutlineOpacity008, other.stateLayersOutlineOpacity008, t)!,
+      stateLayersOutlineOpacity012: Color.lerp(
+          stateLayersOutlineOpacity012, other.stateLayersOutlineOpacity012, t)!,
+      stateLayersOutlineOpacity016: Color.lerp(
+          stateLayersOutlineOpacity016, other.stateLayersOutlineOpacity016, t)!,
+      stateLayersOutlineVariantOpacity008: Color.lerp(
+          stateLayersOutlineVariantOpacity008,
+          other.stateLayersOutlineVariantOpacity008,
+          t)!,
+      stateLayersOutlineVariantOpacity012: Color.lerp(
+          stateLayersOutlineVariantOpacity012,
+          other.stateLayersOutlineVariantOpacity012,
+          t)!,
+      stateLayersOutlineVariantOpacity016: Color.lerp(
+          stateLayersOutlineVariantOpacity016,
+          other.stateLayersOutlineVariantOpacity016,
+          t)!,
+      stateLayersPrimaryContainerOpacity008: Color.lerp(
+          stateLayersPrimaryContainerOpacity008,
+          other.stateLayersPrimaryContainerOpacity008,
+          t)!,
+      stateLayersPrimaryContainerOpacity012: Color.lerp(
+          stateLayersPrimaryContainerOpacity012,
+          other.stateLayersPrimaryContainerOpacity012,
+          t)!,
+      stateLayersPrimaryContainerOpacity016: Color.lerp(
+          stateLayersPrimaryContainerOpacity016,
+          other.stateLayersPrimaryContainerOpacity016,
+          t)!,
+      stateLayersPrimaryFixedDimOpacity008: Color.lerp(
+          stateLayersPrimaryFixedDimOpacity008,
+          other.stateLayersPrimaryFixedDimOpacity008,
+          t)!,
+      stateLayersPrimaryFixedDimOpacity012: Color.lerp(
+          stateLayersPrimaryFixedDimOpacity012,
+          other.stateLayersPrimaryFixedDimOpacity012,
+          t)!,
+      stateLayersPrimaryFixedDimOpacity016: Color.lerp(
+          stateLayersPrimaryFixedDimOpacity016,
+          other.stateLayersPrimaryFixedDimOpacity016,
+          t)!,
+      stateLayersPrimaryFixedOpacity008: Color.lerp(
+          stateLayersPrimaryFixedOpacity008,
+          other.stateLayersPrimaryFixedOpacity008,
+          t)!,
+      stateLayersPrimaryFixedOpacity012: Color.lerp(
+          stateLayersPrimaryFixedOpacity012,
+          other.stateLayersPrimaryFixedOpacity012,
+          t)!,
+      stateLayersPrimaryFixedOpacity016: Color.lerp(
+          stateLayersPrimaryFixedOpacity016,
+          other.stateLayersPrimaryFixedOpacity016,
+          t)!,
+      stateLayersPrimaryOpacity008: Color.lerp(
+          stateLayersPrimaryOpacity008, other.stateLayersPrimaryOpacity008, t)!,
+      stateLayersPrimaryOpacity012: Color.lerp(
+          stateLayersPrimaryOpacity012, other.stateLayersPrimaryOpacity012, t)!,
+      stateLayersPrimaryOpacity016: Color.lerp(
+          stateLayersPrimaryOpacity016, other.stateLayersPrimaryOpacity016, t)!,
+      stateLayersScrimOpacity008: Color.lerp(
+          stateLayersScrimOpacity008, other.stateLayersScrimOpacity008, t)!,
+      stateLayersScrimOpacity012: Color.lerp(
+          stateLayersScrimOpacity012, other.stateLayersScrimOpacity012, t)!,
+      stateLayersScrimOpacity016: Color.lerp(
+          stateLayersScrimOpacity016, other.stateLayersScrimOpacity016, t)!,
+      stateLayersSecondaryContainerOpacity008: Color.lerp(
+          stateLayersSecondaryContainerOpacity008,
+          other.stateLayersSecondaryContainerOpacity008,
+          t)!,
+      stateLayersSecondaryContainerOpacity012: Color.lerp(
+          stateLayersSecondaryContainerOpacity012,
+          other.stateLayersSecondaryContainerOpacity012,
+          t)!,
+      stateLayersSecondaryContainerOpacity016: Color.lerp(
+          stateLayersSecondaryContainerOpacity016,
+          other.stateLayersSecondaryContainerOpacity016,
+          t)!,
+      stateLayersSecondaryFixedDimOpacity008: Color.lerp(
+          stateLayersSecondaryFixedDimOpacity008,
+          other.stateLayersSecondaryFixedDimOpacity008,
+          t)!,
+      stateLayersSecondaryFixedDimOpacity012: Color.lerp(
+          stateLayersSecondaryFixedDimOpacity012,
+          other.stateLayersSecondaryFixedDimOpacity012,
+          t)!,
+      stateLayersSecondaryFixedDimOpacity016: Color.lerp(
+          stateLayersSecondaryFixedDimOpacity016,
+          other.stateLayersSecondaryFixedDimOpacity016,
+          t)!,
+      stateLayersSecondaryFixedOpacity008: Color.lerp(
+          stateLayersSecondaryFixedOpacity008,
+          other.stateLayersSecondaryFixedOpacity008,
+          t)!,
+      stateLayersSecondaryFixedOpacity012: Color.lerp(
+          stateLayersSecondaryFixedOpacity012,
+          other.stateLayersSecondaryFixedOpacity012,
+          t)!,
+      stateLayersSecondaryFixedOpacity016: Color.lerp(
+          stateLayersSecondaryFixedOpacity016,
+          other.stateLayersSecondaryFixedOpacity016,
+          t)!,
+      stateLayersSecondaryOpacity008: Color.lerp(stateLayersSecondaryOpacity008,
+          other.stateLayersSecondaryOpacity008, t)!,
+      stateLayersSecondaryOpacity012: Color.lerp(stateLayersSecondaryOpacity012,
+          other.stateLayersSecondaryOpacity012, t)!,
+      stateLayersSecondaryOpacity016: Color.lerp(stateLayersSecondaryOpacity016,
+          other.stateLayersSecondaryOpacity016, t)!,
+      stateLayersShadowOpacity008: Color.lerp(
+          stateLayersShadowOpacity008, other.stateLayersShadowOpacity008, t)!,
+      stateLayersShadowOpacity012: Color.lerp(
+          stateLayersShadowOpacity012, other.stateLayersShadowOpacity012, t)!,
+      stateLayersShadowOpacity016: Color.lerp(
+          stateLayersShadowOpacity016, other.stateLayersShadowOpacity016, t)!,
+      stateLayersSuccessContainerOpacity008: Color.lerp(
+          stateLayersSuccessContainerOpacity008,
+          other.stateLayersSuccessContainerOpacity008,
+          t)!,
+      stateLayersSuccessContainerOpacity012: Color.lerp(
+          stateLayersSuccessContainerOpacity012,
+          other.stateLayersSuccessContainerOpacity012,
+          t)!,
+      stateLayersSuccessContainerOpacity016: Color.lerp(
+          stateLayersSuccessContainerOpacity016,
+          other.stateLayersSuccessContainerOpacity016,
+          t)!,
+      stateLayersSuccessOpacity008: Color.lerp(
+          stateLayersSuccessOpacity008, other.stateLayersSuccessOpacity008, t)!,
+      stateLayersSuccessOpacity012: Color.lerp(
+          stateLayersSuccessOpacity012, other.stateLayersSuccessOpacity012, t)!,
+      stateLayersSuccessOpacity016: Color.lerp(
+          stateLayersSuccessOpacity016, other.stateLayersSuccessOpacity016, t)!,
+      stateLayersSurfaceBrightOpacity008: Color.lerp(
+          stateLayersSurfaceBrightOpacity008,
+          other.stateLayersSurfaceBrightOpacity008,
+          t)!,
+      stateLayersSurfaceBrightOpacity012: Color.lerp(
+          stateLayersSurfaceBrightOpacity012,
+          other.stateLayersSurfaceBrightOpacity012,
+          t)!,
+      stateLayersSurfaceBrightOpacity016: Color.lerp(
+          stateLayersSurfaceBrightOpacity016,
+          other.stateLayersSurfaceBrightOpacity016,
+          t)!,
+      stateLayersSurfaceContainerHighOpacity008: Color.lerp(
+          stateLayersSurfaceContainerHighOpacity008,
+          other.stateLayersSurfaceContainerHighOpacity008,
+          t)!,
+      stateLayersSurfaceContainerHighOpacity012: Color.lerp(
+          stateLayersSurfaceContainerHighOpacity012,
+          other.stateLayersSurfaceContainerHighOpacity012,
+          t)!,
+      stateLayersSurfaceContainerHighOpacity016: Color.lerp(
+          stateLayersSurfaceContainerHighOpacity016,
+          other.stateLayersSurfaceContainerHighOpacity016,
+          t)!,
+      stateLayersSurfaceContainerHighestOpacity008: Color.lerp(
+          stateLayersSurfaceContainerHighestOpacity008,
+          other.stateLayersSurfaceContainerHighestOpacity008,
+          t)!,
+      stateLayersSurfaceContainerHighestOpacity012: Color.lerp(
+          stateLayersSurfaceContainerHighestOpacity012,
+          other.stateLayersSurfaceContainerHighestOpacity012,
+          t)!,
+      stateLayersSurfaceContainerHighestOpacity016: Color.lerp(
+          stateLayersSurfaceContainerHighestOpacity016,
+          other.stateLayersSurfaceContainerHighestOpacity016,
+          t)!,
+      stateLayersSurfaceContainerLowOpacity008: Color.lerp(
+          stateLayersSurfaceContainerLowOpacity008,
+          other.stateLayersSurfaceContainerLowOpacity008,
+          t)!,
+      stateLayersSurfaceContainerLowOpacity012: Color.lerp(
+          stateLayersSurfaceContainerLowOpacity012,
+          other.stateLayersSurfaceContainerLowOpacity012,
+          t)!,
+      stateLayersSurfaceContainerLowOpacity016: Color.lerp(
+          stateLayersSurfaceContainerLowOpacity016,
+          other.stateLayersSurfaceContainerLowOpacity016,
+          t)!,
+      stateLayersSurfaceContainerLowestOpacity008: Color.lerp(
+          stateLayersSurfaceContainerLowestOpacity008,
+          other.stateLayersSurfaceContainerLowestOpacity008,
+          t)!,
+      stateLayersSurfaceContainerLowestOpacity012: Color.lerp(
+          stateLayersSurfaceContainerLowestOpacity012,
+          other.stateLayersSurfaceContainerLowestOpacity012,
+          t)!,
+      stateLayersSurfaceContainerLowestOpacity016: Color.lerp(
+          stateLayersSurfaceContainerLowestOpacity016,
+          other.stateLayersSurfaceContainerLowestOpacity016,
+          t)!,
+      stateLayersSurfaceContainerOpacity008: Color.lerp(
+          stateLayersSurfaceContainerOpacity008,
+          other.stateLayersSurfaceContainerOpacity008,
+          t)!,
+      stateLayersSurfaceContainerOpacity012: Color.lerp(
+          stateLayersSurfaceContainerOpacity012,
+          other.stateLayersSurfaceContainerOpacity012,
+          t)!,
+      stateLayersSurfaceContainerOpacity016: Color.lerp(
+          stateLayersSurfaceContainerOpacity016,
+          other.stateLayersSurfaceContainerOpacity016,
+          t)!,
+      stateLayersSurfaceDimOpacity008: Color.lerp(
+          stateLayersSurfaceDimOpacity008,
+          other.stateLayersSurfaceDimOpacity008,
+          t)!,
+      stateLayersSurfaceDimOpacity012: Color.lerp(
+          stateLayersSurfaceDimOpacity012,
+          other.stateLayersSurfaceDimOpacity012,
+          t)!,
+      stateLayersSurfaceDimOpacity016: Color.lerp(
+          stateLayersSurfaceDimOpacity016,
+          other.stateLayersSurfaceDimOpacity016,
+          t)!,
+      stateLayersSurfaceOpacity008: Color.lerp(
+          stateLayersSurfaceOpacity008, other.stateLayersSurfaceOpacity008, t)!,
+      stateLayersSurfaceOpacity012: Color.lerp(
+          stateLayersSurfaceOpacity012, other.stateLayersSurfaceOpacity012, t)!,
+      stateLayersSurfaceOpacity016: Color.lerp(
+          stateLayersSurfaceOpacity016, other.stateLayersSurfaceOpacity016, t)!,
+      stateLayersTertiaryContainerOpacity008: Color.lerp(
+          stateLayersTertiaryContainerOpacity008,
+          other.stateLayersTertiaryContainerOpacity008,
+          t)!,
+      stateLayersTertiaryContainerOpacity012: Color.lerp(
+          stateLayersTertiaryContainerOpacity012,
+          other.stateLayersTertiaryContainerOpacity012,
+          t)!,
+      stateLayersTertiaryContainerOpacity016: Color.lerp(
+          stateLayersTertiaryContainerOpacity016,
+          other.stateLayersTertiaryContainerOpacity016,
+          t)!,
+      stateLayersTertiaryFixedDimOpacity008: Color.lerp(
+          stateLayersTertiaryFixedDimOpacity008,
+          other.stateLayersTertiaryFixedDimOpacity008,
+          t)!,
+      stateLayersTertiaryFixedDimOpacity012: Color.lerp(
+          stateLayersTertiaryFixedDimOpacity012,
+          other.stateLayersTertiaryFixedDimOpacity012,
+          t)!,
+      stateLayersTertiaryFixedDimOpacity016: Color.lerp(
+          stateLayersTertiaryFixedDimOpacity016,
+          other.stateLayersTertiaryFixedDimOpacity016,
+          t)!,
+      stateLayersTertiaryFixedOpacity008: Color.lerp(
+          stateLayersTertiaryFixedOpacity008,
+          other.stateLayersTertiaryFixedOpacity008,
+          t)!,
+      stateLayersTertiaryFixedOpacity012: Color.lerp(
+          stateLayersTertiaryFixedOpacity012,
+          other.stateLayersTertiaryFixedOpacity012,
+          t)!,
+      stateLayersTertiaryFixedOpacity016: Color.lerp(
+          stateLayersTertiaryFixedOpacity016,
+          other.stateLayersTertiaryFixedOpacity016,
+          t)!,
+      stateLayersTertiaryOpacity008: Color.lerp(stateLayersTertiaryOpacity008,
+          other.stateLayersTertiaryOpacity008, t)!,
+      stateLayersTertiaryOpacity012: Color.lerp(stateLayersTertiaryOpacity012,
+          other.stateLayersTertiaryOpacity012, t)!,
+      stateLayersTertiaryOpacity016: Color.lerp(stateLayersTertiaryOpacity016,
+          other.stateLayersTertiaryOpacity016, t)!,
+      stateLayersWarnContainerOpacity008: Color.lerp(
+          stateLayersWarnContainerOpacity008,
+          other.stateLayersWarnContainerOpacity008,
+          t)!,
+      stateLayersWarnContainerOpacity012: Color.lerp(
+          stateLayersWarnContainerOpacity012,
+          other.stateLayersWarnContainerOpacity012,
+          t)!,
+      stateLayersWarnContainerOpacity016: Color.lerp(
+          stateLayersWarnContainerOpacity016,
+          other.stateLayersWarnContainerOpacity016,
+          t)!,
+      stateLayersWarnOpacity008: Color.lerp(
+          stateLayersWarnOpacity008, other.stateLayersWarnOpacity008, t)!,
+      stateLayersWarnOpacity012: Color.lerp(
+          stateLayersWarnOpacity012, other.stateLayersWarnOpacity012, t)!,
+      stateLayersWarnOpacity016: Color.lerp(
+          stateLayersWarnOpacity016, other.stateLayersWarnOpacity016, t)!,
       sysError: Color.lerp(sysError, other.sysError, t)!,
       sysErrorContainer:
           Color.lerp(sysErrorContainer, other.sysErrorContainer, t)!,
@@ -2622,7 +2730,7 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
           Color.lerp(sysOnTertiaryFixed, other.sysOnTertiaryFixed, t)!,
       sysOnTertiaryFixedVariant: Color.lerp(
           sysOnTertiaryFixedVariant, other.sysOnTertiaryFixedVariant, t)!,
-      sysOnWarn: Color.lerp(sysOnWarn, other.sysWarn, t)!,
+      sysOnWarn: Color.lerp(sysOnWarn, other.sysOnWarn, t)!,
       sysOnWarnContainer:
           Color.lerp(sysOnWarnContainer, other.sysOnWarnContainer, t)!,
       sysOutline: Color.lerp(sysOutline, other.sysOutline, t)!,
@@ -2646,6 +2754,8 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
       sysSuccess: Color.lerp(sysSuccess, other.sysSuccess, t)!,
       sysSuccessContainer:
           Color.lerp(sysSuccessContainer, other.sysSuccessContainer, t)!,
+      sysSurfaceTinted:
+          Color.lerp(sysSurfaceTinted, other.sysSurfaceTinted, t)!,
       sysSurface: Color.lerp(sysSurface, other.sysSurface, t)!,
       sysSurfaceBright:
           Color.lerp(sysSurfaceBright, other.sysSurfaceBright, t)!,
@@ -2670,6 +2780,32 @@ class ColorsThemeExtension extends ThemeExtension<ColorsThemeExtension> {
       sysWarn: Color.lerp(sysWarn, other.sysWarn, t)!,
       sysWarnContainer:
           Color.lerp(sysWarnContainer, other.sysWarnContainer, t)!,
+      aqua: Color.lerp(aqua, other.aqua, t)!,
+      black: Color.lerp(black, other.black, t)!,
+      blue: Color.lerp(blue, other.blue, t)!,
+      cyan: Color.lerp(cyan, other.cyan, t)!,
+      grape: Color.lerp(grape, other.grape, t)!,
+      green: Color.lerp(green, other.green, t)!,
+      lime: Color.lerp(lime, other.lime, t)!,
+      magenta: Color.lerp(magenta, other.magenta, t)!,
+      orange: Color.lerp(orange, other.orange, t)!,
+      pink: Color.lerp(pink, other.pink, t)!,
+      purple: Color.lerp(purple, other.purple, t)!,
+      red: Color.lerp(red, other.red, t)!,
+      white: Color.lerp(white, other.white, t)!,
+      yellow: Color.lerp(yellow, other.yellow, t)!,
+      onRed: Color.lerp(onRed, other.onRed, t)!,
+      onOrange: Color.lerp(onOrange, other.onOrange, t)!,
+      onYellow: Color.lerp(onYellow, other.onYellow, t)!,
+      onLime: Color.lerp(onLime, other.onLime, t)!,
+      onGreen: Color.lerp(onGreen, other.onGreen, t)!,
+      onAqua: Color.lerp(onAqua, other.onAqua, t)!,
+      onCyan: Color.lerp(onCyan, other.onCyan, t)!,
+      onBlue: Color.lerp(onBlue, other.onBlue, t)!,
+      onPurple: Color.lerp(onPurple, other.onPurple, t)!,
+      onGrape: Color.lerp(onGrape, other.onGrape, t)!,
+      onPink: Color.lerp(onPink, other.onPink, t)!,
+      onMagenta: Color.lerp(onMagenta, other.onMagenta, t)!,
     );
   }
 }

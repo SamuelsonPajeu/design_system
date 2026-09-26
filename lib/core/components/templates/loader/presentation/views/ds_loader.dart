@@ -2,6 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:design_system/core/components/templates/base_scaffold/ds_scaffold.dart';
 import 'package:design_system/core/components/templates/loader/presentation/bindings/ds_loader_binding.dart';
 import 'package:design_system/core/components/templates/loader/presentation/controllers/ds_loader_controller.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -109,11 +110,11 @@ class DSLoader extends GetView<DSLoaderController> {
               .map((text) => TypewriterAnimatedText(
                     text,
                     textAlign: TextAlign.center,
-                    textStyle: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          color: Theme.of(context).colorScheme.primary,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                        ),
+                    textStyle: context.texts.titleLarge.copyWith(
+                      color: Theme.of(context).colorScheme.primary,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
                     speed: const Duration(milliseconds: 50),
                     cursor: '|',
                   ))
@@ -159,9 +160,15 @@ class DSLoader extends GetView<DSLoaderController> {
             child: Center(
               child: SizedBox(
                 width: size?.width ?? _kDefaultLogoWidth,
-                child: SizedBox(
-                  height: size?.height ?? _kDefaultLogoHeight,
-                ),
+                child: controller.logoUrl.value != null &&
+                        controller.logoUrl.value!.isNotEmpty
+                    ? Image.network(
+                        controller.logoUrl.value!,
+                        height: size?.height ?? _kDefaultLogoHeight,
+                      )
+                    : SizedBox(
+                        height: size?.height ?? _kDefaultLogoHeight,
+                      ),
               ),
             ),
           ),

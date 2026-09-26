@@ -1,160 +1,104 @@
+import 'package:design_system/core/components/atoms/text/ds_text.dart';
 import 'package:design_system/core/components/molecules/carousel/ds_carousel.dart';
+import 'package:design_system/core/components/templates/base_scaffold/ds_scaffold.dart';
+import 'package:design_system/core/infrastructure/constants/ds_size.dart';
 import 'package:flutter/material.dart';
 
-import 'package:storybook_flutter/storybook_flutter.dart';
+import '../../../ui/knobs_utils.dart';
 
 class Carousel extends StatelessWidget {
   const Carousel({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              DSCarousel.uncontained(
-                itemExtend: context.knobs.slider(
-                  label: 'itemExtend',
-                  initial: 350,
-                  min: 100,
-                  max: 1000,
-                ),
-                shrinkExtend: context.knobs.slider(
-                  label: 'shrinkExtend',
-                  initial: 180,
-                  min: 100,
-                  max: 300,
-                ),
-                maxHeight: context.knobs.slider(
-                  label: 'maxHeight',
-                  initial: 250,
-                  min: 0,
-                  max: 1000,
-                ),
-                maxWidth: context.knobs.slider(
-                  label: 'maxWidth',
-                  initial: MediaQuery.sizeOf(context).width - 16,
-                  min: 0,
-                  max: 1920,
-                ),
-                cards: List.generate(
-                  20,
-                  (index) => Container(
-                    color: getColor(context, index),
-                    child: Padding(
-                      padding: EdgeInsets.all(
-                        context.knobs.slider(
-                          label: 'Content Pading',
-                          initial: 16,
-                          min: 0,
-                          max: 100,
-                        ),
-                      ),
-                      child: Center(
-                        child: Text('Container $index'),
-                      ),
-                    ),
+    final size = context.knobSliderDSSize(
+      label: 'Size',
+      initial: DSSize.medium,
+    );
+
+    final preset = DSCarousel.fromSize(size);
+    final cards = _buildCards();
+    final uncontainedHeight = preset.height(DSCarouselType.uncontained);
+    final heroHeight = preset.height(DSCarouselType.hero);
+    final centerHeroHeight = preset.height(DSCarouselType.centerAlignedHero);
+    final multiBrowseHeight = preset.height(DSCarouselType.multiBrowse);
+    final fullScreenHeight = preset.height(DSCarouselType.fullScreen);
+
+    return DSScaffold(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+        child: Center(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                DSText('Uncontained',
+                    style: Theme.of(context).textTheme.titleMedium),
+                SizedBox(
+                  height: uncontainedHeight,
+                  width: double.infinity,
+                  child: preset.uncontained(
+                    cards: cards,
+                    tagName: 'carousel-uncontained',
                   ),
                 ),
-                dsCarouselType: DSCarouselType.uncontained,
-                tagName: 'container',
-              ),
-              const SizedBox(height: 30),
-              DSCarousel.hero(
-                cards: List.generate(
-                  10,
-                  (index) => Container(
-                    color: getColor(context, index),
-                    child: Padding(
-                      padding: const EdgeInsets.all(32),
-                      child: Center(
-                        child: Text('Hero $index'),
-                      ),
-                    ),
+                const SizedBox(height: 30),
+                DSText('Hero', style: Theme.of(context).textTheme.titleMedium),
+                SizedBox(
+                  height: heroHeight,
+                  width: double.infinity,
+                  child: preset.hero(
+                    cards: cards,
+                    tagName: 'carousel-hero',
                   ),
                 ),
-                tagName: 'container_hero',
-              ),
-              const SizedBox(height: 30),
-              DSCarousel.centerAlignedHero(
-                cards: List.generate(
-                  10,
-                  (index) => Container(
-                    color: getColor(context, index),
-                    child: Padding(
-                      padding: const EdgeInsets.all(32),
-                      child: Center(
-                        child: Text('Center Hero $index'),
-                      ),
-                    ),
+                const SizedBox(height: 30),
+                DSText('Center Aligned Hero',
+                    style: Theme.of(context).textTheme.titleMedium),
+                SizedBox(
+                  height: centerHeroHeight,
+                  width: double.infinity,
+                  child: preset.centerAlignedHero(
+                    cards: cards,
+                    tagName: 'carousel-center-hero',
                   ),
                 ),
-                tagName: 'center_hero',
-              ),
-              const SizedBox(height: 30),
-              DSCarousel.multiBrowse(
-                cards: List.generate(
-                  10,
-                  (index) => Container(
-                    color: getColor(context, index),
-                    child: Padding(
-                      padding: const EdgeInsets.all(32),
-                      child: Center(
-                        child: Text('Multi Browse $index'),
-                      ),
-                    ),
+                const SizedBox(height: 30),
+                DSText('Multi Browse',
+                    style: Theme.of(context).textTheme.titleMedium),
+                SizedBox(
+                  height: multiBrowseHeight,
+                  width: double.infinity,
+                  child: preset.multiBrowse(
+                    cards: cards,
+                    tagName: 'carousel-multi-browse',
                   ),
                 ),
-                tagName: 'multi_browse',
-              ),
-              const SizedBox(height: 30),
-              DSCarousel.uncontained(
-                cards: List.generate(
-                  10,
-                  (index) => Container(
-                    color: getColor(context, index),
-                    child: Padding(
-                      padding: const EdgeInsets.all(32),
-                      child: Center(
-                        child: Text('Uncontained $index'),
-                      ),
-                    ),
+                const SizedBox(height: 30),
+                DSText('Full Screen',
+                    style: Theme.of(context).textTheme.titleMedium),
+                SizedBox(
+                  height: fullScreenHeight,
+                  width: double.infinity,
+                  child: preset.fullScreen(
+                    cards: cards,
+                    tagName: 'carousel-fullscreen',
                   ),
                 ),
-                tagName: 'uncontained',
-              ),
-              const SizedBox(height: 30),
-              DSCarousel.fullScreen(
-                cards: List.generate(
-                  10,
-                  (index) => Container(
-                    color: getColor(context, index),
-                    child: Padding(
-                      padding: const EdgeInsets.all(32),
-                      child: Center(
-                        child: Text('FullScreen $index'),
-                      ),
-                    ),
-                  ),
-                ),
-                tagName: 'fullscreen',
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
     );
   }
 
-  Color getColor(BuildContext context, int index) {
-    List<Color> colors = [
-      Theme.of(context).colorScheme.primary,
-      Theme.of(context).colorScheme.secondary,
-      Theme.of(context).colorScheme.tertiary,
-      Theme.of(context).colorScheme.surfaceContainer,
-    ];
-
-    return colors[index % colors.length];
+  List<Widget> _buildCards() {
+    return List.generate(
+      10,
+      (index) => Image.asset(
+        'assets/exemple_media.png',
+        fit: BoxFit.cover,
+      ),
+    );
   }
 }

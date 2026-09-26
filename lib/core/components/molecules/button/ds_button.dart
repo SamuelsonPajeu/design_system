@@ -2,7 +2,9 @@ import 'package:design_system/core/components/atoms/button_controller/ds_button_
 import 'package:design_system/core/components/atoms/icon/ds_icon.dart';
 import 'package:design_system/core/components/atoms/loading/ds_loading.dart';
 import 'package:design_system/core/components/atoms/text/ds_text.dart';
-import 'package:design_system/core/ui/themes/base_app_theme.dart';
+import 'package:design_system/core/infrastructure/constants/ds_size.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
 import 'package:material_symbols_icons/symbols.dart';
@@ -16,178 +18,223 @@ enum DsButtonStyleType {
 }
 
 class DSButton extends StatefulWidget {
-  const DSButton(
-      {required this.onTap,
-      super.key,
+  factory DSButton({
+    required Future<void>? Function()? onTap,
+    Key? key,
+    AnimatedButtonController? controller,
+    IconData? buttonIcon,
+    String? buttonText,
+    String? sucessText,
+    TextStyle? textStyle,
+    void Function()? callBack,
+    bool invert = false,
+    bool enabled = true,
+    bool large = false,
+    double spacing = 8,
+    Duration timeout = const Duration(seconds: 2),
+    bool success = false,
+    Duration sucessDuration = const Duration(seconds: 1),
+    ButtonStyle? buttonStyle,
+    String? loadingSemanticMessage,
+    String? successSemanticMessage,
+    bool announceLoading = true,
+    bool announceSuccess = true,
+    FocusNode? focusNode,
+    WidgetState? forcedState,
+    DSSize? size,
+  }) {
+    return DSButton.elevated(
+      onTap: onTap,
+      key: key,
+      controller: controller,
+      buttonIcon: buttonIcon,
+      buttonText: buttonText,
+      sucessText: sucessText,
+      textStyle: textStyle,
+      callBack: callBack,
+      invert: invert,
+      enabled: enabled,
+      size: size,
+      spacing: spacing,
+      timeout: timeout,
+      success: success,
+      sucessDuration: sucessDuration,
+      buttonStyle: buttonStyle,
+      loadingSemanticMessage: loadingSemanticMessage,
+      successSemanticMessage: successSemanticMessage,
+      announceLoading: announceLoading,
+      announceSuccess: announceSuccess,
+      focusNode: focusNode,
+      forcedState: forcedState,
+    );
+  }
+
+  const DSButton.elevated(
+      {super.key,
+      required this.onTap,
       this.controller,
-      this.buttonWidth,
-      this.buttonHeight,
       this.buttonIcon,
       this.buttonText,
       this.sucessText,
       this.textStyle,
       this.callBack,
       this.backgroundColor,
-      this.textAndIconColor,
-      this.borderColor,
-      this.invert = false,
-      this.showBorder = false,
-      this.enabled = true,
-      this.spacing = 15,
-      this.timeout = const Duration(seconds: 2),
-      this.shrinkOnLoading = true,
-      this.shrinkOnSuccess = true,
-      this.success = false,
-      this.sucessDuration = const Duration(seconds: 1),
-      this.buttonStyle,
-      this.dsButtonStyleType = DsButtonStyleType.elevated,
-      this.loadingSemanticMessage,
-      this.successSemanticMessage,
-      this.focusNode})
-      : assert(
-          buttonIcon != null || buttonText != null,
-          'ButtonIcon or ButtonText must be filled',
-        );
-
-  DSButton.filled(
-      {super.key,
-      required BuildContext context,
-      required this.onTap,
-      this.controller,
-      this.buttonWidth,
-      this.buttonHeight,
-      this.buttonIcon,
-      this.buttonText,
-      this.sucessText,
-      this.textStyle,
-      this.callBack,
+      this.iconColor,
       this.borderColor,
       this.invert = false,
       this.enabled = true,
-      this.spacing = 15,
+      this.size,
+      this.spacing = 8,
       this.timeout = const Duration(seconds: 2),
-      this.shrinkOnLoading = true,
-      this.shrinkOnSuccess = true,
       this.success = false,
       this.sucessDuration = const Duration(seconds: 1),
       this.buttonStyle,
       this.loadingSemanticMessage,
       this.successSemanticMessage,
-      this.focusNode})
-      : backgroundColor = Theme.of(context).colors.sysPrimary,
-        textAndIconColor = Theme.of(context).colors.sysOnPrimary,
-        showBorder = false,
-        dsButtonStyleType = DsButtonStyleType.filled,
+      this.announceLoading = true,
+      this.announceSuccess = true,
+      this.focusNode,
+      this.forcedState})
+      : showBorder = false,
+        style = DsButtonStyleType.elevated,
         assert(
           buttonIcon != null || buttonText != null,
           'ButtonIcon or ButtonText must be filled',
         );
 
-  DSButton.outlined(
+  const DSButton.filled(
       {super.key,
-      required BuildContext context,
       required this.onTap,
       this.controller,
-      this.buttonWidth,
-      this.buttonHeight,
-      this.buttonIcon,
-      this.buttonText,
-      this.sucessText,
-      this.callBack,
-      this.invert = false,
-      this.enabled = true,
-      this.spacing = 15,
-      this.timeout = const Duration(seconds: 2),
-      this.shrinkOnLoading = true,
-      this.shrinkOnSuccess = true,
-      this.success = false,
-      this.sucessDuration = const Duration(seconds: 1),
-      this.buttonStyle,
-      this.loadingSemanticMessage,
-      this.successSemanticMessage,
-      this.focusNode})
-      : backgroundColor = Theme.of(context).colors.sysSurface,
-        textAndIconColor = Theme.of(context).colors.sysPrimary,
-        borderColor = Theme.of(context).colors.sysPrimary,
-        showBorder = true,
-        dsButtonStyleType = DsButtonStyleType.outlined,
-        textStyle = null,
-        assert(
-          buttonIcon != null || buttonText != null,
-          'ButtonIcon or ButtonText must be filled',
-        );
-
-  DSButton.text(
-      {super.key,
-      required BuildContext context,
-      required this.onTap,
-      this.controller,
-      this.buttonWidth,
-      this.buttonHeight,
       this.buttonIcon,
       this.buttonText,
       this.sucessText,
       this.textStyle,
       this.callBack,
-      this.invert = false,
-      this.enabled = true,
-      this.spacing = 15,
-      this.timeout = const Duration(seconds: 2),
-      this.shrinkOnLoading = true,
-      this.shrinkOnSuccess = true,
-      this.success = false,
-      this.sucessDuration = const Duration(seconds: 1),
-      this.loadingSemanticMessage,
-      this.successSemanticMessage,
-      this.focusNode})
-      : backgroundColor = null,
-        textAndIconColor = Theme.of(context).colors.sysPrimary,
-        borderColor = null,
-        showBorder = false,
-        buttonStyle = null,
-        dsButtonStyleType = DsButtonStyleType.text,
-        assert(
-          buttonIcon != null || buttonText != null,
-          'ButtonIcon or ButtonText must be filled',
-        );
-
-  DSButton.tonal(
-      {super.key,
-      required BuildContext context,
-      required this.onTap,
-      this.controller,
-      this.buttonWidth,
-      this.buttonHeight,
-      this.buttonIcon,
-      this.buttonText,
-      this.sucessText,
-      this.textStyle,
-      this.callBack,
+      this.backgroundColor,
+      this.iconColor,
       this.borderColor,
       this.invert = false,
       this.enabled = true,
-      this.spacing = 15,
+      this.size,
+      this.spacing = 8,
       this.timeout = const Duration(seconds: 2),
-      this.shrinkOnLoading = true,
-      this.shrinkOnSuccess = true,
       this.success = false,
       this.sucessDuration = const Duration(seconds: 1),
       this.buttonStyle,
       this.loadingSemanticMessage,
       this.successSemanticMessage,
-      this.focusNode})
-      : backgroundColor = Theme.of(context).colors.sysTertiary,
-        textAndIconColor = Theme.of(context).colors.sysOnPrimary,
-        showBorder = false,
-        dsButtonStyleType = DsButtonStyleType.tonal,
+      this.announceLoading = true,
+      this.announceSuccess = true,
+      this.focusNode,
+      this.forcedState})
+      : showBorder = false,
+        style = DsButtonStyleType.filled,
+        assert(
+          buttonIcon != null || buttonText != null,
+          'ButtonIcon or ButtonText must be filled',
+        );
+
+  const DSButton.outlined(
+      {super.key,
+      required this.onTap,
+      this.controller,
+      this.buttonIcon,
+      this.buttonText,
+      this.sucessText,
+      this.textStyle,
+      this.callBack,
+      this.backgroundColor,
+      this.iconColor,
+      this.borderColor,
+      this.invert = false,
+      this.enabled = true,
+      this.size,
+      this.spacing = 8,
+      this.timeout = const Duration(seconds: 2),
+      this.success = false,
+      this.sucessDuration = const Duration(seconds: 1),
+      this.buttonStyle,
+      this.loadingSemanticMessage,
+      this.successSemanticMessage,
+      this.announceLoading = true,
+      this.announceSuccess = true,
+      this.focusNode,
+      this.forcedState})
+      : showBorder = true,
+        style = DsButtonStyleType.outlined,
+        assert(
+          buttonIcon != null || buttonText != null,
+          'ButtonIcon or ButtonText must be filled',
+        );
+
+  const DSButton.text(
+      {super.key,
+      required this.onTap,
+      this.controller,
+      this.buttonIcon,
+      this.buttonText,
+      this.sucessText,
+      this.textStyle,
+      this.callBack,
+      this.backgroundColor,
+      this.iconColor,
+      this.borderColor,
+      this.invert = false,
+      this.enabled = true,
+      this.size,
+      this.spacing = 8,
+      this.timeout = const Duration(seconds: 2),
+      this.success = false,
+      this.sucessDuration = const Duration(seconds: 1),
+      this.buttonStyle,
+      this.loadingSemanticMessage,
+      this.successSemanticMessage,
+      this.announceLoading = true,
+      this.announceSuccess = true,
+      this.focusNode,
+      this.forcedState})
+      : showBorder = false,
+        style = DsButtonStyleType.text,
+        assert(
+          buttonIcon != null || buttonText != null,
+          'ButtonIcon or ButtonText must be filled',
+        );
+
+  const DSButton.tonal(
+      {super.key,
+      required this.onTap,
+      this.controller,
+      this.buttonIcon,
+      this.buttonText,
+      this.sucessText,
+      this.textStyle,
+      this.callBack,
+      this.backgroundColor,
+      this.iconColor,
+      this.borderColor,
+      this.invert = false,
+      this.enabled = true,
+      this.size,
+      this.spacing = 8,
+      this.timeout = const Duration(seconds: 2),
+      this.success = false,
+      this.sucessDuration = const Duration(seconds: 1),
+      this.buttonStyle,
+      this.loadingSemanticMessage,
+      this.successSemanticMessage,
+      this.announceLoading = true,
+      this.announceSuccess = true,
+      this.focusNode,
+      this.forcedState})
+      : showBorder = false,
+        style = DsButtonStyleType.tonal,
         assert(
           buttonIcon != null || buttonText != null,
           'ButtonIcon or ButtonText must be filled',
         );
 
   final AnimatedButtonController? controller;
-  final double? buttonWidth;
-  final double? buttonHeight;
   final IconData? buttonIcon;
   final String? buttonText;
   final String? sucessText;
@@ -195,10 +242,10 @@ class DSButton extends StatefulWidget {
   final void Function()? callBack;
   final Future<void>? Function()? onTap;
   final Color? backgroundColor;
-  final Color? textAndIconColor;
+  final Color? iconColor;
   final Color? borderColor;
   final ButtonStyle? buttonStyle;
-  final DsButtonStyleType dsButtonStyleType;
+  final DsButtonStyleType style;
   final FocusNode? focusNode;
 
   /// Spacing between icon and text
@@ -212,11 +259,7 @@ class DSButton extends StatefulWidget {
 
   final bool enabled;
 
-  /// If button shrinks while loading / on success
-  /// Default is true
-  final bool shrinkOnLoading;
-
-  final bool shrinkOnSuccess;
+  final DSSize? size;
 
   /// If show the success animation
   /// Default is false
@@ -226,9 +269,33 @@ class DSButton extends StatefulWidget {
   /// Defaut is 30 seconds
   final Duration timeout;
 
-  // Semantics message
+  /// Mensagem anunciada para leitores de tela quando o botão entra em estado de carregamento.
+  /// Apenas funciona se:
+  /// - [announceLoading] for true (padrão)
+  /// - MediaQuery.of(context).accessibleNavigation estiver ativo
+  ///
+  /// Exemplo: 'Processando seus dados, aguarde'
   final String? loadingSemanticMessage;
+
+  /// Mensagem anunciada para leitores de tela quando o carregamento é concluído.
+  /// Apenas funciona se:
+  /// - [announceSuccess] for true (padrão)
+  /// - MediaQuery.of(context).accessibleNavigation estiver ativo
+  ///
+  /// Exemplo: 'Dados processados com sucesso'
   final String? successSemanticMessage;
+
+  /// Se true, anuncia [loadingSemanticMessage] quando o botão entra em estado de loading.
+  /// Anúncios só ocorrem se MediaQuery.of(context).accessibleNavigation estiver ativo.
+  /// Padrão: true
+  final bool announceLoading;
+
+  /// Se true, anuncia [successSemanticMessage] quando o carregamento é concluído.
+  /// Anúncios só ocorrem se MediaQuery.of(context).accessibleNavigation estiver ativo.
+  /// Padrão: true
+  final bool announceSuccess;
+
+  final WidgetState? forcedState;
 
   @override
   State<DSButton> createState() => _DSButtonState();
@@ -261,16 +328,23 @@ class _DSButtonState extends State<DSButton> {
   }
 
   void _announceStateChange(ButtonState newState) {
+    // Só anuncia se a acessibilidade estiver ativa
+    if (!MediaQuery.of(context).accessibleNavigation) return;
+
     switch (newState) {
       case ButtonState.loading:
-        SemanticsService.announce(
+        if (!widget.announceLoading) return;
+        SemanticsService.sendAnnouncement(
+          View.of(context),
           widget.loadingSemanticMessage ?? 'Carregando',
           TextDirection.ltr,
           assertiveness: Assertiveness.assertive,
         );
         break;
       case ButtonState.success:
-        SemanticsService.announce(
+        if (!widget.announceSuccess) return;
+        SemanticsService.sendAnnouncement(
+          View.of(context),
           widget.successSemanticMessage ?? 'Carregamento concluído',
           TextDirection.ltr,
           assertiveness: Assertiveness.assertive,
@@ -332,18 +406,10 @@ class _DSButtonState extends State<DSButton> {
       hint:
           widget.enabled ? "Toque duas vezes para ativar" : 'Botão desativado',
       excludeSemantics: true,
-      child: AnimatedContainer(
-        width: returnCurrentButtonSize(context),
-        height: widget.buttonHeight ?? 50,
-        duration: const Duration(milliseconds: 100),
-        curve: Curves.easeIn,
-        child: getButtonType(
-          context,
-          widget.dsButtonStyleType,
-          child: FittedBox(
-            child: returnCurrentButton(context),
-          ),
-        ),
+      child: getButtonType(
+        context,
+        widget.style,
+        child: returnCurrentButton(context),
       ),
     );
   }
@@ -355,7 +421,8 @@ class _DSButtonState extends State<DSButton> {
           label: 'Carregando',
           value: 'Botão em processo de carregamento',
           child: DSLoading(
-            color: widget.textAndIconColor ?? Colors.white,
+            color: widget.iconColor ?? getDefaultIconColor(context),
+            size: DSSize.medium,
           ),
         );
       case ButtonState.success:
@@ -363,12 +430,18 @@ class _DSButtonState extends State<DSButton> {
           label: 'Sucesso',
           value: 'Operação finalizada com sucesso',
           child: Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children:
                 buttonBuilder(context, widget.sucessText, Symbols.check_circle),
           ),
         );
       case _:
         return Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: buttonBuilder(
             context,
             widget.buttonText,
@@ -378,33 +451,58 @@ class _DSButtonState extends State<DSButton> {
     }
   }
 
-  double? returnCurrentButtonSize(BuildContext context) {
-    if (widget.shrinkOnLoading && state == ButtonState.loading ||
-        widget.shrinkOnSuccess && state == ButtonState.success) {
-      return 70;
-    }
-
-    return widget.buttonWidth ?? MediaQuery.of(context).size.width;
-  }
-
   DSIcon buttonIcon(IconData icon) {
-    return DSIcon(
+    return DSIcon.custom(
       icon: icon,
       size: 20,
-      color: widget.textAndIconColor,
+      color: widget.iconColor ?? getDefaultIconColor(context),
     );
   }
 
-  DSText buttonText(String text) {
-    return DSText(
-      text,
-      style: widget.textStyle ??
-          TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-            color: widget.textAndIconColor ?? Colors.white,
-          ),
+  Widget buttonText(String text) {
+    return Flexible(
+      child: DSText(
+        text,
+        style: widget.textStyle ?? getDefaultTextStyle(context),
+        textAlign: TextAlign.center,
+      ),
     );
+  }
+
+  TextStyle getDefaultTextStyle(BuildContext context) {
+    final baseStyle = context.texts.labelLarge;
+    final defaultColor = getDefaultTextColor(context);
+    return baseStyle.copyWith(color: defaultColor);
+  }
+
+  Color getDefaultTextColor(BuildContext context) {
+    switch (widget.style) {
+      case DsButtonStyleType.outlined:
+        return widget.enabled
+            ? context.colors.sysPrimary
+            : context.colors.sysOnSurface.withValues(alpha: 0.38);
+      case DsButtonStyleType.tonal:
+        return widget.enabled
+            ? context.colors.sysOnPrimaryContainer
+            : context.colors.sysOnSurface.withValues(alpha: 0.38);
+
+      case DsButtonStyleType.text:
+        return widget.enabled
+            ? context.colors.sysPrimary
+            : context.colors.sysOnSurface.withValues(alpha: 0.38);
+      case DsButtonStyleType.filled:
+        return widget.enabled
+            ? context.colors.sysOnPrimary
+            : context.colors.sysOnSurface.withValues(alpha: 0.38);
+      case DsButtonStyleType.elevated:
+        return widget.enabled
+            ? context.colors.sysPrimary
+            : context.colors.sysOnSurface.withValues(alpha: 0.38);
+    }
+  }
+
+  Color getDefaultIconColor(BuildContext context) {
+    return getDefaultTextColor(context);
   }
 
   List<Widget> showOnlyIcon(BuildContext context, IconData icon) {
@@ -450,83 +548,288 @@ class _DSButtonState extends State<DSButton> {
       case DsButtonStyleType.outlined:
         return OutlinedButton(
           focusNode: widget.focusNode,
-          onPressed: onPressedFunction,
-          style: widget.buttonStyle ??
-              getButtonStyle(context, widget.dsButtonStyleType),
+          onPressed: widget.enabled ? onPressedFunction : null,
+          style: widget.buttonStyle ?? getButtonStyle(context, widget.style),
           child: child,
         );
       case DsButtonStyleType.tonal:
         return FilledButton(
           focusNode: widget.focusNode,
-          onPressed: onPressedFunction,
-          style: widget.buttonStyle ??
-              getButtonStyle(context, widget.dsButtonStyleType),
+          onPressed: widget.enabled ? onPressedFunction : null,
+          style: widget.buttonStyle ?? getButtonStyle(context, widget.style),
           child: child,
         );
       case DsButtonStyleType.text:
         return TextButton(
           focusNode: widget.focusNode,
-          onPressed: onPressedFunction,
-          style: widget.buttonStyle ??
-              getButtonStyle(context, widget.dsButtonStyleType),
+          onPressed: widget.enabled ? onPressedFunction : null,
+          style: widget.buttonStyle ?? getButtonStyle(context, widget.style),
           child: child,
         );
       default:
         return ElevatedButton(
           focusNode: widget.focusNode,
-          onPressed: onPressedFunction,
-          style: widget.buttonStyle ??
-              getButtonStyle(context, widget.dsButtonStyleType),
+          onPressed: widget.enabled ? onPressedFunction : null,
+          style: widget.buttonStyle ?? getButtonStyle(context, widget.style),
           child: child,
         );
     }
   }
 
+  Set<WidgetState> _applyForcedState(Set<WidgetState> states) {
+    if (widget.forcedState != null) {
+      return {widget.forcedState!};
+    }
+    return states;
+  }
+
   ButtonStyle getButtonStyle(BuildContext context, DsButtonStyleType style) {
+    final borderRadius = _getBorderRadius(
+      widget.size ?? (kIsWeb ? DSSize.large : DSSize.medium),
+    );
+    final buttonPadding = EdgeInsets.symmetric(
+        horizontal: 24,
+        vertical: _getButtonSize(
+          widget.size ?? (kIsWeb ? DSSize.large : DSSize.medium),
+        ));
+
     switch (style) {
       case DsButtonStyleType.outlined:
+        final defaultBackgroundColor = Colors.transparent;
         return OutlinedButton.styleFrom(
-          backgroundColor: widget.backgroundColor ??
-              Theme.of(context).colors.sysOutlineVariant,
-          side: BorderSide(
-            color:
-                widget.textAndIconColor ?? Theme.of(context).colors.sysPrimary,
+          backgroundColor: widget.backgroundColor ?? defaultBackgroundColor,
+          disabledBackgroundColor: defaultBackgroundColor,
+          disabledForegroundColor: context.colors.sysOnSurface,
+          surfaceTintColor: widget.backgroundColor ?? defaultBackgroundColor,
+          padding: buttonPadding,
+          side: BorderSide.none,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius),
           ),
-          surfaceTintColor:
-              widget.backgroundColor ?? Theme.of(context).colors.sysPrimary,
+        ).copyWith(
+          foregroundColor: WidgetStateProperty.resolveWith<Color?>(
+            (Set<WidgetState> states) {
+              final effectiveStates = _applyForcedState(states);
+              if (!widget.enabled ||
+                  effectiveStates.contains(WidgetState.disabled)) {
+                return context.colors.sysOnSurface.withValues(alpha: 0.38);
+              }
+              return context.colors.sysPrimary;
+            },
+          ),
+          side: WidgetStateProperty.resolveWith<BorderSide>(
+            (Set<WidgetState> states) {
+              if (!widget.enabled || states.contains(WidgetState.disabled)) {
+                return BorderSide(
+                  color: context.colors.stateLayersOnSurfaceOpacity012,
+                );
+              }
+
+              if (widget.borderColor != null) {
+                return BorderSide(color: widget.borderColor!);
+              }
+
+              if (states.contains(WidgetState.focused)) {
+                return BorderSide(color: context.colors.sysPrimary);
+              }
+
+              if (states.contains(WidgetState.hovered) ||
+                  states.contains(WidgetState.pressed)) {
+                return BorderSide(color: context.colors.sysOutlineVariant);
+              }
+
+              return BorderSide(color: context.colors.sysOutlineVariant);
+            },
+          ),
+          overlayColor: WidgetStateProperty.resolveWith<Color?>(
+            (Set<WidgetState> states) {
+              final effectiveStates = _applyForcedState(states);
+              if (effectiveStates.contains(WidgetState.pressed)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.hovered)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.focused)) {
+                return context.colors.stateLayersPrimaryOpacity012;
+              }
+              return null;
+            },
+          ),
         );
       case DsButtonStyleType.tonal:
+        final defaultBackgroundColor = context.colors.sysPrimaryContainer;
         return FilledButton.styleFrom(
-          backgroundColor: widget.backgroundColor ??
-              Theme.of(context).colors.sysOutlineVariant,
-          side: BorderSide(
-            color:
-                widget.textAndIconColor ?? Theme.of(context).colors.sysPrimary,
+          backgroundColor: widget.backgroundColor ?? defaultBackgroundColor,
+          disabledBackgroundColor:
+              context.colors.stateLayersOnSurfaceOpacity012,
+          disabledForegroundColor:
+              context.colors.sysOnSurface.withValues(alpha: 0.38),
+          surfaceTintColor: widget.backgroundColor ?? defaultBackgroundColor,
+          padding: buttonPadding,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius),
           ),
-          surfaceTintColor:
-              widget.backgroundColor ?? Theme.of(context).colors.sysPrimary,
+        ).copyWith(
+          overlayColor: WidgetStateProperty.resolveWith<Color?>(
+            (Set<WidgetState> states) {
+              final effectiveStates = _applyForcedState(states);
+              if (effectiveStates.contains(WidgetState.pressed)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.hovered)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.focused)) {
+                return context.colors.stateLayersPrimaryOpacity012;
+              }
+              return null;
+            },
+          ),
         );
       case DsButtonStyleType.text:
         return TextButton.styleFrom(
-          splashFactory: NoSplash.splashFactory,
-          overlayColor: Colors.transparent,
+          disabledForegroundColor:
+              context.colors.sysPrimary.withValues(alpha: 0.38),
+          padding: buttonPadding,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius),
+          ),
+        ).copyWith(
+          overlayColor: WidgetStateProperty.resolveWith<Color?>(
+            (Set<WidgetState> states) {
+              final effectiveStates = _applyForcedState(states);
+              if (effectiveStates.contains(WidgetState.pressed)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.hovered)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.focused)) {
+                return context.colors.stateLayersPrimaryOpacity012;
+              }
+              return null;
+            },
+          ),
         );
-      case _:
+      case DsButtonStyleType.filled:
+        final defaultBackgroundColor = context.colors.sysPrimary;
+        return FilledButton.styleFrom(
+          backgroundColor: widget.backgroundColor ?? defaultBackgroundColor,
+          disabledBackgroundColor:
+              context.colors.stateLayersOnSurfaceOpacity012,
+          disabledForegroundColor:
+              context.colors.sysOnSurface.withValues(alpha: 0.38),
+          surfaceTintColor: widget.backgroundColor ?? defaultBackgroundColor,
+          padding: buttonPadding,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius),
+          ),
+        ).copyWith(
+          overlayColor: WidgetStateProperty.resolveWith<Color?>(
+            (Set<WidgetState> states) {
+              final effectiveStates = _applyForcedState(states);
+              if (effectiveStates.contains(WidgetState.pressed)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.hovered)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.focused)) {
+                return context.colors.stateLayersPrimaryOpacity012;
+              }
+              return null;
+            },
+          ),
+        );
+      case DsButtonStyleType.elevated:
+        final defaultBackgroundColor = context.colors.sysSurfaceContainerLow;
+        final defaultForegroundColor = context.colors.sysPrimary;
         return ElevatedButton.styleFrom(
+          backgroundColor: widget.backgroundColor ?? defaultBackgroundColor,
+          disabledBackgroundColor:
+              context.colors.stateLayersOnSurfaceOpacity012,
+          disabledForegroundColor:
+              context.colors.sysOnSurface.withValues(alpha: 0.38),
+          surfaceTintColor: Colors.transparent,
+          shadowColor: Colors.black,
+          elevation: widget.enabled ? 1 : 0,
+          padding: buttonPadding,
           side: widget.showBorder
               ? BorderSide(
-                  color: widget.borderColor ??
-                      widget.textAndIconColor ??
-                      Colors.white,
+                  color: widget.enabled
+                      ? (widget.borderColor ??
+                          widget.iconColor ??
+                          defaultForegroundColor)
+                      : context.colors.stateLayersPrimaryContainerOpacity012,
                 )
               : null,
-          surfaceTintColor: widget.enabled
-              ? widget.backgroundColor ?? Colors.blue
-              : Theme.of(context).colors.sysOutline,
-          backgroundColor: widget.enabled
-              ? widget.backgroundColor ?? Colors.blue
-              : Theme.of(context).colors.sysOutline,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius),
+          ),
+        ).copyWith(
+          elevation: WidgetStateProperty.resolveWith<double?>(
+            (Set<WidgetState> states) {
+              final effectiveStates = _applyForcedState(states);
+              if (effectiveStates.contains(WidgetState.disabled)) {
+                return 0;
+              }
+              if (effectiveStates.contains(WidgetState.hovered)) {
+                return 2;
+              }
+              return 1;
+            },
+          ),
+          overlayColor: WidgetStateProperty.resolveWith<Color?>(
+            (Set<WidgetState> states) {
+              final effectiveStates = _applyForcedState(states);
+              if (effectiveStates.contains(WidgetState.pressed)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.hovered)) {
+                return context.colors.stateLayersPrimaryOpacity008;
+              }
+              if (effectiveStates.contains(WidgetState.focused)) {
+                return context.colors.stateLayersPrimaryOpacity012;
+              }
+              return null;
+            },
+          ),
         );
+    }
+  }
+
+  double _getButtonSize(DSSize? buttonSize) {
+    switch (buttonSize) {
+      case DSSize.extraSmall:
+        return 8.0;
+      case DSSize.small:
+        return 10.0;
+      case DSSize.medium:
+        return 17.0;
+      case DSSize.large:
+        return 20.0;
+      case DSSize.extraLarge:
+        return 28.0;
+      case null:
+        return 12.0;
+    }
+  }
+
+  double _getBorderRadius(DSSize? buttonSize) {
+    switch (buttonSize) {
+      case DSSize.extraSmall:
+        return 8.0;
+      case DSSize.small:
+        return 12.0;
+      case DSSize.medium:
+        return 16.0;
+      case DSSize.large:
+        return 16.0;
+      case DSSize.extraLarge:
+        return 18.0;
+      case null:
+        return 12.0;
     }
   }
 }

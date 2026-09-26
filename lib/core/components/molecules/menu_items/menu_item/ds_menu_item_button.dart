@@ -1,5 +1,6 @@
 import 'package:design_system/core/components/atoms/icon/ds_icon.dart';
 import 'package:design_system/core/components/atoms/menu_item_base/ds_menu_item_base.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 
 class DSMenuItemButton extends DSBaseMenuItem {
@@ -112,7 +113,7 @@ class DSMenuItemButton extends DSBaseMenuItem {
       trailingIcon: trailingIcon,
       closeOnActivate: closeOnActivate,
       overflowAxis: overflowAxis,
-      style: Theme.of(context).menuButtonTheme.style,
+      style: context.theme.menuButtonTheme.style,
       child: Text(
         buttonText,
       ),

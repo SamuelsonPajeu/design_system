@@ -1,4 +1,4 @@
-import 'package:design_system/core/ui/themes/base_app_theme.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 
 class DSSortHeader extends StatelessWidget {
@@ -45,7 +45,7 @@ class DSSortHeader extends StatelessWidget {
         ),
         if (divider == true) ...[
           Divider(
-            color: Theme.of(context).colors.sysOnSurface,
+            color: context.colors.sysOnSurface,
             thickness: dividerWidth,
           ),
         ]

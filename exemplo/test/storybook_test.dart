@@ -4,7 +4,7 @@ import 'package:storybook_flutter/storybook_flutter.dart';
 import 'package:storybook_flutter_test/storybook_flutter_test.dart';
 
 void main() => testStorybook(
-      storybook(),
+      createStorybook(),
       layouts: [
         (
           device: Devices.ios.iPhone13,

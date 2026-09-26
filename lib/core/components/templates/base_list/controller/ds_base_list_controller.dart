@@ -1,8 +1,8 @@
 import 'dart:collection';
 
-import 'package:design_system/core/components/molecules/listtile/ds_listtile.dart';
-import 'package:design_system/core/components/templates/base_list/ds_base_list.dart'; // For DSBaseListModelTabs
-import 'package:flutter/foundation.dart'; // For ChangeNotifier
+import 'package:design_system/core/components/molecules/list_tile/ds_list_tile.dart';
+import 'package:design_system/core/components/templates/base_list/ds_base_list.dart';
+import 'package:flutter/material.dart';
 
 class DSBaseListController extends ChangeNotifier {
   final bool isTabMode;
@@ -36,19 +36,25 @@ class DSBaseListController extends ChangeNotifier {
       if (_searchString.isEmpty) {
         return UnmodifiableListView(listToFilter);
       }
-      final filteredList = listToFilter
-          .where((item) =>
-              (item.title).toLowerCase().contains(_searchString.toLowerCase()))
-          .toList();
+      final filteredList = listToFilter.where((item) {
+        String titleText = '';
+        if (item.title is Text) {
+          titleText = (item.title as Text).data ?? '';
+        }
+        return titleText.toLowerCase().contains(_searchString.toLowerCase());
+      }).toList();
       return UnmodifiableListView(filteredList);
     } else {
       if (_searchString.isEmpty) {
         return UnmodifiableListView(_initialItensList);
       }
-      final filteredList = _initialItensList
-          .where((item) =>
-              (item.title).toLowerCase().contains(_searchString.toLowerCase()))
-          .toList();
+      final filteredList = _initialItensList.where((item) {
+        String titleText = '';
+        if (item.title is Text) {
+          titleText = (item.title as Text).data ?? '';
+        }
+        return titleText.toLowerCase().contains(_searchString.toLowerCase());
+      }).toList();
       return UnmodifiableListView(filteredList);
     }
   }

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 
 Future<void> DSShowModalPage(
@@ -47,7 +48,7 @@ Widget _showModalWith(
     child: Container(
       height: MediaQuery.of(context).copyWith().size.height * height0,
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surface,
+        color: context.colors.sysSurface,
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(20.0),
           topRight: Radius.circular(20.0),

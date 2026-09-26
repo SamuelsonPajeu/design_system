@@ -20,6 +20,8 @@ class DSGetCustomInput extends StatefulWidget {
 }
 
 class _DSGetCustomInputState extends State<DSGetCustomInput> {
+  bool _obscurePassword = true;
+
   Future<void> _showDatePicker(
       {required BuildContext context,
       required TextEditingController controller,
@@ -260,11 +262,14 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
       case DSTypeOfInput.name:
         return DSFormTextField(
           key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
           backgroundColor: widget.customFormInput.backgroundColor,
           hintText: widget.customFormInput.hintText,
           controller: widget.customFormInput.controller,
           autovalidateMode: widget.customFormInput.autovalidateMode,
           required: widget.customFormInput.required,
+          visible: widget.customFormInput.visible,
           validate: widget.customFormInput.validate,
           validatorType: DSValidatorType.nome,
           validationMessage: 'Informe um nome válido',
@@ -276,9 +281,12 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
       case DSTypeOfInput.cpf:
         return DSFormTextField(
           key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
           backgroundColor: widget.customFormInput.backgroundColor,
           hintText: widget.customFormInput.hintText,
           controller: widget.customFormInput.controller,
+          visible: widget.customFormInput.visible,
           autovalidateMode: widget.customFormInput.autovalidateMode,
           maskType: DSFieldMaskType.cpf,
           keyboardType: TextInputType.number,
@@ -294,12 +302,15 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
       case DSTypeOfInput.date:
         return DSFormTextField(
           key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
           backgroundColor: widget.customFormInput.backgroundColor,
           hintText: widget.customFormInput.hintText,
           controller: widget.customFormInput.controller,
+          visible: widget.customFormInput.visible,
           autovalidateMode: widget.customFormInput.autovalidateMode,
           keyboardType: TextInputType.datetime,
-          suffixIcon: IconButton(
+          sufixIcon: IconButton(
               onPressed: () {
                 if (widget.customFormInput.isRangePicker) {
                   _showDateRangePicker(
@@ -336,12 +347,15 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
       case DSTypeOfInput.dateTime:
         return DSFormTextField(
           key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
           backgroundColor: widget.customFormInput.backgroundColor,
           hintText: widget.customFormInput.hintText,
           controller: widget.customFormInput.controller,
+          visible: widget.customFormInput.visible,
           autovalidateMode: widget.customFormInput.autovalidateMode,
           keyboardType: TextInputType.datetime,
-          suffixIcon: IconButton(
+          sufixIcon: IconButton(
             onPressed: () {
               _showCombinedDateTimePicker(
                 context: context,
@@ -368,12 +382,15 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
       case DSTypeOfInput.time:
         return DSFormTextField(
           key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
           backgroundColor: widget.customFormInput.backgroundColor,
           hintText: widget.customFormInput.hintText,
           controller: widget.customFormInput.controller,
+          visible: widget.customFormInput.visible,
           autovalidateMode: widget.customFormInput.autovalidateMode,
           keyboardType: TextInputType.datetime,
-          suffixIcon: IconButton(
+          sufixIcon: IconButton(
             onPressed: () {
               _showTimerPicker(
                   context: context,
@@ -411,6 +428,7 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
               : null,
           items: widget.customFormInput.dropDownOptions ?? [],
           required: widget.customFormInput.required,
+          visible: widget.customFormInput.visible,
           validate: widget.customFormInput.validate,
           validatorType:
               widget.customFormInput.validatorType ?? DSValidatorType.notEmpty,
@@ -428,12 +446,15 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
       case DSTypeOfInput.phone:
         return DSFormTextField(
           key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
           backgroundColor: widget.customFormInput.backgroundColor,
           hintText: widget.customFormInput.hintText,
           controller: widget.customFormInput.controller,
           autovalidateMode: widget.customFormInput.autovalidateMode,
           required: widget.customFormInput.required,
           validate: widget.customFormInput.validate,
+          visible: widget.customFormInput.visible,
           validatorType: DSValidatorType.phone,
           maskType: DSFieldMaskType.phone,
           validationMessage: 'Informe um telefone válido',
@@ -443,12 +464,16 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
       case DSTypeOfInput.email:
         return DSFormTextField(
           key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
           backgroundColor: widget.customFormInput.backgroundColor,
           hintText: widget.customFormInput.hintText,
           controller: widget.customFormInput.controller,
           autovalidateMode: widget.customFormInput.autovalidateMode,
           required: widget.customFormInput.required,
+          visible: widget.customFormInput.visible,
           validate: widget.customFormInput.validate,
+          readOnly: widget.customFormInput.readOnly,
           validatorType: DSValidatorType.email,
           validationMessage: 'Informe um e-mail válido',
           shakeKey: widget.customFormInput.shakeKey,
@@ -457,46 +482,64 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
       case DSTypeOfInput.cep:
         return DSFormTextField(
           key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
           backgroundColor: widget.customFormInput.backgroundColor,
           fieldKey: widget.customFormInput.fieldKey,
           hintText: widget.customFormInput.hintText,
           autovalidateMode: widget.customFormInput.autovalidateMode,
           controller: widget.customFormInput.controller,
-          prefixIcon: const Icon(Icons.place_outlined),
+          visible: widget.customFormInput.visible,
+          prefixIcon: widget.customFormInput.prefixIcon,
+          sufixIcon: widget.customFormInput.sufixIcon,
           keyboardType: TextInputType.number,
           maskType: DSFieldMaskType.cep,
           required: widget.customFormInput.required,
           validate: widget.customFormInput.validate,
           validatorType: DSValidatorType.cep,
-          validationMessage: 'Informe um CEP válido',
+          validationMessage: widget.customFormInput.validationMessage ??
+              'Informe um CEP válido',
           shakeKey: widget.customFormInput.shakeKey,
           onEditingComplete: widget.customFormInput.onEditingComplete,
           onChanged: widget.customFormInput.onChanged,
         );
       case DSTypeOfInput.houseNumber:
-        return Semantics(
-          label: "Campo de edição: número da residência",
-          hint: widget.customFormInput.required
-              ? "(Campo obrigatório) ${widget.customFormInput.readOnly ? 'Campo desativado' : 'toque duas vezes para editar'}"
-              : widget.customFormInput.readOnly
-                  ? 'Campo desativado'
-                  : "toque duas vezes para editar",
-          excludeSemantics: true,
-          child: DSFormTextField(
-            key: widget.customFormInput.key,
-            backgroundColor: widget.customFormInput.backgroundColor,
-            hintText: widget.customFormInput.hintText,
-            controller: widget.customFormInput.controller,
-            autovalidateMode: widget.customFormInput.autovalidateMode,
-            keyboardType: TextInputType.multiline,
-            required: widget.customFormInput.required,
-            validate: widget.customFormInput.validate,
-            maskType: DSFieldMaskType.numeroCasa,
-            validatorType: DSValidatorType.notEmpty,
-            validationMessage: 'Informe um número válido',
-            shakeKey: widget.customFormInput.shakeKey,
-            onChanged: widget.customFormInput.onChanged,
-          ),
+        return ValueListenableBuilder<TextEditingValue>(
+          valueListenable: widget.customFormInput.controller,
+          builder: (context, value, child) {
+            final String semanticLabel = value.text.isEmpty
+                ? "Número da residência, vazio"
+                : "Número da residência, ${value.text}";
+
+            return Semantics(
+              label: semanticLabel,
+              hint: widget.customFormInput.required
+                  ? "(Campo obrigatório) ${widget.customFormInput.readOnly ? 'Campo desativado' : 'toque duas vezes para editar'}"
+                  : widget.customFormInput.readOnly
+                      ? 'Campo desativado'
+                      : "toque duas vezes para editar",
+              textField: true,
+              excludeSemantics: true,
+              child: DSFormTextField(
+                key: widget.customFormInput.key,
+                showCounter: widget.customFormInput.showCounter,
+                focusNode: widget.customFormInput.focusNode,
+                backgroundColor: widget.customFormInput.backgroundColor,
+                hintText: widget.customFormInput.hintText,
+                controller: widget.customFormInput.controller,
+                autovalidateMode: widget.customFormInput.autovalidateMode,
+                keyboardType: TextInputType.multiline,
+                required: widget.customFormInput.required,
+                visible: widget.customFormInput.visible,
+                validate: widget.customFormInput.validate,
+                maskType: DSFieldMaskType.numeroCasa,
+                validatorType: DSValidatorType.notEmpty,
+                validationMessage: 'Informe um número válido',
+                shakeKey: widget.customFormInput.shakeKey,
+                onChanged: widget.customFormInput.onChanged,
+              ),
+            );
+          },
         );
       case DSTypeOfInput.pis:
       case DSTypeOfInput.pasep:
@@ -517,9 +560,12 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
           excludeSemantics: true,
           child: DSFormTextField(
             key: widget.customFormInput.key,
+            showCounter: widget.customFormInput.showCounter,
+            focusNode: widget.customFormInput.focusNode,
             backgroundColor: widget.customFormInput.backgroundColor,
             hintText: widget.customFormInput.hintText,
             controller: widget.customFormInput.controller,
+            visible: widget.customFormInput.visible,
             autovalidateMode: widget.customFormInput.autovalidateMode,
             keyboardType: TextInputType.number,
             required: widget.customFormInput.required,
@@ -531,20 +577,54 @@ class _DSGetCustomInputState extends State<DSGetCustomInput> {
             onChanged: widget.customFormInput.onChanged,
           ),
         );
+      case DSTypeOfInput.password:
+        return DSFormTextField(
+          key: widget.customFormInput.key,
+          showCounter: widget.customFormInput.showCounter,
+          focusNode: widget.customFormInput.focusNode,
+          backgroundColor: widget.customFormInput.backgroundColor,
+          hintText: widget.customFormInput.hintText,
+          controller: widget.customFormInput.controller,
+          autovalidateMode: widget.customFormInput.autovalidateMode,
+          required: widget.customFormInput.required,
+          validate: widget.customFormInput.validate,
+          visible: widget.customFormInput.visible,
+          obscureText: _obscurePassword,
+          validatorType:
+              widget.customFormInput.validatorType ?? DSValidatorType.password,
+          validationMessage: widget.customFormInput.validationMessage ??
+              'Informe uma senha válida',
+          shakeKey: widget.customFormInput.shakeKey,
+          onChanged: widget.customFormInput.onChanged,
+          sufixIcon: IconButton(
+            icon: Icon(
+              _obscurePassword ? Icons.visibility : Icons.visibility_off,
+            ),
+            onPressed: () {
+              setState(() {
+                _obscurePassword = !_obscurePassword;
+              });
+            },
+          ),
+          sufixIconSemanticLabel:
+              _obscurePassword ? 'Exibir senha' : 'Ocultar senha',
+        );
       case DSTypeOfInput.custom:
         return DSFormTextField(
             key: widget.customFormInput.key,
+            showCounter: widget.customFormInput.showCounter,
             backgroundColor: widget.customFormInput.backgroundColor,
             hintText: widget.customFormInput.hintText,
             controller: widget.customFormInput.controller,
             autovalidateMode: widget.customFormInput.autovalidateMode,
+            visible: widget.customFormInput.visible,
             shakeKey: widget.customFormInput.shakeKey,
             fieldKey: widget.customFormInput.fieldKey,
             obscureText: widget.customFormInput.obscureText ?? false,
             focusNode: widget.customFormInput.focusNode,
             keyboardType: widget.customFormInput.keyboardType,
             prefixIcon: widget.customFormInput.prefixIcon,
-            suffixIcon: widget.customFormInput.sufixIcon,
+            sufixIcon: widget.customFormInput.sufixIcon,
             suffixText: widget.customFormInput.suffixText,
             padding: widget.customFormInput.padding,
             required: widget.customFormInput.required,

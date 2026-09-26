@@ -13,5 +13,6 @@ enum DSTypeOfInput {
   pis,
   pasep,
   nis,
-  dateTime, 
+  dateTime,
+  password,
 }
