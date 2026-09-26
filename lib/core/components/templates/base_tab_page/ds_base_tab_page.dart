@@ -65,6 +65,16 @@ class _DSBaseTabPageState extends State<DSBaseTabPage>
           tabs: widget.baseTabPage.tabs,
           tabController: _tabController,
         );
+      case DSTabsType.bulletOnly:
+        return DSTabs.bulletOnly(
+          tabs: widget.baseTabPage.tabs,
+          tabController: _tabController,
+        );
+      case DSTabsType.titleOnlyFullIndicator:
+        return DSTabs.titleOnlyFullIndicator(
+          tabs: widget.baseTabPage.tabs,
+          tabController: _tabController,
+        );
     }
   }
 }

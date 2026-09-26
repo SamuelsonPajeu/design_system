@@ -1,6 +1,6 @@
 import 'package:design_system/core/components/atoms/text/ds_text.dart';
-import 'package:design_system/core/components/molecules/app_bar/ds_app_bar.dart';
 import 'package:design_system/core/components/molecules/tabs/ds_tabs.dart';
+import 'package:design_system/core/components/molecules/top_app_bar/ds_top_app_bar.dart';
 import 'package:design_system/core/components/templates/base_scaffold/ds_scaffold.dart';
 import 'package:design_system/core/components/templates/base_tab_page/ds_base_tab_page.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,9 @@ class _CustomTabPageState extends State<CustomTabPage> {
   @override
   Widget build(BuildContext context) {
     return DSScaffold(
-      appBar: DSAppBar(text: 'Custom Tabs', context: context),
+      appBar: DSTopAppBar.centered(
+        title: 'Custom Tabs',
+      ),
       body: DSBaseTabPage(
         baseTabPage: DSBaseTabPageModel(
           tabs: [

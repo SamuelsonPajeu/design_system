@@ -12,7 +12,7 @@ class DSDynamicListController<T> extends GetxController {
     this.showFilters = true,
     this.showSearch = true,
     this.showCountList = true,
-    this.viewMode = DsViewModeFilterDynamicList.chips,
+    this.viewMode = DSViewModeFilterDynamicList.chips,
   });
 
   final List<DSDynamicListChip> filters;
@@ -31,7 +31,7 @@ class DSDynamicListController<T> extends GetxController {
   var searchText = ''.obs;
   var isLoading = false.obs;
 
-  DsViewModeFilterDynamicList viewMode;
+  DSViewModeFilterDynamicList viewMode;
 
   List<T> get filteredItems {
     List<T> tempItems = items;

@@ -9,6 +9,7 @@ class DSLoaderController extends GetxController
   DSLoaderController({required LoadingMessagesService loadingService})
       : _loadingService = loadingService;
 
+  final Rx<String?> logoUrl = Rx<String?>(null);
   final Map<String, List<String>> _messagesCache = {};
   static const List<String> _fallbackMessages = [
     'Carregando...',
@@ -36,6 +37,7 @@ class DSLoaderController extends GetxController
   }
 
   Future<void> _initialize() async {
+    logoUrl.value = await _loadingService.fetchLogoUrl();
     // Pre-fetch and cache default messages
     final defaultMessages =
         await _loadingService.fetchMessagesForScreen('default');

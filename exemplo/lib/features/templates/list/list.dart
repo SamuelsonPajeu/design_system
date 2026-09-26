@@ -1,8 +1,8 @@
 import 'package:design_system/core/components/molecules/floating_action_button/ds_floating_action_button.dart';
-import 'package:design_system/core/components/molecules/listtile/ds_listtile.dart';
+import 'package:design_system/core/components/molecules/list_tile/ds_list_tile.dart';
 import 'package:design_system/core/components/molecules/tabs/ds_tabs.dart';
 import 'package:design_system/core/components/templates/base_list/ds_base_list.dart';
-import 'package:design_system/core/ui/themes/base_app_theme.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/symbols.dart';
 import 'package:storybook_flutter/storybook_flutter.dart';
@@ -24,7 +24,7 @@ class _CustomListState extends State<CustomList> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     for (var i = 0; i < 41; i++) {
       itemsList.add(DSListTile(
-          typeOfListTile: TypeOfListTile.listItem, title: 'teste $i'));
+          density: DSListTileDensity.standard, title: Text('teste $i')));
     }
     final List<DSBaseListModelTabs> tabs = <DSBaseListModelTabs>[
       DSBaseListModelTabs(tab: DSTabModel(title: 'Tab1'), itemsList: itemsList),
@@ -52,7 +52,7 @@ class _CustomListState extends State<CustomList> with TickerProviderStateMixin {
                 curve: Curves.fastOutSlowIn),
             floatingActionButtonStyle: DSFloatingActionButtonColor.primary,
             icon: Symbols.arrow_upward,
-            iconColor: Theme.of(context).colors.sysOnTertiary,
+            iconColor: context.colors.sysOnTertiary,
           ),
           tabController: tabController,
           tabs: tabs);
@@ -75,7 +75,7 @@ class _CustomListState extends State<CustomList> with TickerProviderStateMixin {
             duration: const Duration(seconds: 1), curve: Curves.fastOutSlowIn),
         floatingActionButtonStyle: DSFloatingActionButtonColor.primary,
         icon: Symbols.arrow_upward,
-        iconColor: Theme.of(context).colors.sysOnTertiary,
+        iconColor: context.colors.sysOnTertiary,
       ),
       itemsList: itemsList,
     );

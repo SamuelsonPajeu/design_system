@@ -1,8 +1,8 @@
-import 'package:design_system/core/components/molecules/app_bar/ds_app_bar.dart';
 import 'package:design_system/core/components/molecules/floating_action_button/ds_floating_action_button.dart';
-import 'package:design_system/core/components/molecules/listtile/ds_listtile.dart';
+import 'package:design_system/core/components/molecules/list_tile/ds_list_tile.dart';
 import 'package:design_system/core/components/molecules/shake/ds_shake_error.dart';
 import 'package:design_system/core/components/molecules/tabs/ds_tabs.dart';
+import 'package:design_system/core/components/molecules/top_app_bar/ds_top_app_bar.dart';
 import 'package:design_system/core/components/organisms/form/domain/entities/ds_custom_form_input.dart';
 import 'package:design_system/core/components/organisms/form/domain/entities/ds_custom_form_map.dart';
 import 'package:design_system/core/components/organisms/form/domain/entities/ds_type_of_input.dart';
@@ -160,7 +160,7 @@ class _DSBaseListState extends State<DSBaseList> with TickerProviderStateMixin {
     switch (widget.typeList) {
       case DSBaseListType.pageMode:
         return DSScaffold(
-          appBar: DSAppBar(text: 'BaseList', context: context),
+          appBar: DSTopAppBar.centered(title: 'BaseList'),
           floatingActionButton:
               _enableButton ? widget.floatingActionButton : null,
           body: customScrollView(),
@@ -247,6 +247,7 @@ class _DSBaseListState extends State<DSBaseList> with TickerProviderStateMixin {
               listDSCustomFormInput: <DSCustomFormInput>[
             DSCustomFormInput(
                 typeOfInput: DSTypeOfInput.custom,
+                focusNode: FocusNode(),
                 controller: searchController,
                 hintText: 'Buscar',
                 shakeKey: searchShakeKey,
@@ -278,6 +279,16 @@ class _DSBaseListState extends State<DSBaseList> with TickerProviderStateMixin {
     switch (tabsType) {
       case DSTabsType.title:
         return DSTabs.title(
+          tabs: listOfTabs,
+          tabController: tabController,
+        );
+      case DSTabsType.titleOnlyFullIndicator:
+        return DSTabs.titleOnlyFullIndicator(
+          tabs: listOfTabs,
+          tabController: tabController,
+        );
+      case DSTabsType.bulletOnly:
+        return DSTabs.bulletOnly(
           tabs: listOfTabs,
           tabController: tabController,
         );

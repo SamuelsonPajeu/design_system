@@ -1,24 +1,7 @@
 import 'package:flutter/material.dart';
 
+@immutable
 class TextsThemeExtension extends ThemeExtension<TextsThemeExtension> {
-  TextsThemeExtension({
-    required this.displayLarge,
-    required this.displayMedium,
-    required this.displaySmall,
-    required this.headlineLarge,
-    required this.headlineMedium,
-    required this.headlineSmall,
-    required this.titleLarge,
-    required this.titleMedium,
-    required this.titleSmall,
-    required this.bodyLarge,
-    required this.bodyMedium,
-    required this.bodySmall,
-    required this.labelLarge,
-    required this.labelMedium,
-    required this.labelSmall,
-  });
-
   final TextStyle displayLarge;
   final TextStyle displayMedium;
   final TextStyle displaySmall;
@@ -31,12 +14,36 @@ class TextsThemeExtension extends ThemeExtension<TextsThemeExtension> {
   final TextStyle bodyLarge;
   final TextStyle bodyMedium;
   final TextStyle bodySmall;
+  final TextStyle bodySmallBold;
+  final TextStyle bodyMediumBold;
+  final TextStyle bodyLargeBold;
   final TextStyle labelLarge;
   final TextStyle labelMedium;
   final TextStyle labelSmall;
 
+  const TextsThemeExtension({
+    required this.displayLarge,
+    required this.displayMedium,
+    required this.displaySmall,
+    required this.headlineLarge,
+    required this.headlineMedium,
+    required this.headlineSmall,
+    required this.titleLarge,
+    required this.titleMedium,
+    required this.titleSmall,
+    required this.bodyLarge,
+    required this.bodyMedium,
+    required this.bodySmall,
+    required this.bodySmallBold,
+    required this.bodyMediumBold,
+    required this.bodyLargeBold,
+    required this.labelLarge,
+    required this.labelMedium,
+    required this.labelSmall,
+  });
+
   @override
-  ThemeExtension<TextsThemeExtension> copyWith({
+  TextsThemeExtension copyWith({
     TextStyle? displayLarge,
     TextStyle? displayMedium,
     TextStyle? displaySmall,
@@ -49,6 +56,9 @@ class TextsThemeExtension extends ThemeExtension<TextsThemeExtension> {
     TextStyle? bodyLarge,
     TextStyle? bodyMedium,
     TextStyle? bodySmall,
+    TextStyle? bodySmallBold,
+    TextStyle? bodyMediumBold,
+    TextStyle? bodyLargeBold,
     TextStyle? labelLarge,
     TextStyle? labelMedium,
     TextStyle? labelSmall,
@@ -66,6 +76,9 @@ class TextsThemeExtension extends ThemeExtension<TextsThemeExtension> {
       bodyLarge: bodyLarge ?? this.bodyLarge,
       bodyMedium: bodyMedium ?? this.bodyMedium,
       bodySmall: bodySmall ?? this.bodySmall,
+      bodySmallBold: bodySmallBold ?? this.bodySmallBold,
+      bodyMediumBold: bodyMediumBold ?? this.bodyMediumBold,
+      bodyLargeBold: bodyLargeBold ?? this.bodyLargeBold,
       labelLarge: labelLarge ?? this.labelLarge,
       labelMedium: labelMedium ?? this.labelMedium,
       labelSmall: labelSmall ?? this.labelSmall,
@@ -73,11 +86,9 @@ class TextsThemeExtension extends ThemeExtension<TextsThemeExtension> {
   }
 
   @override
-  ThemeExtension<TextsThemeExtension> lerp(
-      covariant ThemeExtension<TextsThemeExtension>? other, double t) {
-    if (other is! TextsThemeExtension) {
-      return this;
-    }
+  TextsThemeExtension lerp(
+      ThemeExtension<TextsThemeExtension>? other, double t) {
+    if (other is! TextsThemeExtension) return this;
     return TextsThemeExtension(
       displayLarge: TextStyle.lerp(displayLarge, other.displayLarge, t)!,
       displayMedium: TextStyle.lerp(displayMedium, other.displayMedium, t)!,
@@ -91,6 +102,9 @@ class TextsThemeExtension extends ThemeExtension<TextsThemeExtension> {
       bodyLarge: TextStyle.lerp(bodyLarge, other.bodyLarge, t)!,
       bodyMedium: TextStyle.lerp(bodyMedium, other.bodyMedium, t)!,
       bodySmall: TextStyle.lerp(bodySmall, other.bodySmall, t)!,
+      bodySmallBold: TextStyle.lerp(bodySmallBold, other.bodySmallBold, t)!,
+      bodyMediumBold: TextStyle.lerp(bodyMediumBold, other.bodyMediumBold, t)!,
+      bodyLargeBold: TextStyle.lerp(bodyLargeBold, other.bodyLargeBold, t)!,
       labelLarge: TextStyle.lerp(labelLarge, other.labelLarge, t)!,
       labelMedium: TextStyle.lerp(labelMedium, other.labelMedium, t)!,
       labelSmall: TextStyle.lerp(labelSmall, other.labelSmall, t)!,

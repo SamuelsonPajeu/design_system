@@ -1,4 +1,5 @@
 import 'package:design_system/core/components/atoms/text/ds_text.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 
 //base_filter_chip.widget.dart
@@ -35,8 +36,7 @@ class DSFilterChip extends StatelessWidget {
           checked
               ? Icon(
                   Icons.check,
-                  size: (Theme.of(context).textTheme.bodySmall?.fontSize ?? 0) *
-                      1.4,
+                  size: (context.texts.bodySmall.fontSize ?? 0) * 1.4,
                   color: fontColor,
                 )
               : Container(),
@@ -47,10 +47,10 @@ class DSFilterChip extends StatelessWidget {
               : Container(),
           DSText(
             label,
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: fontColor,
-                ),
+            style: context.texts.bodySmall.copyWith(
+              fontWeight: FontWeight.bold,
+              color: fontColor,
+            ),
           ),
         ],
       ),

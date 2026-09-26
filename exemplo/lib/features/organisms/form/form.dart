@@ -7,6 +7,7 @@ import 'package:design_system/core/components/organisms/form/domain/entities/ds_
 import 'package:design_system/core/components/organisms/form/domain/entities/ds_custom_form_map.dart';
 import 'package:design_system/core/components/organisms/form/domain/entities/ds_type_of_input.dart';
 import 'package:design_system/core/components/organisms/form/presentation/page/ds_custom_form.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 
 class DesignSystemFormPage extends StatefulWidget {
@@ -109,14 +110,12 @@ class _DesignSystemFormPageState extends State<DesignSystemFormPage> {
                             margin: const EdgeInsets.only(bottom: 24),
                             child: DSText(
                               'Informe seus dados para cadastro abaixo. Campos identificados com * são obrigatórios',
-                              style: Theme.of(context).textTheme.bodyMedium,
+                              style: context.texts.bodyMedium,
                             ),
                           ),
                           DSCustomForm(
                               customFormMap: DSCustomFormMap(
                             formKey: formKey,
-                            autovalidateMode:
-                                AutovalidateMode.onUserInteraction,
                             listDSCustomFormInput: <DSCustomFormInput>[
                               DSCustomFormInput(
                                 typeOfInput: DSTypeOfInput.name,
@@ -213,10 +212,13 @@ class _DesignSystemFormPageState extends State<DesignSystemFormPage> {
                                       : MediaQuery.of(context).size.width *
                                           0.595),
                               DSCustomFormInput(
-                                  typeOfInput: DSTypeOfInput.houseNumber,
+                                  typeOfInput: DSTypeOfInput.custom,
                                   hintText: 'Número',
                                   controller: numeroController,
                                   shakeKey: numeroShakeKey,
+                                  validate: validate,
+                                  required: true,
+                                  validatorType: DSValidatorType.houseNumber,
                                   width: MediaQuery.of(context).size.width < 600
                                       ? double.infinity
                                       : MediaQuery.of(context).size.width *

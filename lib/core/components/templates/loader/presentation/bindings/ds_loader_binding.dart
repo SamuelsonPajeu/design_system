@@ -6,6 +6,9 @@ class DSLoaderBinding extends Binding {
   @override
   List<Bind> dependencies() {
     return [
+      Bind.lazyPut<LoadingMessagesService>(
+        () => LoadingMessagesService(),
+      ),
       Bind.lazyPut<DSLoaderController>(
         () => DSLoaderController(
           loadingService: Get.find<LoadingMessagesService>(),

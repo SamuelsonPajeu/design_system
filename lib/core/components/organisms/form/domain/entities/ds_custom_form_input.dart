@@ -23,6 +23,7 @@ class DSCustomFormInput {
     this.required = false,
     this.readOnly = false,
     this.validate = false,
+    this.visible = true,
     this.maskedValidation = false,
     this.onTap,
     this.onEditingComplete,
@@ -45,6 +46,7 @@ class DSCustomFormInput {
     this.lastDate,
     this.use24hrs = true,
     this.suffixWidget,
+    this.showCounter = true,
   });
 
   final Key? key;
@@ -62,6 +64,7 @@ class DSCustomFormInput {
   final bool required;
   final bool readOnly;
   final bool validate;
+  final bool visible;
   final String? suffixText;
   final String? equalValidationValue;
   final String? validationMessage;
@@ -85,4 +88,6 @@ class DSCustomFormInput {
   final DateTime? lastDate;
   final bool use24hrs;
   final Widget? suffixWidget;
+
+  final bool showCounter;
 }

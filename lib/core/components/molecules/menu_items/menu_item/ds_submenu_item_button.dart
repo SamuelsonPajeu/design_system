@@ -1,5 +1,6 @@
 import 'package:design_system/core/components/atoms/icon/ds_icon.dart';
 import 'package:design_system/core/components/atoms/menu_item_base/ds_menu_item_base.dart';
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 
 class DSSubmenuItemButton extends DSBaseMenuItem {
@@ -57,7 +58,7 @@ class DSSubmenuItemButton extends DSBaseMenuItem {
       clipBehavior: clipBehavior,
       leadingIcon: leadingIcon,
       trailingIcon: trailingIcon,
-      style: Theme.of(context).menuButtonTheme.style,
+      style: context.theme.menuButtonTheme.style,
       child: Text(
         buttonText,
         maxLines: 1,

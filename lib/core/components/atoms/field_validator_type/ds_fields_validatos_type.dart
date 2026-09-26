@@ -6,6 +6,7 @@ import 'package:design_system/core/infrastructure/validators/cpf_validator.dart'
 import 'package:design_system/core/infrastructure/validators/date_validator.dart';
 import 'package:design_system/core/infrastructure/validators/email_validator.dart';
 import 'package:design_system/core/infrastructure/validators/height_validator.dart';
+import 'package:design_system/core/infrastructure/validators/house_number_validator.dart';
 import 'package:design_system/core/infrastructure/validators/integer_validator.dart';
 import 'package:design_system/core/infrastructure/validators/json_map_validator.dart';
 import 'package:design_system/core/infrastructure/validators/nome_validator.dart';
@@ -93,6 +94,9 @@ class DSValidateField {
       case DSValidatorType.simpleListValidator:
         final simpleListValidator = SimpleListValidator();
         return simpleListValidator.valid(value);
+      case DSValidatorType.houseNumber:
+        final houseNumberValidator = HouseNumberValidator();
+        return houseNumberValidator.valid(value);
     }
   }
 }
@@ -119,5 +123,6 @@ enum DSValidatorType {
   integer,
   boolean,
   simpleListValidator,
-  cns
+  cns,
+  houseNumber,
 }

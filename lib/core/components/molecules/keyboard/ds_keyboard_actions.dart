@@ -3,11 +3,13 @@ import 'package:keyboard_actions/keyboard_actions.dart';
 
 KeyboardActionsConfig buildConfig(BuildContext context, FocusNode node) {
   return KeyboardActionsConfig(
-      keyboardActionsPlatform: KeyboardActionsPlatform.IOS,
-      keyboardBarColor: Colors.grey[700],
-      nextFocus: false,
-      actions: [
-        KeyboardActionsItem(focusNode: node, toolbarButtons: [
+    keyboardActionsPlatform: KeyboardActionsPlatform.IOS,
+    keyboardBarColor: Colors.grey[700],
+    nextFocus: false,
+    actions: [
+      KeyboardActionsItem(
+        focusNode: node,
+        toolbarButtons: [
           (node) {
             return GestureDetector(
               onTap: () => node.unfocus(),
@@ -23,32 +25,38 @@ KeyboardActionsConfig buildConfig(BuildContext context, FocusNode node) {
               ),
             );
           }
-        ])
-      ]);
+        ],
+      ),
+    ],
+  );
 }
 
 class DSKeyboardActionDoneWidget extends StatelessWidget {
   final Widget child;
-  final FocusNode focusNode;
+  final FocusNode? focusNode;
   final double? height;
   final bool disableScroll;
 
   const DSKeyboardActionDoneWidget({
     super.key,
     required this.child,
-    required this.focusNode,
+    this.focusNode,
     this.height,
     this.disableScroll = false,
   });
 
   @override
   Widget build(BuildContext context) {
+    if (focusNode == null) {
+      return child;
+    }
+
     return SizedBox(
       height: height,
       child: KeyboardActions(
         autoScroll: false,
         disableScroll: disableScroll,
-        config: buildConfig(context, focusNode),
+        config: buildConfig(context, focusNode!),
         child: child,
       ),
     );

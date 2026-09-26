@@ -1,4 +1,3 @@
-import 'package:design_system/core/components/atoms/text/ds_text.dart';
 import 'package:design_system/core/components/molecules/bottom_sheet/ds_bottom_sheet.dart';
 import 'package:design_system/core/components/molecules/button/ds_button.dart';
 import 'package:design_system/core/components/templates/base_scaffold/ds_scaffold.dart';
@@ -12,16 +11,22 @@ class CustomBottomSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     bool dragHandle = context.knobs
         .boolean(label: 'Button close or DragHandle', initial: true);
+    double heightFactor = context.knobs
+            .sliderInt(
+                label: 'Height Factor (%)', initial: 50, min: 20, max: 100)
+            .toDouble() /
+        100;
     return DSScaffold(
       body: Center(
         child: DSButton(
-          buttonWidth: 300,
-          onTap: () => DSBottomSheet(context,
-              dragHandle: dragHandle,
-              elevation: 2,
-              child: const Center(
-                child: DSText('Isso é um BottomSheet'),
-              )),
+          onTap: () => DSBottomSheet(
+            context,
+            dragHandle: dragHandle,
+            elevation: 2,
+            heightFactor: heightFactor,
+            isScrollControlled: true,
+            child: Container(),
+          ),
           buttonText: 'Abrir BottomSheet',
         ),
       ),

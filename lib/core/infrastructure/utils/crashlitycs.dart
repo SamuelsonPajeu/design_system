@@ -1,4 +1,4 @@
-import 'package:datadog_flutter_plugin/datadog_flutter_plugin.dart';
+// import 'package:datadog_flutter_plugin/datadog_flutter_plugin.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -11,12 +11,12 @@ registerRequestError(
       'http code: $httpCode - request name: $requestName - request url: $requestUrl - error message: $errorMessage';
   FirebaseCrashlytics.instance
       .recordFlutterError(FlutterErrorDetails(exception: Exception(message)));
-  DatadogSdk.instance.rum?.addAction(RumActionType.custom, 'Request error', {
-    'http code': httpCode,
-    'request name': requestName,
-    'request url': requestUrl,
-    'error message': errorMessage,
-  });
+  // DatadogSdk.instance.rum?.addAction(RumActionType.custom, 'Request error', {
+  //   'http code': httpCode,
+  //   'request name': requestName,
+  //   'request url': requestUrl,
+  //   'error message': errorMessage,
+  // });
 }
 
 registerCrashlyticsLog(String message) {
@@ -26,7 +26,7 @@ registerCrashlyticsLog(String message) {
       library: 'CrashlyticsLog',
     ),
   );
-  DatadogSdk.instance.rum?.addAction(RumActionType.custom, 'Generic error', {
-    'message': message,
-  });
+  // DatadogSdk.instance.rum?.addAction(RumActionType.custom, 'Generic error', {
+  //   'message': message,
+  // });
 }
