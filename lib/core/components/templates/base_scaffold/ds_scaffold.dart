@@ -70,6 +70,7 @@ class DSScaffold extends StatelessWidget {
         bottomPadding: dsAppBar.bottomPadding,
         primaryBandHeight: dsAppBar.primaryBandHeight,
         showPrimaryBand: dsAppBar.showPrimaryBand,
+        isWeb: dsAppBar.isWeb,
       );
 
       // Wrap in PreferredSize to override the default height

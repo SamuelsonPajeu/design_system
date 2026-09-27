@@ -31,6 +31,7 @@ class DSButton extends StatefulWidget {
     bool enabled = true,
     bool large = false,
     double spacing = 8,
+    EdgeInsetsGeometry? padding,
     Duration timeout = const Duration(seconds: 2),
     bool success = false,
     Duration sucessDuration = const Duration(seconds: 1),
@@ -56,6 +57,7 @@ class DSButton extends StatefulWidget {
       enabled: enabled,
       size: size,
       spacing: spacing,
+      padding: padding,
       timeout: timeout,
       success: success,
       sucessDuration: sucessDuration,
@@ -85,6 +87,7 @@ class DSButton extends StatefulWidget {
       this.enabled = true,
       this.size,
       this.spacing = 8,
+      this.padding,
       this.timeout = const Duration(seconds: 2),
       this.success = false,
       this.sucessDuration = const Duration(seconds: 1),
@@ -118,6 +121,7 @@ class DSButton extends StatefulWidget {
       this.enabled = true,
       this.size,
       this.spacing = 8,
+      this.padding,
       this.timeout = const Duration(seconds: 2),
       this.success = false,
       this.sucessDuration = const Duration(seconds: 1),
@@ -151,6 +155,7 @@ class DSButton extends StatefulWidget {
       this.enabled = true,
       this.size,
       this.spacing = 8,
+      this.padding,
       this.timeout = const Duration(seconds: 2),
       this.success = false,
       this.sucessDuration = const Duration(seconds: 1),
@@ -184,6 +189,7 @@ class DSButton extends StatefulWidget {
       this.enabled = true,
       this.size,
       this.spacing = 8,
+      this.padding,
       this.timeout = const Duration(seconds: 2),
       this.success = false,
       this.sucessDuration = const Duration(seconds: 1),
@@ -217,6 +223,7 @@ class DSButton extends StatefulWidget {
       this.enabled = true,
       this.size,
       this.spacing = 8,
+      this.padding,
       this.timeout = const Duration(seconds: 2),
       this.success = false,
       this.sucessDuration = const Duration(seconds: 1),
@@ -250,6 +257,10 @@ class DSButton extends StatefulWidget {
 
   /// Spacing between icon and text
   final double? spacing;
+
+  /// Espaço interno. Padrão: 24 nas laterais e a altura de [size]. Menor
+  /// quando o texto precisa caber (ex.: dois botões lado a lado no celular).
+  final EdgeInsetsGeometry? padding;
 
   /// Invert the position of the text and the icon
   /// the defaut is the icon on the left and text on right
@@ -372,6 +383,9 @@ class _DSButtonState extends State<DSButton> {
       if (widget.callBack != null && !widget.success) {
         widget.callBack!.call();
       }
+      // O onTap pode ter tirado o botão da tela (navegou, trocou o estado da
+      // página): sem context nem setState depois de desmontado.
+      if (!mounted) return;
       if (state == ButtonState.loading) {
         if (widget.success) {
           setState(() {
@@ -381,6 +395,7 @@ class _DSButtonState extends State<DSButton> {
           _announceStateChange(ButtonState.success);
 
           Future.delayed(widget.sucessDuration, () {
+            if (!mounted) return;
             setState(() {
               state = ButtonState.idle;
             });
@@ -587,11 +602,12 @@ class _DSButtonState extends State<DSButton> {
     final borderRadius = _getBorderRadius(
       widget.size ?? (kIsWeb ? DSSize.large : DSSize.medium),
     );
-    final buttonPadding = EdgeInsets.symmetric(
-        horizontal: 24,
-        vertical: _getButtonSize(
-          widget.size ?? (kIsWeb ? DSSize.large : DSSize.medium),
-        ));
+    final buttonPadding = widget.padding ??
+        EdgeInsets.symmetric(
+            horizontal: 24,
+            vertical: _getButtonSize(
+              widget.size ?? (kIsWeb ? DSSize.large : DSSize.medium),
+            ));
 
     switch (style) {
       case DsButtonStyleType.outlined:

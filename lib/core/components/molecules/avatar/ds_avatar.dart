@@ -136,7 +136,10 @@ class DSAvatar extends StatelessWidget {
     this.borderSize,
     required String this.initial,
     this.widgetColor,
-  })  : assert(initial.length == 1, 'initial must be exactly 1 character'),
+  })  : assert(
+          initial.length >= 1 && initial.length <= 2,
+          'initial deve ter 1 ou 2 caracteres (ex.: "J" ou "JL")',
+        ),
         type = _DSAvatarType.initial,
         child = null,
         icon = null,

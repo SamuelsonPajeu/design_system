@@ -1,3 +1,4 @@
+import 'package:design_system/core/ui/themes/theme_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -7,17 +8,23 @@ class DSLoadingShimmer extends StatelessWidget {
 
   final double height;
   final double width;
+
+  /// Só a forma conta (ex.: `borderRadius`): a cor é pintada pelo shimmer.
   final BoxDecoration? decoration;
 
   @override
   Widget build(BuildContext context) {
+    final colors = context.colors;
+    // Superfícies do tema: cinza-claro no tema claro e tons escuros no escuro
+    // (o cinza fixo ficava quase branco no dark mode).
     return Shimmer.fromColors(
-      baseColor: Colors.grey.shade300,
-      highlightColor: Colors.grey.shade100,
+      baseColor: colors.sysSurfaceContainerHighest,
+      highlightColor: colors.sysSurfaceContainerLow,
       period: const Duration(milliseconds: 800),
       enabled: true,
       child: Container(
-        decoration: decoration ?? BoxDecoration(color: Colors.grey.shade300),
+        decoration: decoration ??
+            BoxDecoration(color: colors.sysSurfaceContainerHighest),
         height: height,
         width: width,
       ),

@@ -8,6 +8,7 @@ import 'package:design_system/core/components/molecules/menu/ds_menu.dart';
 import 'package:design_system/core/components/molecules/search/ds_search_bar.dart';
 import 'package:design_system/core/infrastructure/constants/ds_size.dart';
 import 'package:design_system/core/ui/themes/theme_extensions.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:material_symbols_icons/symbols.dart';
@@ -101,6 +102,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     Color? curvatureColor,
     double? primaryBandHeight,
     bool showPrimaryBand = false,
+    bool? isWeb,
   }) {
     return DSTopAppBar._(
       key: key,
@@ -166,6 +168,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
       curvatureColor: curvatureColor,
       primaryBandHeight: primaryBandHeight,
       showPrimaryBand: showPrimaryBand,
+      isWeb: isWeb,
     );
   }
 
@@ -225,6 +228,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     Color? curvatureColor,
     double? primaryBandHeight,
     bool showPrimaryBand = false,
+    bool? isWeb,
   }) {
     return DSTopAppBar._(
       key: key,
@@ -282,6 +286,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
       curvatureColor: curvatureColor,
       primaryBandHeight: primaryBandHeight,
       showPrimaryBand: showPrimaryBand,
+      isWeb: isWeb,
     );
   }
 
@@ -341,6 +346,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     Color? curvatureColor,
     double? primaryBandHeight,
     bool showPrimaryBand = true,
+    bool? isWeb,
   }) {
     return DSTopAppBar._(
       key: key,
@@ -397,6 +403,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
       curvatureColor: curvatureColor,
       primaryBandHeight: primaryBandHeight,
       showPrimaryBand: showPrimaryBand,
+      isWeb: isWeb,
     );
   }
 
@@ -456,6 +463,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     Color? curvatureColor,
     double? primaryBandHeight,
     bool showPrimaryBand = false,
+    bool? isWeb,
   }) {
     return DSTopAppBar._(
       key: key,
@@ -512,6 +520,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
       curvatureColor: curvatureColor,
       primaryBandHeight: primaryBandHeight,
       showPrimaryBand: showPrimaryBand,
+      isWeb: isWeb,
     );
   }
 
@@ -571,6 +580,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     Color? curvatureColor,
     double? primaryBandHeight,
     bool showPrimaryBand = false,
+    bool? isWeb,
   }) {
     return DSTopAppBar._(
       key: key,
@@ -627,6 +637,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
       curvatureColor: curvatureColor,
       primaryBandHeight: primaryBandHeight,
       showPrimaryBand: showPrimaryBand,
+      isWeb: isWeb,
     );
   }
 
@@ -689,6 +700,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     Color? curvatureColor,
     double? primaryBandHeight,
     bool showPrimaryBand = false,
+    bool? isWeb,
   }) {
     return DSTopAppBar._(
       key: key,
@@ -745,6 +757,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
       curvatureColor: curvatureColor,
       primaryBandHeight: primaryBandHeight,
       showPrimaryBand: showPrimaryBand,
+      isWeb: isWeb,
     );
   }
 
@@ -807,6 +820,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.curvatureColor,
     this.primaryBandHeight,
     this.showPrimaryBand = false,
+    this.isWeb,
   });
 
   final DSTopAppBarType type;
@@ -890,6 +904,14 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
   /// Use `borderRadius: 0` to drop the curvature as well.
   final bool showPrimaryBand;
 
+  /// Web layout: no band and no [curvatureColor] behind the corners, only
+  /// the top curvature over the page background (there is no status bar to
+  /// absorb, and a zero-height band left just colored corners).
+  /// Defaults to [kIsWeb].
+  final bool? isWeb;
+
+  bool get _isWebLayout => isWeb ?? kIsWeb;
+
   static const double _kSmallScreenWidth = 600;
   static const double _kLargeScreenWidth = 840;
 
@@ -939,7 +961,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
 
     double extraSpacing = (topPadding ?? 0.0) +
         (bottomPadding ?? 0.0) +
-        (showPrimaryBand
+        (showPrimaryBand && !_isWebLayout
             ? (primaryBandHeight ?? _kDefaultPrimaryBandHeight)
             : 0.0);
 
@@ -958,6 +980,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     double? bottomPadding,
     double? primaryBandHeight,
     bool showPrimaryBand = false,
+    bool? isWeb,
   }) {
     double height = toolbarHeight ?? _kDefaultToolbarHeight;
 
@@ -989,7 +1012,7 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
 
     height += (topPadding ?? 0.0) +
         (bottomPadding ?? 0.0) +
-        (showPrimaryBand
+        (showPrimaryBand && !(isWeb ?? kIsWeb)
             ? (primaryBandHeight ?? _kDefaultPrimaryBandHeight)
             : 0.0);
 
@@ -1321,7 +1344,8 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
     final double effectiveBorderRadius = borderRadius ?? DSSize.small.border();
     final Color effectiveCurvatureColor = curvatureColor ?? colors.sysPrimary;
     final double bandHeight = primaryBandHeight ?? _kDefaultPrimaryBandHeight;
-    final bool hasBand = showPrimaryBand && bandHeight > 0;
+    final bool isWebLayout = _isWebLayout;
+    final bool hasBand = !isWebLayout && showPrimaryBand && bandHeight > 0;
     // The band takes over the status bar area so it is not painted with the
     // bar surface; the inner AppBar must not inset it a second time.
     final double topInset = primary ? MediaQuery.paddingOf(context).top : 0.0;
@@ -1416,7 +1440,8 @@ class DSTopAppBar extends StatelessWidget implements PreferredSizeWidget {
 
     if (!hasBand) {
       // Curvature only: no Column, so the AppBar keeps bounded constraints.
-      return effectiveBorderRadius > 0
+      // On web the corners show the page itself, not the curvature color.
+      return effectiveBorderRadius > 0 && !isWebLayout
           ? Container(color: effectiveCurvatureColor, child: surface)
           : surface;
     }

@@ -124,12 +124,25 @@ class _DSFormTextFieldState extends State<DSFormTextField> {
   }
 
   @override
+  void didUpdateWidget(covariant DSFormTextField oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.controller != widget.controller) {
+      oldWidget.controller.removeListener(checkIfControllerIsEmpty);
+      widget.controller.addListener(checkIfControllerIsEmpty);
+    }
+  }
+
+  @override
   void dispose() {
+    // O controller costuma viver mais que o campo (ex.: no controller da
+    // tela): sem remover, a próxima digitação chama setState num state morto.
+    widget.controller.removeListener(checkIfControllerIsEmpty);
     _announcementTimer?.cancel();
     super.dispose();
   }
 
   void checkIfControllerIsEmpty() {
+    if (!mounted) return;
     setState(() {
       showLabel = widget.required && fieldIsEmpty;
       fieldIsEmpty = widget.controller.text.isEmpty;
